@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>台北國際自行車展覽會</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/tts_A.css">
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="vendor/pignose/css/pignose.calendar.min.css">
+	
+
+</head>
+
+<body class="noScrollBody">
+	<div class="fboxifDiv">
+		<div class="title">
+			<h2>Contact List</h2>
+		</div>
+		<div class="S-scrollbar fboxifBody">
+			<div class="wrapper">
+				<div class="container">               
+					<section class="lp">
+						<div class="grid">
+							<ul>
+								<li><a href="javascript:parent.chatWinAccount('25021740','4995DC47CE08D5C448175DF427D97534C07C84F8A9F1DF81D0636733C6861689')">Hsiao Ju , Liu</a></li>
+								<li><a href="javascript:parent.chatWinAccount('25021740','84145C417BC16D9196AA92C166237F5130906001088FACF6')">劉筱儒555</a></li>
+								<li><a href="javascript:parent.chatWinAccount('25021740','71BB43488ABA1A2DB53FC98983CA63F87D3E641E8BFA0DD9')">12345</a></li>
+								<li><a href="javascript:parent.chatWinAccount('25021740','1689B0311BA676B0BD74EE7DD777CD42')">test</a></li>
+								<li><a href="javascript:parent.chatWinAccount('25021740','1689B0311BA676B04C29B571A7D898E0')">testt</a></li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+   
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <script src="vendor/slick/slick.min.js "></script>
+    <script src="vendor/slick/slick-lightbox.js "></script>
+    <script src="vendor/lazyload/lazyload.min.js"></script>
+    <script src="vendor/picturefill/picturefill.min.js"></script>
+    <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <!-- add pignose calendar -->
+    <script src="vendor/pignose/js/pignose.calendar.full.min.js"></script>
+    <script src="vendor/pignose/js/pignose.calendar.min.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+    <script>
+    $(function() {
+        $('.calendar').pignoseCalendar();
+        $('.pickHour').find('a').each(function(index, el) {
+            $(this).click(function(e) {
+                $(this).addClass('active').parent().siblings().find('a').removeClass('active');
+                e.preventDefault();
+            });
+        });
+
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,873 @@
+.full {}
+.col-12 {}
+// -----------------------------------------------------6-6
+.col-6-6 {
+    .col {
+        .video_bg {
+            .video-container {
+                @include aspect-ratio(5, 2);
+                @include screen('mobile') {
+                    @include aspect-ratio(5, 3);
+                    margin-bottom: 1em;
+                    iframe, video {
+                        width: 130%;
+                        height: 120%;
+                    }
+                }
+            }
+        }
+        .feature {
+            .feature_intro {
+                float: none;
+                width: 100%;
+            }
+            .pic {
+                float: none;
+                width: 100%;
+            }
+        }
+        .loaction {
+            .pic {
+                width: 50%;
+                min-height: 15em;
+                @include screen('mobile') {
+                    width: 100%;
+                }
+            }
+            .loaction_intro {
+                width: 50%;
+                @include screen('mobile') {
+                    width: 100%;
+                    float: none;
+                }
+                p {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .ex_news, .industry_news {
+            .pic {
+                float: none;
+                width: 100%;
+            }
+        }
+        .product {
+            ul {
+                li {
+                    width: 33%;
+                    @include screen('xs_mobile') {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .award {
+            .img-container {
+                float: none;
+                width: 100%;
+                margin: 0px auto 1em;
+            }
+            .slider {
+                p {
+                    display: none;
+                }
+            }
+        }
+        .seminar {
+            .pic {
+                float: none;
+                width: 100%;
+            }
+        }
+        .ad {
+            ul {
+                li {
+                    width: 30%;
+                    margin: 0px 1.5% 1.5em;
+                    @include screen('tablet') {
+                        width: 45%;
+                        margin: 0px 2.5% 1.5em;
+                    }
+                }
+            }
+        }
+        .topic {
+            .img-container {
+                width: 100%;
+                float: none;
+            }
+        }
+        .event {
+            .item {
+                .event_intro {
+                    width: 100%;
+                }
+                min-height: auto;
+                height: auto;
+                .img-container {
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+        .video{ width: 100%;}
+        .product{ width: 100%;}
+        .photo{ width: 100%;}
+        .award{ width: 100%;}
+        .ad{ width: 100%;}
+    }
+}
+// -----------------------------------------------------8-4
+.col-8-4 {
+    // 第一格
+    .col:nth-child(2n+1) {
+        .ex_news, .industry_news {
+            .pic {
+                @include screen('tablet') {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+        .video_bg {
+            .video-container {
+                @include aspect-ratio(5, 2);
+                @include screen('mobile') {
+                    @include aspect-ratio(5, 3);
+                    margin-bottom: 1em;
+                    iframe, video {
+                        width: 130%;
+                        height: 120%;
+                    }
+                }
+            }
+            .caption {
+                width: 90%;
+                margin-left: -45%;
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+        .feature {
+            .feature_intro {
+                @include screen('mobile') {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            .pic {
+                @include screen('mobile') {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+        .loaction {
+            .loaction_intro {
+                p {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            .pic {
+                min-height: 15em;
+            }
+        }
+        .product {
+            ul {
+                li {
+                    width: 33%;
+                    @include screen('xs_mobile') {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .seminar {
+            .pic {
+                @include screen('tablet') {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+        .ad {
+            ul {
+                li {
+                    @include screen('tablet') {
+                        width: 45%;
+                        margin: 0px 1.5% 1.5em;
+                    }
+                }
+            }
+        }
+        .topic {
+            .img-container {
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+    .col {
+        &:nth-child(2n) {
+            .video_bg {
+                .video-container {
+                    @include aspect-ratio(5, 4);
+                    @include screen('mobile') {
+                        @include aspect-ratio(5, 3);
+                        margin-bottom: 1em;
+                        iframe, video {
+                            width: 130%;
+                            height: 120%;
+                        }
+                    }
+                }
+                .caption {
+                    width: 90%;
+                    margin-left: -45%;
+                    h2 {
+                        width: 100%;
+                    }
+                }
+            }
+            .feature {
+                .feature_intro {
+                    float: none;
+                    width: 100%;
+                }
+                .pic {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            .loaction {
+                .loaction_intro {
+                    float: none;
+                    width: 100%;
+                    p {
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+                .pic {
+                    min-height: 15em;
+                }
+            }
+            .ex_news, .industry_news {
+                .pic {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            .product {
+                ul {
+                    li {
+                        width: 50%;
+                    }
+                }
+            }
+            .award {
+                .img-container {
+                    float: none;
+                    width: 100%;
+                    margin: 0px auto 1em;
+                }
+                .slider {
+                    .img-container {
+                        width: 98%;
+                        margin: 0px 1% .5em;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+            .seminar {
+                .pic {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            .event {
+                .item {
+                    .event_intro {
+                        width: 100%;
+                    }
+                    min-height: auto;
+                    height: auto;
+                    .img-container {
+                        width: 100%;
+                        float: none;
+                    }
+                }
+            }
+            .topic {
+                .img-container {
+                    width: 100%;
+                    float: none;
+                }
+            }
+            .ad {
+                ul {
+                    li {
+                        width: 45%;
+                        margin: 0px 1.5% 1.5em;
+                        @include screen('tablet') {
+                            width: 90%;
+                            margin: 0px 1.5% 1.5em;
+                        }
+                        @include screen('mobile') {
+                            width: 45%;
+                            margin: 0px 2.5% 1.5em;
+                        }
+                    }
+                }
+            }
+            .ex_info {
+                time {
+                    .year {
+                        font-size: 1.5em;
+                        @include screen('mobile') {
+                            font-size: 2em;
+                        }
+                    }
+                    .date {
+                        font-size: 1.5em;
+                        @include screen('mobile') {
+                            font-size: 2.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// -----------------------------------------------------4-8
+.col-4-8 {
+    //第二格
+    .col:nth-child(2n){
+        .ex_news, .industry_news {
+            .pic {
+                @include screen('tablet') {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+        .video_bg {
+            .video-container {
+                @include aspect-ratio(5, 2);
+                @include screen('mobile') {
+                    @include aspect-ratio(5, 3);
+                    margin-bottom: 1em;
+                    iframe, video {
+                        width: 130%;
+                        height: 120%;
+                    }
+                }
+            }
+            .caption {
+                width: 90%;
+                margin-left: -45%;
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+        .feature {
+            .feature_intro {
+                @include screen('mobile') {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            .pic {
+                @include screen('mobile') {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+        .loaction {
+            .loaction_intro {
+                p {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            .pic {
+                min-height: 15em;
+            }
+        }
+        .product {
+            ul {
+                li {
+                    width: 33%;
+                }
+            }
+        }
+        .seminar {
+            .pic {
+                @include screen('tablet') {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+        
+        .topic {
+            .img-container {
+                width: 100%;
+                float: none;
+            }
+        }
+        .ad {
+            ul {
+                li {
+                    @include screen('tablet') {
+                        width: 45%;
+                        margin: 0px 1.5% 1.5em;
+                    }
+                }
+            }
+        }
+    }
+    .col {
+        &:nth-child(2n+1) {
+            .video_bg {
+                .video-container {
+                    @include aspect-ratio(5, 4);
+                    iframe, video {
+                        width: 130%;
+                        height: 120%;
+                    }
+                    @include screen('mobile') {
+                        @include aspect-ratio(5, 3);
+                        margin-bottom: 1em;
+                        iframe, video {
+                            width: 130%;
+                            height: 120%;
+                        }
+                    }
+                }
+                .caption {
+                    width: 90%;
+                    margin-left: -45%;
+                    h2 {
+                        width: 100%;
+                    }
+                }
+            }
+            .feature {
+                .feature_intro {
+                    float: none;
+                    width: 100%;
+                }
+                .pic {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            .loaction {
+                .loaction_intro {
+                    float: none;
+                    width: 100%;
+                    p {
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+                .pic {
+                    min-height: 15em;
+                }
+            }
+            .ex_news, .industry_news {
+                .pic {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            .product {
+                ul {
+                    li {
+                        width: 50%;
+                    }
+                }
+            }
+            .award {
+                .img-container {
+                    float: none;
+                    width: 100%;
+                    margin: 0px auto 1em;
+                }
+                .slider {
+                    .img-container {
+                        width: 98%;
+                        margin: 0px 1% .5em;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+            .seminar {
+                .pic {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            .topic {
+                .img-container {
+                    width: 100%;
+                    float: none;
+                }
+            }
+            .ad {
+                ul {
+                    li {
+                        width: 45%;
+                        margin: 0px 1.5% 1.5em;
+                        @include screen('tablet') {
+                            width: 90%;
+                            margin: 0px 1.5% 1.5em;
+                        }
+                        @include screen('mobile') {
+                            width: 45%;
+                            margin: 0px 2.5% 1.5em;
+                        }
+                    }
+                }
+            }
+            .ex_info {
+                time {
+                    .year {
+                        font-size: 1.5em;
+                        @include screen('mobile') {
+                            font-size: 2em;
+                        }
+                    }
+                    .date {
+                        font-size: 1.5em;
+                        @include screen('mobile') {
+                            font-size: 2.3em;
+                        }
+                    }
+                }
+            }
+            .event {
+                .item {
+                    .event_intro {
+                        width: 100%;
+                    }
+                    min-height: auto;
+                    height: auto;
+                    .img-container {
+                        width: 100%;
+                        float: none;
+                    }
+                }
+            }
+        }
+    }
+}
+// -----------------------------------------------------4-4-4
+.col-4-4-4 {
+    .col {
+        .video_bg {
+            .video-container {
+                @include aspect-ratio(5, 4);
+                iframe, video {
+                    width: 130%;
+                    height: 120%;
+                }
+                @include screen('mobile') {
+                    @include aspect-ratio(5, 3);
+                    margin-bottom: 1em;
+                    iframe, video {
+                        width: 130%;
+                        height: 120%;
+                    }
+                }
+            }
+            .caption {
+                width: 90%;
+                margin-left: -45%;
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+        .feature {
+            .feature_intro {
+                float: none;
+                width: 100%;
+            }
+            .pic {
+                float: none;
+                width: 100%;
+            }
+        }
+        .loaction {
+            .loaction_intro {
+                float: none;
+                width: 100%;
+                p {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            .pic {
+                min-height: 15em;
+            }
+        }
+        .ex_news, .industry_news {
+            .pic {
+                float: none;
+                width: 100%;
+            }
+        }
+        .product {
+            ul {
+                li {
+                    width: 50%;
+                }
+            }
+        }
+        .award {
+            .img-container {
+                float: none;
+                width: 98%;
+                margin: 0px 1% 1em;
+            }
+            .slider {
+                .img-container {
+                    width: 98%;
+                    margin: 0px 1% .5em;
+                }
+                p {
+                    display: none;
+                }
+            }
+        }
+        .seminar {
+            .pic {
+                float: none;
+                width: 100%;
+            }
+        }
+        .event {
+            .item {
+                .event_intro {
+                    width: 100%;
+                }
+                min-height: auto;
+                height: auto;
+                .img-container {
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+        .topic {
+            .img-container {
+                width: 100%;
+                float: none;
+            }
+        }
+        .ad {
+            ul {
+                li {
+                    width: 45%;
+                    margin: 0px 1.5% 1.5em;
+                    @include screen('tablet') {
+                        width: 90%;
+                        margin: 0px 5% 1.5em;
+                    }
+                    @include screen('mobile') {
+                        width: 45%;
+                        margin: 0px 1.5% 1.5em;
+                    }
+                }
+            }
+        }
+        .ex_info {
+            time {
+                .year {
+                    font-size: 1.5em;
+                    @include screen('mobile') {
+                        font-size: 2em;
+                    }
+                }
+                .date {
+                    font-size: 1.5em;
+                    @include screen('mobile') {
+                        font-size: 2.3em;
+                    }
+                }
+            }
+        }
+    }
+}
+// ---------------------------------------------------3-3-3-3
+.col-3-3-3-3 {
+    .col {
+        .video_bg {
+            .video-container {
+                @include aspect-ratio(5, 4);
+                iframe, video {
+                    width: 130%;
+                    height: 120%;
+                }
+                @include screen('mobile') {
+                    @include aspect-ratio(5, 3);
+                    margin-bottom: 1em;
+                    iframe, video {
+                        width: 130%;
+                        height: 120%;
+                    }
+                }
+            }
+            .caption {
+                width: 90%;
+                margin-left: -45%;
+                h2 {
+                    width: 100%;
+                }
+            }
+        }
+        .feature {
+            .feature_intro {
+                float: none;
+                width: 100%;
+            }
+            .pic {
+                float: none;
+                width: 100%;
+            }
+        }
+        .loaction {
+            .loaction_intro {
+                float: none;
+                width: 100%;
+                p {
+                    span {
+                        display: block;
+                    }
+                }
+            }
+            .pic {
+                min-height: 15em;
+            }
+        }
+        .ex_news, .industry_news {
+            .pic {
+                float: none;
+                width: 100%;
+            }
+        }
+        .product {
+            ul {
+                li {
+                    width: 50%;
+                }
+            }
+        }
+        .award {
+            .img-container {
+                float: none;
+                width: 100%;
+                margin: 0px auto 1em;
+            }
+            .slider {
+                .img-container {
+                    width: 98%;
+                    margin: 0px 1% .5em;
+                }
+                p {
+                    display: none;
+                }
+                ul {
+                    ul {
+                        li {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .seminar {
+            .pic {
+                float: none;
+                width: 100%;
+            }
+        }
+        .event {
+            .item {
+                margin-bottom: 1em;
+                .event_intro {
+                    width: 100%;
+                    h3 {
+                        font-size: 1.25em;
+                    }
+                }
+                min-height: auto;
+                height: auto;
+                .img-container {
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+        .topic {
+            .img-container {
+                width: 100%;
+                float: none;
+            }
+        }
+        .ex_btn {
+            ul {
+                li {
+                    a {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+        .ad {
+            ul {
+                li {
+                    width: 90%;
+                    margin: 0px 5% 1.5em;
+                    @include screen('mobile') {
+                        width: 45%;
+                        margin: 0px 2.5% 1.5em;
+                    }
+                }
+            }
+        }
+        .ex_info {
+            time {
+                .year {
+                    font-size: 1.5em;
+                    @include screen('mobile') {
+                        font-size: 2em;
+                    }
+                }
+                .date {
+                    font-size: 1.3em;
+                    @include screen('mobile') {
+                        font-size: 2.3em;
+                    }
+                }
+            }
+        }
+    }
+}

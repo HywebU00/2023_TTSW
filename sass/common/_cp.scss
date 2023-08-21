@@ -1,0 +1,689 @@
+@charset "utf-8";
+// 文章標題
+h1.title {
+    line-height: 1.25em;
+    margin: .4em 0;
+}
+
+.cp {
+    margin-top: -3.6em;
+    @include screen('mobile') {
+        margin-top: 0;
+    }
+    .float_left {
+        float: left;
+        margin: 0px 1em 1em 0;
+        width: auto;
+        display: block;
+        max-width: 55%;
+        @include screen('mobile') {
+            float: none;
+            max-width: 100%;
+            margin: 0px auto;
+        }
+    }
+    .float_right {
+        float: right;
+        margin: 0px 0 1em 1em;
+        width: auto;
+        max-width: 55%;
+        @include screen('mobile') {
+            float: none;
+            max-width: 100%;
+            margin: 0px auto;
+        }
+    }
+    .photo_pic {
+        width: 75%;
+        margin: 0px auto 1em;
+        img {
+            width: 100%;
+        }
+        .btn_grp {
+            button {
+                @include screen('xs_mobile') {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .video_block {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 3em;
+        @include gutter();
+        .video_container {
+            @include aspect-ratio(4, 3);
+            position: relative;
+            width: 40%;
+            float: left;
+            margin: 0 1em 1em 0;
+            @include screen('tablet') {
+                width: 55%;
+            }
+            @include screen('mobile') {
+                float: none;
+                width: 100%;
+                margin: 0 auto 1em;
+            }
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+            }
+            p {
+                overflow: hidden;
+            }
+        }
+    }
+    &.small_size {
+        font-size: .938em;
+    }
+    &.large_size {
+        font-size: 1.125em;
+    }
+	&.mt-0 {
+        margin-top: 0;
+    }
+    h3 {
+        padding: 12px 0px 15px 0px;
+        margin: 0.5em 0px 1em;
+        border-bottom: 1px solid $primaryColor;
+    }
+    table {
+        background: #FFF;
+    }
+    ul, ol {
+        overflow: hidden;
+    }
+    img {
+        &.float_left {
+            float: left;
+            margin: 0px 1em 1em 0;
+            width: auto;
+            display: block;
+            max-width: 55%;
+            @include screen('mobile') {
+                float: none;
+                max-width: 100%;
+                margin: 0px auto;
+            }
+        }
+        &.float_right {
+            float: right;
+            margin: 0px 0 1em 1em;
+            width: auto;
+            max-width: 55%;
+            @include screen('mobile') {
+                float: none;
+                max-width: 100%;
+                margin: 0px auto;
+            }
+        }
+    }
+    p {
+        a {
+            @include screen('mobile') {
+                white-space: normal !important;
+            }
+        }
+    }
+    a {
+        @include aSetting;
+    }
+    .info {
+        font-size: 0.938em;
+        line-height: 1.5em;
+        list-style: none;
+        margin: 0 0 .7em 0;
+        border-left: solid 5px $secondaryColor;
+        @include box-sizing;
+        padding: 0.8em 1.5em 0.8em;
+        background: #F2F2F2;
+        @extend %clearfix;
+        li {
+            width: 25%;
+            // margin-bottom: .5em;
+            display: inline-block;
+            vertical-align: top;
+            @include screen('tablet') {
+                width: 48%;
+                margin-bottom: .2em;
+                font-size: 0.875em;
+            }
+            @include screen('mobile') {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+// 文章標籤
+div.tag {
+    @extend %clearfix;
+    padding: .5em 0;
+    margin-bottom: .5em;
+    &:before {
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: .2em;
+        background: url(../images/basic/icon_tag.png) no-repeat center center;
+        background-size: 16px;
+    }
+    ul {
+        display: inline-block;
+        @include li-reset;
+        li {
+            display: inline-block;
+            margin: 0 .2em .2em 0;
+            a {
+                display: block;
+                font-size: .813em;
+                @include aSetting_nocolor;
+                border-radius: 4px;
+                border: 1px solid #DDD;
+                padding: .2em .5em;
+            }
+        }
+    }
+}
+// 檔案下載
+.file_download {
+    width: 100%;
+    margin: 0 auto;
+    @extend %clearfix;
+    h3 {
+        font-size: 1.5em;
+        padding: 12px 0px 15px 0px;
+        margin: 0.5em 0px 0.2em;
+        border-bottom: 1px solid $primaryColor;
+    }
+    ul {
+        counter-reset: counter;
+        list-style-type: none;
+        padding: 0;
+        margin-left: 1em;
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+        }
+    }
+    li {
+        position: relative;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #EEE;
+        .update,
+        .file_view {
+            font-size: .813em;
+            color: #AAA;
+            width: 100px;
+            float: right;
+            margin-top: 5px;
+            display: none;
+            @media screen and (max-width: 767px) {
+                display: none;
+                float: none;
+                width: auto;
+                margin-top: 0;
+            }
+            @include screen('xs_mobile') {
+                display: none;
+            }
+        }
+        .update {
+            width: 150px;
+            @media screen and (max-width: 767px) {
+                margin-left: 5px;
+            }
+        }
+        a {
+            padding: .2em 0px .2em 65px;
+            position: relative;
+            height: auto;
+            line-height: 1.45em;
+            display: inline-block;
+            width: 100%;
+            color: $color-word;
+            &:hover {
+                color: $aHover;
+            }
+            @include text-overflow;
+            &:before {
+                position: absolute; // outline: 1px solid red;
+                top: 5px;
+                left: 0px;
+                text-align: right;
+                width: 30px;
+                counter-increment: counter;
+                content: counters(counter, ".") " . ";
+            }
+            @include screen('mobile') {
+                margin-right: 0px; // display: block;
+                width: 85%;
+            }
+            .kb {
+                font-size: .75em;
+                color: #666;
+                display: inline-block;
+                margin: 0px .5em;
+            }
+            &:after {
+                content: "";
+                background: url(../images/basic/icon_folder.png);
+                width: 22px;
+                height: 24px;
+                position: absolute;
+                top: 2px;
+                left: 35px;
+                text-align: right;
+                background-size:contain;
+                background-repeat:no-repeat;
+				filter: grayscale(100%);						
+            }
+            &[href$="doc"]:after {
+                background: url(../images/basic/icon_doc.png);
+                background-size:contain;
+            }
+            &[href$="odp"]:after {
+                background: url(../images/basic/icon_odp.png);
+                background-size:contain;
+            }
+            &[href$="ods"]:after {
+                background: url(../images/basic/icon_ods.png);
+                background-size:contain;
+            }
+            &[href$="odt"]:after {
+                background: url(../images/basic/icon_odt.png);
+                background-size:contain;
+            }
+            &[href$="pdf"]:after {
+                background: url(../images/basic/icon_pdf.png);
+                background-size:contain;
+            }
+            &[href$="xls"]:after {
+                background: url(../images/basic/icon_xls.png);
+                background-size:contain;
+            }
+            &[href$="ppt"]:after {
+                background: url(../images/basic/icon_ppt.png);
+                background-size:contain;
+            }
+            &[href$="jpg"]:after {
+                background: url(../images/basic/icon_jpg.png);
+                background-size:contain;
+            }
+            &[href$="mp3"]:after {
+                background: url(../images/basic/icon_mp3.png);
+                background-size:contain;
+            }
+            &[href$="mov"]:after {
+                background: url(../images/basic/icon_mov.png);
+                background-size:contain;
+            }
+            &[href$="txt"]:after {
+                background: url(../images/basic/icon_txt.png);
+                background-size:contain;
+            }
+            &[href$="dot"]:after {
+                background: url(../images/basic/icon_doc.png);
+                background-size:contain;
+            }
+            &[href$="zip"]:after {
+                background: url(../images/basic/icon_zip.png);
+                background-size:contain;
+            }
+        }
+    }
+}
+// 外部連結
+.web_link {
+    width: 100%;
+    margin: 0 auto;
+    @extend %clearfix;
+    h3 {
+        font-size: 1.5em;
+        padding: 12px 0px 15px 0px;
+        margin: 0.5em 0px 0.2em;
+        border-bottom: 1px solid $primaryColor;
+    }
+    ol,
+    ul {
+        counter-reset: counter;
+        list-style-type: none;
+        padding: 0;
+        margin-left: 1em;
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+        }
+    }
+    li {
+        position: relative;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #EEE;
+        a {
+            padding: .2em 0px .2em 35px;
+            position: relative;
+            height: auto;
+            line-height: 1.45em;
+            display: block;
+            @include aSetting_nocolor;
+            &:before {
+                position: absolute; // outline: 1px solid red;
+                top: 5px;
+                left: 0px;
+                text-align: right;
+                width: 30px;
+                counter-increment: counter;
+                content: counters(counter, ".") " . ";
+            }
+        }
+    }
+}
+.cp .video-container {
+    width: 300px;
+    margin: 1em auto;
+    min-width: 300px;
+    float: left;
+    margin: 0 1em 1em 0;
+    @include aspect-ratio(4, 3);
+    position: relative;
+    @include screen('xs_mobile') {
+         width: 100%;
+         float: none;
+         margin: 0 auto 1em;
+    }
+    iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    &:hover {
+        picture {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+    picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 3.6em;
+            height: 3.6em;
+            border-radius: 50%;
+            top: 40%;
+            left: 50%;
+            margin-left: -1.8em;
+            background: url(../images/play.png) no-repeat center center;
+            background-size: cover;
+            z-index: 1;
+            opacity: .8;
+            transition:.3s ease-out;
+        }
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover !important;
+    }
+}
+.jump {
+    @extend %clearfix;
+    width: 80%;
+    min-width: 600px;
+    margin: 0 auto 1em;
+    padding: .5em;
+    a {
+        color: #333;
+        font-weight: bold;
+        display: block;
+        line-height: 1.5;
+        font-size: 1.125em;
+        @include text-overflow;
+        @include screen('mobile') {
+            height: 4em;
+            text-overflow: inherit;
+            white-space: normal;
+        }
+        span {
+            font-size: .75em;
+            color: #888;
+            display: block;
+            font-weight: normal;
+        }
+        &:hover, &:focus {
+            color: $aHover;
+        }
+    }
+    .prev, .next {
+        width: 50%;
+        float: left;
+        padding: 1em 2em;
+        position: relative;
+        border-right: 1px solid #666;
+        &:before {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 40px;
+            transform: rotate(-45deg);
+            border: 5px solid #CCC;
+            border-bottom: none;
+            border-right: none;
+            top: 20%;
+            left: -40px;
+            transition: .3s ease-out;
+            opacity: .5;
+        }
+        &:hover {
+            &:before {
+                border: 5px solid $aHover;
+                border-bottom: none;
+                border-right: none;
+                left: -20px;
+                opacity: 1;
+            }
+        }
+    }
+    .next {
+        border-right: none;
+        &:before {
+            left: auto;
+            right: -40px;
+            transform: rotate(135deg);
+        }
+        &:hover {
+            &:before {
+                border: 5px solid $aHover;
+                border-bottom: none;
+                border-right: none;
+                left: auto;
+                right: -20px;
+                opacity: 1;
+            }
+        }
+    }
+    @include screen('mobile') {
+        width: 100%;
+        min-width: 260px;
+        padding: .2em;
+        .prev, .next {
+            &:before {
+                width: 20px;
+                height: 20px;
+                top: 30%;
+                left: 0px;
+            }
+            &:hover {
+                &:before {
+                    left: 0px;
+                }
+            }
+        }
+        .next {
+            &:before {
+                left: auto;
+                right: 0px;
+            }
+            &:hover {
+                &:before {
+                    left: auto;
+                    right: 0px;
+                }
+            }
+        }
+    }
+}
+.basic_slider {
+    clear: both;
+}
+.cp_slider{
+    .img-container{
+        border:none !important;
+        a{
+            &:after{
+                content:"";
+                position:absolute;
+                width: 100%;
+                height: 100%;
+                top:0;
+                left: 0;
+                right: 0;
+                bottom:0;
+                box-shadow:0px 0px 0px 1px #DDD inset;
+            }
+            &:hover,&:focus {
+                 box-shadow:0px 0px 0px 1px $aHover inset;
+            }
+        }
+    }
+}
+.p-top{
+    margin-top:0 !important;
+}
+
+//參展紀錄
+.cp .timeline {
+    overflow: visible;
+    .sticky-panel {
+        margin: 8px 0 0 0;
+        min-width: 80px;
+
+        span {
+            position: sticky;
+            top: 40px;
+            font-size: 1.75em;
+            font-weight: bold;
+            color: $primaryColor;
+            translate: top ease-in-out .25s;
+        }
+    }
+    .date-range {
+        margin-bottom: .25em;
+        font-size: .75em;
+        color: $color-dark;
+        opacity: .75;
+    }
+
+    li {
+        position: relative;
+        list-style: none;
+    }
+    > li {
+        display: flex;
+        margin: 0;
+        > ul {
+            position: relative;
+            margin: 0 0 0 24px;
+            padding: 0;
+            overflow: visible;
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 2px;
+                height: 100%;
+                background-color: $My_line;
+            }
+            > li {
+                padding: 0 0 0 24px;
+                &:before {
+                    position: absolute;
+                    top: 12px;
+                    left: -3px;
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 100%;
+                    background-color: $primaryColor;
+                }
+                &:first-child:before {
+                    left: -5px;
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+        &:first-child > ul:before {
+            background: linear-gradient(0deg, rgba($color: $My_line, $alpha: 1) 90%, rgba($color: $My_line, $alpha: 0) 100%);
+        }
+        &:last-child > ul:before {
+            background: linear-gradient(180deg, rgba($color: $My_line, $alpha: 1) 80%, rgba($color: $My_line, $alpha: 0) 100%);
+        }
+    }
+    @include screen('tablet') {
+        padding: 0;
+        .sticky-panel {
+            span {
+                top: 60px;
+            }
+        }
+    }
+    
+}
+.calendarInfo{
+	padding-bottom:2em !important;
+    h2{
+        display: table;
+        line-height: 1 !important;
+        margin: 2.5em 0em 1em 0em !important;
+        text-align:left !important;
+        white-space: nowrap;
+        width: 95%;
+    }
+    h2:after{
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 50%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../images/basic/divider.jpg);
+        background-position: left 1em top 50%;
+    }
+    p{
+        margin:0em 0em 0.5em 0em !important;
+        line-height:1.65em !important;
+    }
+
+}

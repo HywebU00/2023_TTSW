@@ -1,0 +1,41 @@
+@mixin fontSetting($FONT-SIZE:$font-size, $WEIGHT:normal) {
+    font-size: $FONT-SIZE;
+    font-weight: $WEIGHT;
+    color: $color-word;
+}
+@mixin aSetting($COLOR:$aColor, $NOLINE:none) {
+    color: adjust_hue(saturate(lighten($aColor, 7), 40), -10);
+    text-decoration: $NOLINE;
+    &:hover,
+    &:focus {
+        color: adjust_hue(saturate(lighten($aHover, 19), 40), -10);
+        cursor: pointer;
+    }
+}
+@mixin aSetting_nocolor($COLOR:$color-word, $NOLINE:none) {
+    color: $COLOR;
+    text-decoration: $NOLINE;
+    &:hover,
+    &:focus {
+        color: $aHover;
+        cursor: pointer;
+    }
+}
+@mixin aSetting_whitecolor($COLOR:#FFF, $NOLINE:none) {
+    color: $COLOR;
+    text-decoration: $NOLINE;
+    &:hover,
+    &:focus {
+        color: adjust_hue(saturate(lighten($aHover, 19), 40), -10);
+        cursor: pointer;
+    }
+}
+body {
+    @include fontSetting(1em);
+    line-height: 1.45em;
+    font-family: $font-family;
+    -webkit-text-size-adjust: none;
+}
+a {
+    @include aSetting();
+}

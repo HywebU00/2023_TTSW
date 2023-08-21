@@ -1,0 +1,107 @@
+footer {
+    color: $My_WhiteColor;
+    background: $My_footerColor;
+    @include box-sizing(border-box);
+    @extend %clearfix;
+    text-align: left;
+    font-size: .938em;
+    padding: 2em 0;
+    &.has_bottom {
+        @include screen('mobile') {
+            padding-bottom: 6em;
+        }
+    }
+    @include screen('mobile') {
+        padding: 2em 0 1em;
+        font-size: .813em;
+        position:relative;
+        z-index: 1;
+    }
+    .container {
+        @include gutter;
+        >div {
+            padding-bottom: 1em;
+        }
+    }
+    p {
+        line-height: 1.45em;
+        margin-bottom: .2em;
+        a {
+            display: inline-block;
+            margin: 0px .5em;
+            color: #FFF;
+            img {
+                height: 2em;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: .5em;
+            }
+        }
+    }
+    a {
+        @include aSetting;
+    }
+    .footer_info {
+        @include make-xs-column(12);
+        @include make-sm-column(7);
+        @include make-md-column(8);
+        @include make-lg-column(8);
+        @include gutter();
+    }
+    .footer_app {
+        @include make-xs-column(12);
+        @include make-sm-column(5);
+        @include make-md-column(4);
+        @include make-lg-column(4);
+        @include gutter();
+    }
+    // 版權連結
+    .footer_link, .footer_share {
+        @include li-reset();
+        @extend %clearfix;
+        li {
+            float: left;
+            display: block;
+            margin: 0px 1em .5em 0px;
+            a {
+                @include aSetting_whitecolor;
+                display: block;
+            }
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+    .update,
+    .counter {
+        display: inline-block;
+        margin-right: 5px;
+        em {
+            font-style: normal;
+            color: $My_WhiteColor;
+            padding: 0 .5em;
+        }
+    }
+    .footer_app {
+        h3 {
+            margin: 0 0 .5em 0;
+        }
+        a {
+            display: block;
+        }
+        .app_download {
+            float: left;
+            margin: 0px 1em 1em 0;
+        }
+        .qr_code {
+            img {
+                border: 5px solid #FFF;
+            }
+        }
+        img {
+            max-width: 150px;
+            max-height: 80px;
+        }
+    }
+}

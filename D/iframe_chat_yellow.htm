@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chat</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body class="chat_body color_yellow">
+    <div class="chat_inside">
+        <!-- 列表 -->
+        <div class="chat_list">
+            <div class="chat_search">
+                <div class="form_grp">
+                    <input name="username" type="text" placeholder="請輸入文字">
+                </div>
+                <select name="" id="selectSample">
+                    <option value="">選項一</option>
+                    <option value="">選項二</option>
+                    <option value="">選項三</option>
+                    <option value="">選項四</option>
+                </select>
+            </div>
+            <!-- 聊天列表 -->
+            <div class="list">
+                <div class="annoucement">
+                    <a href="#" class="close"><i class="i_close"></i></a>
+                    <span>我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告</span>
+                </div>
+                <ul>
+                    <li>
+                        <!-- 有上線的 - online; 被標記的 bookmark -->
+                        <a href="#" class="online bookmark">
+                            <div class="pic">
+                                <img src="images/completed_bg.jpg" alt="">
+                                <div class="status"></div>
+                            </div>
+                            <div class="chat_summary">
+                                <div class="name">A廠商廠商廠商廠商廠商廠商廠商廠商</div>
+                                <!-- 最高99，沒有新消息就隱藏 -->
+                                <div class="new_message">99</div>
+                                <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                <time>2020/09/10</time>
+                            </div>
+                        </a>
+                        <!-- ... 點開內容 -->
+                        <div class="more_function">
+                            <a href="#" class="dot"></a>
+                            <div class="window">
+                                <ul>
+                                    <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                    <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                    <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 有上線的 - online; 被標記的 bookmark -->
+                        <a href="#" class="online bookmark">
+                            <div class="pic">
+                                <img src="images/completed_bg.jpg" alt="">
+                                <div class="status"></div>
+                            </div>
+                            <div class="chat_summary">
+                                <div class="name">A廠商</div>
+                                <!-- 最高99，沒有新消息就隱藏 -->
+                                <div class="new_message">99</div>
+                                <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                <time>2020/09/10</time>
+                            </div>
+                        </a>
+                        <!-- ... 點開內容 -->
+                        <div class="more_function">
+                            <a href="#" class="dot"></a>
+                            <div class="window">
+                                <ul>
+                                    <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                    <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                    <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 有上線的 - online; 被標記的 bookmark -->
+                        <a href="#" class="online">
+                            <div class="pic">
+                                <img src="images/completed_bg.jpg" alt="">
+                                <div class="status"></div>
+                            </div>
+                            <div class="chat_summary">
+                                <div class="name">A廠商</div>
+                                <!-- 最高99，沒有新消息就隱藏 -->
+                                <div class="new_message">99</div>
+                                <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                <time>2020/09/10</time>
+                            </div>
+                        </a>
+                        <!-- ... 點開內容 -->
+                        <div class="more_function">
+                            <a href="#" class="dot"></a>
+                            <div class="window">
+                                <ul>
+                                    <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                    <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                    <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 有上線的 - online; 被標記的 bookmark -->
+                        <a href="#" class="online bookmark">
+                            <div class="pic">
+                                <img src="images/completed_bg.jpg" alt="">
+                                <div class="status"></div>
+                            </div>
+                            <div class="chat_summary">
+                                <div class="name">A廠商</div>
+                                <!-- 最高99，沒有新消息就隱藏 -->
+                                <div class="new_message">99</div>
+                                <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                <time>2020/09/10</time>
+                            </div>
+                        </a>
+                        <!-- ... 點開內容 -->
+                        <div class="more_function">
+                            <a href="#" class="dot"></a>
+                            <div class="window">
+                                <ul>
+                                    <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                    <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                    <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 有上線的 - online; 被標記的 bookmark -->
+                        <a href="#" class="online bookmark">
+                            <div class="pic">
+                                <img src="images/completed_bg.jpg" alt="">
+                                <div class="status"></div>
+                            </div>
+                            <div class="chat_summary">
+                                <div class="name">A廠商</div>
+                                <!-- 最高99，沒有新消息就隱藏 -->
+                                <div class="new_message">99</div>
+                                <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                <time>2020/09/10</time>
+                            </div>
+                        </a>
+                        <!-- ... 點開內容 -->
+                        <div class="more_function">
+                            <a href="#" class="dot"></a>
+                            <div class="window">
+                                <ul>
+                                    <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                    <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                    <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 有上線的 - online; 被標記的 bookmark -->
+                        <a href="#" class="online bookmark">
+                            <div class="pic">
+                                <img src="images/completed_bg.jpg" alt="">
+                                <div class="status"></div>
+                            </div>
+                            <div class="chat_summary">
+                                <div class="name">A廠商</div>
+                                <!-- 最高99，沒有新消息就隱藏 -->
+                                <div class="new_message">99</div>
+                                <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                <time>2020/09/10</time>
+                            </div>
+                        </a>
+                        <!-- ... 點開內容 -->
+                        <div class="more_function">
+                            <a href="#" class="dot"></a>
+                            <div class="window">
+                                <ul>
+                                    <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                    <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                    <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 沒上線的 - online; 被標記的 bookmark -->
+                        <a href="#" class="offline">
+                            <div class="pic">
+                                <img src="images/completed_bg.jpg" alt="">
+                                <div class="status"></div>
+                            </div>
+                            <div class="chat_summary">
+                                <div class="name">A廠商</div>
+                                <!-- 最高99，沒有新消息就隱藏 -->
+                                <div class="new_message">99</div>
+                                <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                <time>2020/09/10</time>
+                            </div>
+                        </a>
+                        <!-- ... 點開內容 -->
+                        <div class="more_function">
+                            <a href="#" class="dot"></a>
+                            <div class="window">
+                                <ul>
+                                    <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                    <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                    <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 沒上線的 - offline; 有被標記的 bookmark -->
+                        <a href="#" class="offline">
+                            <div class="pic">
+                                <img src="images/completed_bg.jpg" alt="">
+                                <div class="status"></div>
+                            </div>
+                            <div class="chat_summary">
+                                <div class="name">A廠商</div>
+                                <!-- 最高99，沒有新消息就隱藏 -->
+                                <div class="new_message">99</div>
+                                <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                <time>2020/09/10</time>
+                            </div>
+                        </a>
+                        <!-- ... 點開內容 -->
+                        <div class="more_function">
+                            <a href="#" class="dot"></a>
+                            <div class="window">
+                                <ul>
+                                    <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                    <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                    <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="offline">
+                            <div class="pic">
+                                <img src="images/completed_bg.jpg" alt="">
+                                <div class="status"></div>
+                            </div>
+                            <div class="chat_summary">
+                                <div class="name">A廠商</div>
+                                <!-- 最高99，沒有新消息就隱藏 -->
+                                <div class="new_message">99</div>
+                                <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                <time>2020/09/10</time>
+                            </div>
+                        </a>
+                        <!-- ... 點開內容 -->
+                        <div class="more_function">
+                            <a href="#" class="dot"></a>
+                            <div class="window">
+                                <ul>
+                                    <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                    <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                    <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- welcome 預設畫面 -->
+        <div class="chat_welcome">
+            <div class="message">
+                <span>歡迎使用聊天</span>
+            </div>
+        </div>
+        <!-- 聊天內容 -->
+        <div class="chat_content">
+            <a href="#" class="back"></a>
+            <!-- 廠商資訊 -->
+            <a href="#" class="information"><i class="i_information"></i></a>
+            <!-- 視訊通話 -->
+            <a href="#" class="video"><i class="i_videotalk"></i>視訊</a>
+            <div class="title"> 某商家;某商家;某商家;某商家;某商家;某商家;某商家;某商家 </div>
+            <div class="txt_content">
+                <!-- 對話 -->
+                <div class="txt_area">
+                    <div class="divider">以下未讀</div>
+                    <!-- right是自己 -->
+                    <div class="txt right">
+                        <div class="pic">
+                            <img src="images/completed_bg.jpg" alt="">
+                        </div>
+                        <div class="bubble"> 哈囉!!您好我想要請問！ </div>
+                        <time>2020/01/01 12:00:59</time>
+                    </div>
+                    <!-- left是對方 -->
+                    <div class="txt left">
+                        <div class="pic">
+                            <img src="images/completed_bg.jpg" alt="">
+                        </div>
+                        <div class="bubble">您好！很高興為您服務!!請問有什麼地方能為您效勞呢？</div>
+                        <time>2020/01/01 12:00:59</time>
+                    </div>
+                    <!-- right是自己 -->
+                    <div class="txt right">
+                        <div class="pic">
+                            <img src="images/completed_bg.jpg" alt="">
+                        </div>
+                        <div class="bubble"> 哈囉!!您好我想要請問！ </div>
+                        <time>2020/01/01 12:00:59</time>
+                    </div>
+                    <!-- left是對方 -->
+                    <div class="txt left">
+                        <div class="pic">
+                            <img src="images/completed_bg.jpg" alt="">
+                        </div>
+                        <div class="bubble">您好！很高興為您服務!!請問有什麼地方能為您效勞呢？</div>
+                        <time>2020/01/01 12:00:59</time>
+                    </div>
+                    <!-- right是自己 -->
+                    <div class="txt right">
+                        <div class="pic">
+                            <img src="images/completed_bg.jpg" alt="">
+                        </div>
+                        <div class="bubble"> 哈囉!!您好我想要請問！ </div>
+                        <time>2020/01/01 12:00:59</time>
+                    </div>
+                    <!-- left是對方 -->
+                    <div class="txt left">
+                        <div class="pic">
+                            <img src="images/completed_bg.jpg" alt="">
+                        </div>
+                        <div class="bubble">您好！很高興為您服務!!請問有什麼地方能為您效勞呢？</div>
+                        <time>2020/01/01 12:00:59</time>
+                    </div>
+                    <!-- right是自己 -->
+                    <div class="txt right">
+                        <div class="pic">
+                            <img src="images/completed_bg.jpg" alt="">
+                        </div>
+                        <div class="bubble"> 哈囉!!您好我想要請問！ </div>
+                        <time>2020/01/01 12:00:59</time>
+                    </div>
+                    <!-- left是對方 -->
+                    <div class="txt left">
+                        <div class="pic">
+                            <img src="images/completed_bg.jpg" alt="">
+                        </div>
+                        <div class="bubble">您好！很高興為您服務!!請問有什麼地方能為您效勞呢？</div>
+                        <time>2020/01/01 12:00:59</time>
+                    </div>
+                </div>
+                <!-- 輸入 -->
+                <div class="type_area">
+                    <div class="form_grp">
+                        <input type="text">
+                    </div>
+                    <div class="btn_grp">
+                        <button type="button" class="btn btn-orange">傳送</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 視訊 -->
+            <div class="video_content">
+                <div class="start_video">
+                    <span>Hyweb Inc. Ltd</span>
+                    <span>撥打中...</span>
+                    <a href="#">開始通話</a>
+                    <a href="#">拒絕通話</a>
+                </div>
+                <div class="camera_area">
+                    <img src="images/chat.jpg" alt="">
+                    <a href="#" class="enlarge"></a>
+                    <div class="my_camera">
+                        <img src="images/chat.jpg" alt="">
+                    </div>
+                </div>
+                <div class="camera_function">
+                    <a href="#" class="end_talk"></a>
+                    <a href="#" class="end_video"></a>
+                    <a href="#" class="end_audio"></a>
+                    <a href="#" class="reverse"></a>
+                    <a href="#" class="shrink"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.chat_list').find('.list>ul>li>a').off().click(function(e) {
+            $('.chat_content').stop().addClass('show');
+            $('.chat_welcome').stop().addClass('hide');
+            e.preventDefault();
+        });
+        $('.chat_list').find('.annoucement').find('a.close').off().click(function(e) {
+            $(this).parents('.annoucement').hide();
+            e.preventDefault();
+        });
+        $('.chat_content').find('a.back').off().click(function(e) {
+            $('.chat_welcome').stop().removeClass('hide');
+            $(this).parents('.chat_content').removeClass('show');
+            e.preventDefault();
+        });
+        // 開啟morefunction
+        $('.chat_list').find('.list>ul>li').each(function(index, el) {
+            $(this).find('.more_function a.dot').off().click(function(e) {
+                $(this).siblings('.window').addClass('open');
+                // $(this).parents('li').find('.window').removeClass('open');
+                e.preventDefault();
+            });
+        });
+        // 視窗消失
+        $(document).mouseup(function(e) {
+            var target = e.target,
+                container = $('.window');
+            if ((!container.is(e.target) && container.has(e.target).length === 0)) {
+                {
+                    container.removeClass('open');
+                }
+            }
+        });
+        // 打開視訊
+        $('.chat_content').find('.video').off().click(function(e) {
+            $('.video_content').addClass('show');
+            e.preventDefault();
+        });
+        // 關閉視訊
+        $('.camera_function').find('a.end_talk').click(function(e) {
+            $('.video_content').removeClass('show');
+            e.preventDefault();
+        });
+        // 開始通話關閉
+        $('.start_video').find('a').off().click(function(e) {
+            $(this).parents('.start_video').addClass('hide');
+             e.preventDefault();
+        });
+        //toogle video
+        $('.end_video').off().click(function(e) {
+            $(this).toggleClass('open_video');
+            e.preventDefault();
+        });
+        //toogle audio
+        $('.end_audio').off().click(function(e) {
+            $(this).toggleClass('open_audio');
+            e.preventDefault();
+        });
+        // 縮小
+        $('.shrink').off().click(function(event) {
+            $('.video_content').addClass('shrink');
+            e.preventDefault();
+        });
+        // 放大
+        $('.enlarge').off().click(function(event) {
+            $('.video_content').removeAttr('style').removeClass('shrink');
+            e.preventDefault();
+        });
+    });
+    </script>
+</body>
+
+</html>

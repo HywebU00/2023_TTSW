@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOOTH台北國際自行車展覽會</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/tts_A.css">
+    <!--<link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">-->
+    
+	
+
+</head>
+
+<body>
+<div style="width:100%; height:100vh; overflow:hidden;">
+<iframe id="targetWindow" 
+src="https://tts.portal.hyweb.com.tw/demo/booth/booth_setting3.htm" scrolling="no" allow-scripts="no" style="width:100%; height:100vh; border:none; overflow:hidden;">
+</iframe>
+</div>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- plugin js -->
+    <!--<script src="vendor/jquery.easing.min.js"></script>
+    <script src="vendor/slick/slick.min.js "></script>
+    <script src="vendor/slick/slick-lightbox.js "></script>
+   <script src="vendor/lazyload/lazyload.min.js"></script>
+    <script src="vendor/picturefill/picturefill.min.js"></script>
+    <script src="vendor/fancybox/jquery.fancybox.min.js"></script>-->
+    
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+    <script>
+		var iframeObject;
+		$(document).ready(function(){
+			iframeObject = document.getElementById("targetWindow");		
+			iframeObject.onload = function(){
+				iframeObject.contentWindow.postMessage({tpl:'C',clr:'blue'}, 'https://tts.portal.hyweb.com.tw');
+			};		
+			
+		});
+		
+		
+	</script>
+    
+</body>
+
+</html>

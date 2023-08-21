@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<path id="Shape 1" class="shp0" d="M1 1L6 1L6 3L1 3L1 1ZM1 5L6 5L6 7L1 7L1 5ZM1 2L3 2L3 6L1 6L1 2ZM5 1L7 1L7 7L5 7L5 1Z" />
+	<path id="Shape 1 copy" class="shp0" d="M9 1L14 1L14 3L9 3L9 1ZM9 5L14 5L14 7L9 7L9 5ZM9 2L11 2L11 6L9 6L9 2ZM13 1L15 1L15 7L13 7L13 1Z" />
+	<path id="Shape 1 copy 2" class="shp0" d="M1 9L6 9L6 11L1 11L1 9ZM1 13L6 13L6 15L1 15L1 13ZM1 10L3 10L3 14L1 14L1 10ZM5 9L7 9L7 15L5 15L5 9Z" />
+	<path id="Shape 1 copy 3" class="shp0" d="M9 9L14 9L14 11L9 11L9 9ZM9 13L14 13L14 15L9 15L9 13ZM9 10L11 10L11 14L9 14L9 10ZM13 9L15 9L15 15L13 15L13 9Z" />
+</svg>

@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+// 共通
+// 初始值
+@import '_style';
+//-------------------------------------------------------------繼承---------//
+$color: index($style, 紫色);
+
+$primaryColor: nth($mainColor, $color); //主色
+$secondaryColor: nth($subColor, $color); //主色
+//-------------------------------------------------------------顏色---------//
+$lightColor: #fcc211; //點綴
+$linkColor: #21baff; //連結
+$importantColor: #ff3e4d; //重要
+
+$color-blue: #21baff;
+$color-green: #5cb85c;
+$color-orange: #f77810;
+$color-red: #ff3e4d;
+$color-yellow: #fcc211;
+$color-purple: #aa5ac5;
+$color-gray: #ccc;
+$color-dark: #333;
+$color-hr: #666; //hr顏色
+$My_wordColor: #222; //黑字
+$My_WhiteColor: #fff; //白字
+$color-word: $My_wordColor; //一般字的顏色
+// 連結顏色
+$aColor: $primaryColor;
+$aHover: lighten($aColor, 15);
+
+// 表單focus顏色
+$form-focus: saturate(lighten($primaryColor, 7), 36); //表單
+
+// 替換顏色
+$My_primaryColor: $primaryColor; //客製主色
+$My_secondaryColor: $secondaryColor; //客製輔色
+$My_aColor: $aColor; //連結顏色
+$My_aHover: $aHover; //滑過顏色
+$My_footerColor: $My_primaryColor; //footer
+$My_colorWord: $color-word; //footer
+$My_line: #ddd; //預設線
+
+$toDoFilter: invert(38%) sepia(69%) saturate(463%) hue-rotate(226deg) brightness(89%) contrast(103%);
+
+//-------------------------------------------------------------匯入---------//
+@import 'common/_normalize'; //reset
+@import 'common/_mixin'; //客製MIXIN
+@import 'common/_typography'; //CP文字排版
+@import 'common/_font'; //文字設定
+
+// 元素
+@import 'common/_grid'; //格線
+@import 'common/_breadcrumb'; //麵包屑
+@import 'common/_divider'; //分隔線
+@import 'common/_btn'; //按鈕設定
+@import 'common/_hr'; //分隔線
+@import 'common/_image'; //圖片
+@import 'common/_tabs'; //頁籤
+@import 'common/_table'; //表格
+@import 'common/_form'; //表單
+@import 'common/_icon'; //圖示
+@import 'common/_element'; //小元素
+@import 'common/_paginations'; //分頁
+@import 'common/_notice'; //提示
+@import 'common/_function_panel'; //內頁功能面板
+@import 'common/_footer'; //footer
+@import 'common/_fatfooter'; //fatfooter
+@import 'common/_modal'; //pop視窗
+@import 'common/_function'; //function功能區塊
+@import 'sass_d/_category'; //標籤
+@import 'common/_share'; //社群分享
+@import 'common/_tag'; //文章標籤
+@import 'common/_fontsize'; //控制文章字體大小
+
+// 模組
+@import 'sass_d/_header'; //header
+@import 'sass_d/_language'; //語言選單
+@import 'sass_d/_menu'; //menu
+@import 'common/_onlineheader'; //only for header
+
+// 頁面
+@import 'page_d/_template'; //版型初始設定
+@import 'page_d/_mp'; //首頁
+@import 'common/_lp'; //LP
+@import 'common/_np'; //NP
+@import 'common/_cp'; //CP
+@import 'common/_fp'; //Forward
+@import 'common/_qp'; //QP
+@import 'common/_sp'; //SP
+@import 'common/_sitemap'; //Sitemap
+
+// 外掛
+@import 'sass_d/_slick'; //slick
+// 無障礙
+@import 'sass_d/_nojs'; //無障礙關閉js設定
+// 列印
+@import 'sass_d/_print'; //列印樣式
+// 首頁模組樣式
+@import 'sass_d/_grid_module'; //首頁模組樣式

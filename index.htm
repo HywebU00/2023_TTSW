@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TTS強化案 GUI demo</title>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI -->
+    <link rel="stylesheet" href="css/hyui.css" />
+    <style>
+      body {
+        background: url('images/bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+      }
+      .demo_wrap {
+        max-width: 1200px;
+        margin: 1em auto 1em;
+        padding: 35px 35px 3em;
+        clear: both;
+        background: #fff;
+        box-sizing: border-box;
+      }
+      .demo_wrap h1 {
+        display: block;
+        margin: 0px auto;
+        float: left;
+        margin-right: 1em;
+      }
+      .demo_wrap h1 img {
+        width: 100%;
+        max-width: 60px;
+      }
+      @media screen and (max-width: 545px) {
+        .demo_wrap h1 {
+          max-width: 100%;
+          float: none;
+          text-align: center;
+        }
+      }
+      .demo_wrap h1 img {
+        width: 300px;
+      }
+      .num {
+        width: 12%;
+      }
+      body {
+        counter-reset: num;
+      }
+      table {
+        margin-bottom: 1em;
+      }
+      table th:nth-child(1),
+      table td:nth-child(1) {
+        width: 50px;
+      }
+      table th:nth-child(2),
+      table td:nth-child(2) {
+        width: 30%;
+      }
+      table caption {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.25em;
+        padding: 0.5em 0;
+        color: #ff5050;
+      }
+      tbody tr td:first-child:before {
+        counter-increment: num;
+        display: block;
+        text-align: center;
+        content: counters(num, '.') ' ';
+      }
+      tbody tr td:nth-child(2) {
+        width: 35%;
+      }
+      table {
+        border: none;
+      }
+      table th,
+      table td {
+        border-left: none;
+        border-right: none;
+        text-align: left;
+      }
+      th:first-child {
+        text-align: center;
+      }
+      td a {
+        color: #984f90;
+      }
+      td a:hover {
+        color: #dd0986;
+      }
+      td span.red {
+        background: red;
+        color: #fff;
+        font-size: 0.813rem;
+        border-radius: 0.4em;
+        display: inline-block;
+        padding: 0.1em 0.5em;
+        min-width: 3em;
+        text-align: center;
+        vertical-align: middle;
+        margin-right: 0.5em;
+      }
+      .btn_grp {
+        text-align: right;
+      }
+      @media screen and (max-width: 545px) {
+        .btn_grp {
+          text-align: center;
+        }
+      }
+      img.ok {
+        display: inline-block;
+        vertical-align: middle;
+        width: 1.5em;
+      }
+      .outline {
+        outline: 1px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="demo_wrap">
+      <h1><img src="images/logo.png" alt="" /></h1>
+      <div class="btn_grp">
+        <a href="#" class="btn" target="_blank">請按此下載切版檔案(暫無)</a>
+        <!--<a href="https://github.com/HywebU00/2021_TTSW" class="btn" target="_blank">請按此下載切版檔案</a>-->
+      </div>
+      <h2 style="color: red">2023新增頁面</h2>
+      <div class="table_wrapper outline tb2022">
+        <table>
+          <thead>
+            <tr>
+              <th class="num">編號</th>
+              <th>頁面名稱</th>
+              <th>A視覺潮流</th>
+              <th>B經典設計</th>
+              <th>C極簡風格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td style="color: blue">首頁kv位置：攤位產品slick</td>
+              <td><a href="A/mp_boothPorduct_A.htm"></a></td>
+              <td><a href="B/mp_boothPorduct_B.htm"></a></td>
+              <td><a href="C/mp_boothPorduct_C.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: blue">Login</td>
+              <td colspan="3"><a href="A/sp_login_new_2023.htm"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>2022新增頁面</h2>
+      <div class="table_wrapper tb2022">
+        <table>
+          <thead>
+            <tr>
+              <th class="num">編號</th>
+              <th>頁面名稱</th>
+              <th>A視覺潮流</th>
+              <th>B經典設計</th>
+              <th>C極簡風格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td style="color: blue">推薦信</td>
+              <td><a href="A/recommendLetter.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: blue">首頁加推薦面板</td>
+              <td><a href="A/mp2.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+            <!--<tr>
+                        <td></td>
+                        <td style="color:blue">推薦參展商／產品(未登入)</td>
+                        <td><a href="A/lp_recommend.htm"></a>／<a href="A/lp_recommend_prod.htm"></a></td>
+                        <td><a href="B/"></a></td>
+                        <td><a href="C/"></a></td>
+                    </tr>-->
+            <tr>
+              <td></td>
+              <td style="color: blue">推薦參展商／產品(未登入)+陰影</td>
+              <td><a href="A/lp_recommend_s.htm"></a>／<a href="A/lp_recommend_prod_s.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: blue">推薦參展商(未登入)+陰影+英文Recommend</td>
+              <td><a href="A/lp_recommend_s_en.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+            <!--<tr>
+                        <td></td>
+                        <td style="color:blue">收藏參展商</td>
+                        <td><a href="A/sp_login_collect.htm"></a></td>
+                        <td><a href="B/"></a></td>
+                        <td><a href="C/"></a></td>
+                    </tr>-->
+            <tr>
+              <td></td>
+              <td style="color: blue">收藏參展商+陰影</td>
+              <td><a href="A/sp_login_collect_s.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: blue">收藏參展商推薦條件設定</td>
+              <td><a href="A/sp_login_recommend_setting.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: blue">推薦條件設定-選擇面版(按‘推薦條件設定’鈕)</td>
+              <td><a href="A/sp_login_recommend_setting_panel.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: blue">個人化登入首頁+推薦</td>
+              <td><a href="A/sp_login_buyer.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+            <!--<tr>
+                        <td></td>
+                        <td style="color:blue">推薦參展商／產品(已登入)</td>
+                        <td><a href="A/sp_login_recommend.htm"></a></td>
+                        <td><a href="B/"></a></td>
+                        <td><a href="C/"></a></td>
+                    </tr>-->
+            <tr>
+              <td></td>
+              <td style="color: blue">推薦參展商／產品(已登入)+陰影</td>
+              <td><a href="A/sp_login_recommend_s.htm"></a>／<a href="A/sp_login_recommend_prod_s.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: blue">Cookie(設定按cookie設定)</td>
+              <td><a href="A/mp.htm"></a></td>
+              <td><a href="B/"></a></td>
+              <td><a href="C/"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>首頁</h2>
+      <div class="table_wrapper">
+        <!-- hyUI 標準頁面 -->
+        <table>
+          <thead>
+            <tr>
+              <th class="num">編號</th>
+              <th>頁面名稱</th>
+              <th>A視覺潮流</th>
+              <th>B經典設計</th>
+              <th>C極簡風格</th>
+              <th>D風格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>首頁</td>
+              <td><a href="A/mp.htm"></a></td>
+              <td><a href="B/mp.htm"></a></td>
+              <td><a href="C/mp.htm"></a></td>
+              <td><a href="D/mp.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>首頁(聊天模組)</td>
+              <td><a href="A/mp_chat.htm"></a></td>
+              <td><a href="B/mp_chat.htm"></a></td>
+              <td><a href="C/mp_chat.htm"></a></td>
+              <td><a href="D/mp_chat.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>自由編輯區</td>
+              <td><a href="A/mp_edit.htm"></a></td>
+              <td><a href="B/mp_edit.htm"></a></td>
+              <td><a href="C/mp_edit.htm"></a></td>
+              <td><a href="D/mp_edit.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>換色展示</td>
+              <td><a href="A/mp_demo.htm"></a></td>
+              <td><a href="B/mp_demo.htm"></a></td>
+              <td><a href="C/mp_demo.htm"></a></td>
+              <td><a href="D/mp_demo.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>線上展header</td>
+              <td><a href="A/sp_login_onlineheader.htm"></a></td>
+              <td><a href="B/sp_login_onlineheader.htm"></a></td>
+              <td><a href="C/sp_login_onlineheader.htm"></a></td>
+              <td><a href="D/sp_login_onlineheader.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>kv video</td>
+              <td><a href="A/mp_kvVideo.htm"></a></td>
+              <td><a href="B/mp_kvVideo.htm"></a></td>
+              <td><a href="C/mp_kvVideo.htm"></a></td>
+              <td><a href="D/mp_kvVideo.htm"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>old新增需要頁面</h2>
+      <div class="table_wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th class="num">編號</th>
+              <th>頁面名稱</th>
+              <th>A視覺潮流</th>
+              <th>B經典設計</th>
+              <th>C極簡風格</th>
+              <th>D風格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td style="color: blue">廠商個人化視覺化報表</td>
+              <td><a href="A/sp_chart_grid.htm"></a></td>
+              <td><a href="B/sp_chart_grid.htm"></a></td>
+              <td><a href="C/sp_chart_grid.htm"></a></td>
+              <td><a href="D/sp_chart_grid.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄列表grid</td>
+              <td><a href="A/lp_category_grid.htm"></a></td>
+              <td><a href="B/lp_category_grid.htm"></a></td>
+              <td><a href="C/lp_category_grid.htm"></a></td>
+              <td><a href="D/lp_category_grid.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄列表list</td>
+              <td><a href="A/lp_category_list.htm"></a></td>
+              <td><a href="B/lp_category_list.htm"></a></td>
+              <td><a href="C/lp_category_list.htm"></a></td>
+              <td><a href="D/lp_category_list.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄列表CP頁</td>
+              <td><a href="A/cp_category.htm"></a></td>
+              <td><a href="B/cp_category.htm"></a></td>
+              <td><a href="C/cp_category.htm"></a></td>
+              <td><a href="D/cp_category.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄區-圖片列表頁(條列式)</td>
+              <td><a href="A/lp_product.htm"></a></td>
+              <td><a href="B/lp_product.htm"></a></td>
+              <td><a href="C/lp_product.htm"></a></td>
+              <td><a href="D/lp_product.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄區-圖片列表頁(區塊式)</td>
+              <td><a href="A/lp_product_grid.htm"></a></td>
+              <td><a href="B/lp_product_grid.htm"></a></td>
+              <td><a href="C/lp_product_grid.htm"></a></td>
+              <td><a href="D/lp_product_grid.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄區-內容頁</td>
+              <td><a href="A/cp_product.htm"></a></td>
+              <td><a href="B/cp_product.htm"></a></td>
+              <td><a href="C/cp_product.htm"></a></td>
+              <td><a href="D/cp_product.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>廠商展區列表-卡片式</td>
+              <td><a href="A/lp_company.htm"></a></td>
+              <td><a href="B/lp_company.htm"></a></td>
+              <td><a href="C/lp_company.htm"></a></td>
+              <td><a href="D/lp_company.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>廠商展區列表-條列式</td>
+              <td><a href="A/lp_company_list.htm"></a></td>
+              <td><a href="B/lp_company_list.htm"></a></td>
+              <td><a href="C/lp_company_list.htm"></a></td>
+              <td><a href="C/lp_company_list.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>廠商展區內容頁</td>
+              <td><a href="A/cp_company.htm"></a></td>
+              <td><a href="B/cp_company.htm"></a></td>
+              <td><a href="C/cp_company.htm"></a></td>
+              <td><a href="D/cp_company.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>進階搜尋-產品</td>
+              <td><a href="A/sp_advsearch_product.htm"></a></td>
+              <td><a href="B/sp_advsearch_product.htm"></a></td>
+              <td><a href="C/sp_advsearch_product.htm"></a></td>
+              <td><a href="D/sp_advsearch_product.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>進階搜尋-廠商</td>
+              <td><a href="A/sp_advsearch_company.htm"></a></td>
+              <td><a href="B/sp_advsearch_company.htm"></a></td>
+              <td><a href="C/sp_advsearch_company.htm"></a></td>
+              <td><a href="D/sp_advsearch_company.htm"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>標準共通頁面</h2>
+      <div class="table_wrapper">
+        <!-- hyUI 標準頁面 -->
+        <table>
+          <thead>
+            <tr>
+              <th class="num">編號</th>
+              <th>頁面名稱</th>
+              <th>A視覺潮流</th>
+              <th>B經典設計</th>
+              <th>C極簡風格</th>
+              <th>D風格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>產品型錄列表grid</td>
+              <td><a href="A/lp_category_grid.htm"></a></td>
+              <td><a href="B/lp_category_grid.htm"></a></td>
+              <td><a href="C/lp_category_grid.htm"></a></td>
+              <td><a href="D/lp_category_grid.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄列表list</td>
+              <td><a href="A/lp_category_list.htm"></a></td>
+              <td><a href="B/lp_category_list.htm"></a></td>
+              <td><a href="C/lp_category_list.htm"></a></td>
+              <td><a href="D/lp_category_list.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄列表CP頁</td>
+              <td><a href="A/cp_category.htm"></a></td>
+              <td><a href="B/cp_category.htm"></a></td>
+              <td><a href="C/cp_category.htm"></a></td>
+              <td><a href="D/cp_category.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>一般列表頁</td>
+              <td><a href="A/lp.htm"></a></td>
+              <td><a href="B/lp.htm"></a></td>
+              <td><a href="C/lp.htm"></a></td>
+              <td><a href="D/lp.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>左圖右文列表頁</td>
+              <td><a href="A/lp_imglist.htm"></a></td>
+              <td><a href="B/lp_imglist.htm"></a></td>
+              <td><a href="C/lp_imglist.htm"></a></td>
+              <td><a href="D/lp_imglist.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>圖文列表頁</td>
+              <td><a href="A/lp_grid.htm"></a></td>
+              <td><a href="B/lp_grid.htm"></a></td>
+              <td><a href="C/lp_grid.htm"></a></td>
+              <td><a href="D/lp_grid.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>常見問答列表頁</td>
+              <td><a href="A/lp_faq.htm"></a></td>
+              <td><a href="B/lp_faq.htm"></a></td>
+              <td><a href="C/lp_faq.htm"></a></td>
+              <td><a href="D/lp_faq.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>內容頁</td>
+              <td><a href="A/cp.htm"></a></td>
+              <td><a href="B/cp.htm"></a></td>
+              <td><a href="C/cp.htm"></a></td>
+              <td><a href="D/cp.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>列表頁-表格</td>
+              <td><a href="A/lp_table.htm"></a></td>
+              <td><a href="B/lp_table.htm"></a></td>
+              <td><a href="C/lp_table.htm"></a></td>
+              <td><a href="D/lp_table.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>相簿列表頁</td>
+              <td><a href="A/lp_album.htm"></a></td>
+              <td><a href="B/lp_album.htm"></a></td>
+              <td><a href="C/lp_album.htm"></a></td>
+              <td><a href="D/lp_album.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>相片列表頁</td>
+              <td><a href="A/lp_photo.htm"></a></td>
+              <td><a href="B/lp_photo.htm"></a></td>
+              <td><a href="C/lp_photo.htm"></a></td>
+              <td><a href="D/lp_photo.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>相片下載清單列表頁</td>
+              <td><a href="A/lp_photo_download.htm"></a></td>
+              <td><a href="B/lp_photo_download.htm"></a></td>
+              <td><a href="C/lp_photo_download.htm"></a></td>
+              <td><a href="D/lp_photo_download.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>相片內容頁</td>
+              <td><a href="A/cp_photo.htm"></a></td>
+              <td><a href="B/cp_photo.htm"></a></td>
+              <td><a href="C/cp_photo.htm"></a></td>
+              <td><a href="D/cp_photo.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>影片列表頁</td>
+              <td><a href="A/lp_video.htm"></a></td>
+              <td><a href="B/lp_video.htm"></a></td>
+              <td><a href="C/lp_video.htm"></a></td>
+              <td><a href="D/lp_video.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>影片內容頁</td>
+              <td><a href="A/cp_video.htm"></a></td>
+              <td><a href="B/cp_video.htm"></a></td>
+              <td><a href="C/cp_video.htm"></a></td>
+              <td><a href="D/cp_video.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>網站地圖</td>
+              <td><a href="A/sitemap.htm"></a></td>
+              <td><a href="B/sitemap.htm"></a></td>
+              <td><a href="C/sitemap.htm"></a></td>
+              <td><a href="D/sitemap.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>404 網站錯誤</td>
+              <td><a href="A/404.htm"></a></td>
+              <td><a href="B/404.htm"></a></td>
+              <td><a href="C/404.htm"></a></td>
+              <td><a href="D/404.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>創新設計獎 列表頁</td>
+              <td><a href="A/lp_innovation.htm"></a></td>
+              <td><a href="B/lp_innovation.htm"></a></td>
+              <td><a href="C/lp_innovation.htm"></a></td>
+              <td><a href="D/lp_innovation.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>創新設計獎 內容頁</td>
+              <td><a href="A/cp_innovation.htm"></a></td>
+              <td><a href="B/cp_innovation.htm"></a></td>
+              <td><a href="C/cp_innovation.htm"></a></td>
+              <td><a href="D/cp_innovation.htm"></a></td>
+            </tr>
+            <!-- <tr>
+                        <td></td>
+                        <td>參展專區</td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>媒體專區</td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                    </tr> -->
+            <tr>
+              <td></td>
+              <td>大會刊物節點頁</td>
+              <td><a href="A/np_ publication.htm"></a></td>
+              <td><a href="B/np_ publication.htm"></a></td>
+              <td><a href="C/np_ publication.htm"></a></td>
+              <td><a href="D/np_ publication.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>預登</td>
+              <td><a href="A/sp_prelogin.htm"></a></td>
+              <td><a href="B/sp_prelogin.htm"></a></td>
+              <td><a href="C/sp_prelogin.htm"></a></td>
+              <td><a href="D/sp_prelogin.htm"></a></td>
+            </tr>
+            <!--  <tr>
+                        <td></td>
+                        <td>內容頁-照片</td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>節點頁</td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>轉寄友人</td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>意見信箱</td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                        <td><a href="#"></a></td>
+                    </tr> -->
+            <tr>
+              <td></td>
+              <td>新版登入</td>
+              <td><a href="A/sp_login_new.htm"></a></td>
+              <td><a href="B/sp_login_new.htm"></a></td>
+              <td><a href="C/sp_login_new.htm"></a></td>
+              <td><a href="D/sp_login_new.htm"></a></td>
+            </tr>
+            <!-- <tr>
+                        <td></td>
+                        <td>登入 分眾+輸入表單</td>
+                        <td><a href="A/sp_login.htm"></a></td>
+                        <td><a href="B/sp_login.htm"></a></td>
+                        <td><a href="C/sp_login.htm"></a></td>
+                    </tr> -->
+            <tr>
+              <td></td>
+              <td>產品型錄區-圖片列表頁(條列式)</td>
+              <td><a href="A/lp_product.htm"></a></td>
+              <td><a href="B/lp_product.htm"></a></td>
+              <td><a href="C/lp_product.htm"></a></td>
+              <td><a href="D/lp_product.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄區-圖片列表頁(區塊式)</td>
+              <td><a href="A/lp_product_grid.htm"></a></td>
+              <td><a href="B/lp_product_grid.htm"></a></td>
+              <td><a href="C/lp_product_grid.htm"></a></td>
+              <td><a href="D/lp_product_grid.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄區-內容頁</td>
+              <td><a href="A/cp_product.htm"></a></td>
+              <td><a href="B/cp_product.htm"></a></td>
+              <td><a href="C/cp_product.htm"></a></td>
+              <td><a href="D/cp_product.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>廠商展區列表-卡片式</td>
+              <td><a href="A/lp_company.htm"></a></td>
+              <td><a href="B/lp_company.htm"></a></td>
+              <td><a href="C/lp_company.htm"></a></td>
+              <td><a href="D/lp_company.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>廠商展區列表-條列式</td>
+              <td><a href="A/lp_company_list.htm"></a></td>
+              <td><a href="B/lp_company_list.htm"></a></td>
+              <td><a href="C/lp_company_list.htm"></a></td>
+              <td><a href="D/lp_company_list.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>廠商展區內容頁</td>
+              <td><a href="A/cp_company.htm"></a></td>
+              <td><a href="B/cp_company.htm"></a></td>
+              <td><a href="C/lp_company_list.htm"></a></td>
+              <td><a href="D/lp_company_list.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>進階搜尋-產品</td>
+              <td><a href="A/sp_advsearch_product.htm"></a></td>
+              <td><a href="B/sp_advsearch_product.htm"></a></td>
+              <td><a href="C/sp_advsearch_product.htm"></a></td>
+              <td><a href="D/sp_advsearch_product.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>進階搜尋-廠商</td>
+              <td><a href="A/sp_advsearch_company.htm"></a></td>
+              <td><a href="B/sp_advsearch_company.htm"></a></td>
+              <td><a href="C/sp_advsearch_company.htm"></a></td>
+              <td><a href="D/sp_advsearch_company.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>進階搜尋-網站全文</td>
+              <td><a href="A/sp_advsearch_all.htm"></a></td>
+              <td><a href="B/sp_advsearch_all.htm"></a></td>
+              <td><a href="C/sp_advsearch_all.htm"></a></td>
+              <td><a href="D/sp_advsearch_all.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>行事曆</td>
+              <td><a href="A/sp_calendar.htm"></a></td>
+              <td><a href="B/sp_calendar.htm"></a></td>
+              <td><a href="C/sp_calendar.htm"></a></td>
+              <td><a href="D/sp_calendar.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>議程行事曆</td>
+              <td><a href="A/sp_agenda_view.htm"></a></td>
+              <td><a href="B/sp_agenda_view.htm"></a></td>
+              <td><a href="C/sp_agenda_view.htm"></a></td>
+              <td><a href="D/sp_agenda_view.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>贊助廠商-圖片列表頁(卡片式)</td>
+              <td><a href="A/lp_sponsor.htm"></a></td>
+              <td><a href="B/lp_sponsor.htm"></a></td>
+              <td><a href="C/lp_sponsor.htm"></a></td>
+              <td><a href="D/lp_sponsor.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>贊助廠商-圖片列表頁(條列式)</td>
+              <td><a href="A/lp_sponsor_list.htm"></a></td>
+              <td><a href="B/lp_sponsor_list.htm"></a></td>
+              <td><a href="C/lp_sponsor_list.htm"></a></td>
+              <td><a href="D/lp_sponsor_list.htm"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>廠商專區</h2>
+      <div class="table_wrapper">
+        <!-- hyUI 標準頁面 -->
+        <table>
+          <thead>
+            <tr>
+              <th class="num">編號</th>
+              <th>頁面名稱</th>
+              <th>A視覺潮流</th>
+              <th>B經典設計</th>
+              <th>C極簡風格</th>
+              <th>D風格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>廠商專區登入後首頁</td>
+              <td><a href="A/sp_login_company.htm"></a></td>
+              <td><a href="B/sp_login_company.htm"></a></td>
+              <td><a href="C/sp_login_company.htm"></a></td>
+              <td><a href="D/sp_login_company.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>型錄列表</td>
+              <td><a href="A/sp_login_company_category.htm"></a></td>
+              <td><a href="B/sp_login_company_category.htm"></a></td>
+              <td><a href="C/sp_login_company_category.htm"></a></td>
+              <td><a href="D/sp_login_company_category.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>預登資料</td>
+              <td><a href="A/sp_login_company_license.htm"></a></td>
+              <td><a href="B/sp_login_company_license.htm"></a></td>
+              <td><a href="C/sp_login_company_license.htm"></a></td>
+              <td><a href="D/sp_login_company_license.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>訊息夾</td>
+              <td><a href="A/sp_login_company_message.htm"></a></td>
+              <td><a href="B/sp_login_company_message.htm"></a></td>
+              <td><a href="C/sp_login_company_message.htm"></a></td>
+              <td><a href="D/sp_login_company_message.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>邀請買主</td>
+              <td><a href="A/sp_login_company_invite.htm"></a></td>
+              <td><a href="B/sp_login_company_invite.htm"></a></td>
+              <td><a href="C/sp_login_company_invite.htm"></a></td>
+              <td><a href="D/sp_login_company_invite.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>貼紙產生器</td>
+              <td><a href="A/sp_login_company_sticker.htm"></a></td>
+              <td><a href="B/sp_login_company_sticker.htm"></a></td>
+              <td><a href="C/sp_login_company_sticker.htm"></a></td>
+              <td><a href="D/sp_login_company_sticker.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>廠商訊息</td>
+              <td><a href="A/sp_login_company_message.htm"></a></td>
+              <td><a href="B/sp_login_company_message.htm"></a></td>
+              <td><a href="C/sp_login_company_message.htm"></a></td>
+              <td><a href="D/sp_login_company_message.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>個人帳號管理- 修改密碼</td>
+              <td><a href="A/sp_login_company_password.htm"></a></td>
+              <td><a href="B/sp_login_company_password.htm"></a></td>
+              <td><a href="C/sp_login_company_password.htm"></a></td>
+              <td><a href="D/sp_login_company_password.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>個人帳號管理- 公司資料維護</td>
+              <td><a href="A/sp_login_company_company.htm"></a></td>
+              <td><a href="B/sp_login_company_company.htm"></a></td>
+              <td><a href="C/sp_login_company_company.htm"></a></td>
+              <td><a href="D/sp_login_company_company.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>個人帳號管理- 隱私權設定</td>
+              <td><a href="A/sp_login_company_privacy.htm"></a></td>
+              <td><a href="B/sp_login_company_privacy.htm"></a></td>
+              <td><a href="C/sp_login_company_privacy.htm"></a></td>
+              <td><a href="D/sp_login_company_privacy.htm"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>買主專區</h2>
+      <div class="table_wrapper">
+        <!-- hyUI 標準頁面 -->
+        <table>
+          <thead>
+            <tr>
+              <th class="num">編號</th>
+              <th>頁面名稱</th>
+              <th>A視覺潮流</th>
+              <th>B經典設計</th>
+              <th>C極簡風格</th>
+              <th>D風格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>買主專區登入後首頁</td>
+              <td><a href="A/sp_login_buyer.htm"></a></td>
+              <td><a href="B/sp_login_buyer.htm"></a></td>
+              <td><a href="C/sp_login_buyer.htm"></a></td>
+              <td><a href="D/sp_login_buyer.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>預登資料</td>
+              <td><a href="A/sp_login_buyer_license.htm"></a></td>
+              <td><a href="B/sp_login_buyer_license.htm"></a></td>
+              <td><a href="C/sp_login_buyer_license.htm"></a></td>
+              <td><a href="D/sp_login_buyer_license.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>訊息夾</td>
+              <td><a href="A/sp_login_buyer_message.htm"></a></td>
+              <td><a href="B/sp_login_buyer_message.htm"></a></td>
+              <td><a href="C/sp_login_buyer_message.htm"></a></td>
+              <td><a href="D/sp_login_buyer_message.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>收藏廠商</td>
+              <td><a href="A/sp_login_buyer_mycompany.htm"></a></td>
+              <td><a href="B/sp_login_buyer_mycompany.htm"></a></td>
+              <td><a href="C/sp_login_buyer_mycompany.htm"></a></td>
+              <td><a href="D/sp_login_buyer_mycompany.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>收藏產品/推薦產品</td>
+              <td><a href="A/sp_login_buyer_collect.htm"></a></td>
+              <td><a href="B/sp_login_buyer_collect.htm"></a></td>
+              <td><a href="C/sp_login_buyer_collect.htm"></a></td>
+              <td><a href="D/sp_login_buyer_collect.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>個人帳號管理- 修改密碼</td>
+              <td><a href="A/sp_login_buyer_password.htm"></a></td>
+              <td><a href="B/sp_login_buyer_password.htm"></a></td>
+              <td><a href="C/sp_login_buyer_password.htm"></a></td>
+              <td><a href="D/sp_login_buyer_password.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>個人帳號管理- 個人資料維護</td>
+              <td><a href="A/sp_login_buyer_person.htm"></a></td>
+              <td><a href="B/sp_login_buyer_person.htm"></a></td>
+              <td><a href="C/sp_login_buyer_person.htm"></a></td>
+              <td><a href="D/sp_login_buyer_person.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>個人帳號管理- 公司資料維護</td>
+              <td><a href="A/sp_login_buyer_company.htm"></a></td>
+              <td><a href="B/sp_login_buyer_company.htm"></a></td>
+              <td><a href="C/sp_login_buyer_company.htm"></a></td>
+              <td><a href="D/sp_login_buyer_company.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>個人帳號管理- 隱私權設定</td>
+              <td><a href="A/sp_login_buyer_privacy.htm"></a></td>
+              <td><a href="B/sp_login_buyer_privacy.htm"></a></td>
+              <td><a href="C/sp_login_buyer_privacy.htm"></a></td>
+              <td><a href="D/sp_login_buyer_privacy.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>買主專區- 我的票券</td>
+              <td><a href="A/sp_login_buyer_ticket.htm"></a></td>
+              <td><a href="B/sp_login_buyer_ticket.htm"></a></td>
+              <td><a href="C/sp_login_buyer_ticket.htm"></a></td>
+              <td><a href="D/sp_login_buyer_ticket.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>買主專區- 展覽-活動報名資料</td>
+              <td><a href="A/sp_login_buyer_activity.htm"></a></td>
+              <td><a href="B/sp_login_buyer_activity.htm"></a></td>
+              <td><a href="C/sp_login_buyer_activity.htm"></a></td>
+              <td><a href="D/sp_login_buyer_activity.htm"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>媒體專區</h2>
+      <div class="table_wrapper">
+        <!-- hyUI 標準頁面 -->
+        <table>
+          <thead>
+            <tr>
+              <th class="num">編號</th>
+              <th>頁面名稱</th>
+              <th>A視覺潮流</th>
+              <th>B經典設計</th>
+              <th>C極簡風格</th>
+              <th>D風格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>媒體專區登入後首頁</td>
+              <td><a href="A/sp_login_media.htm"></a></td>
+              <td><a href="B/sp_login_media.htm"></a></td>
+              <td><a href="C/sp_login_media.htm"></a></td>
+              <td><a href="D/sp_login_media.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>媒體專區 - 訊息夾</td>
+              <td><a href="A/sp_login_media_message.htm"></a></td>
+              <td><a href="B/sp_login_media_message.htm"></a></td>
+              <td><a href="C/sp_login_media_message.htm"></a></td>
+              <td><a href="D/sp_login_media_message.htm"></a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>媒體專區 - 修改密碼</td>
+              <td><a href="A/sp_login_media_password.htm"></a></td>
+              <td><a href="B/sp_login_media_password.htm"></a></td>
+              <td><a href="C/sp_login_media_password.htm"></a></td>
+              <td><a href="D/sp_login_media_password.htm"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>模組列表 & 格線呈現</h2>
+      <div class="table_wrapper">
+        <table class="module_table">
+          <thead>
+            <tr>
+              <th>編號</th>
+              <th>模組名稱</th>
+              <th>檔案名稱</th>
+              <th>輪播</th>
+              <th>class名稱</th>
+              <th>完成狀態</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>展覽資訊</td>
+              <td><a href="module/m_ex_info.htm"></a></td>
+              <td></td>
+              <td>ex_info</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>分眾連結</td>
+              <td><a href="module/m_ex_btn.htm"></a></td>
+              <td></td>
+              <td>ex_btn</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>跑馬燈</td>
+              <td><a href="module/m_marquee.htm"></a></td>
+              <td></td>
+              <td>marquee</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產業消息-圖文列表</td>
+              <td><a href="module/m_industry_news.htm"></a></td>
+              <td></td>
+              <td>industry_news</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>最新消息-圖文列表</td>
+              <td><a href="module/m_ex_news.htm"></a></td>
+              <td></td>
+              <td>ex_news</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>最新消息-圖文列表</td>
+              <td><a href="module/m_news_list.htm"></a></td>
+              <td></td>
+              <td>industry_news <span style="color: #ccc">or</span> ex_news 皆可使用</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>主題報導</td>
+              <td><a href="module/m_topic.htm"></a></td>
+              <td></td>
+              <td>topic</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>精選活動</td>
+              <td><a href="module/m_event.htm"></a></td>
+              <td></td>
+              <td>event</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>論壇/研討會</td>
+              <td><a href="module/m_seminar.htm"></a></td>
+              <td></td>
+              <td>seminar</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>滿版背景影片區塊</td>
+              <td><a href="module/m_video_bg.htm"></a></td>
+              <td></td>
+              <td>video_bg</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>【輪播】創新設計獎</td>
+              <td><a href="module/m_award_slider.htm"></a></td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+              <td>award</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>【輪播】創新設計獎2</td>
+              <td><a href="module/m_award_slider2.htm"></a></td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+              <td>award</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>創新設計獎</td>
+              <td><a href="module/m_award.htm"></a></td>
+              <td></td>
+              <td>award</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>【輪播】產品型錄</td>
+              <td><a href="module/m_product_slider.htm"></a></td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+              <td>product</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>產品型錄</td>
+              <td><a href="module/m_product.htm"></a></td>
+              <td></td>
+              <td>product</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>【輪播】精選產品</td>
+              <td><a href="module/m_feature.htm"></a></td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+              <td>feature</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>【輪播】活動照片</td>
+              <td><a href="module/m_photo.htm"></a></td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+              <td>photo</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>【輪播】影音專區</td>
+              <td><a href="module/m_video.htm"></a></td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+              <td>video</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>【輪播】合作單位</td>
+              <td><a href="module/m_ad_slider.htm"></a></td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+              <td>ad</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>合作單位</td>
+              <td><a href="module/m_ad.htm"></a></td>
+              <td></td>
+              <td>ad</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>交通指引</td>
+              <td><a href="module/m_location.htm"></a></td>
+              <td></td>
+              <td>location</td>
+              <td><img src="images/ok.png" alt="" class="ok" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- <script src="js/hyui.js"></script> -->
+    <!-- <script src="js/customize.js"></script> -->
+    <script>
+      $(function () {
+        $('tbody')
+          .find('a')
+          .each(function (index, el) {
+            var Link = $(this).attr('href').substring(2);
+            $(this).text(Link);
+          });
+        $('.module_table tbody')
+          .find('a')
+          .each(function (index, el) {
+            var Link = $(this).attr('href').substring(7);
+            $(this).text(Link);
+          });
+      });
+    </script>
+  </body>
+</html>

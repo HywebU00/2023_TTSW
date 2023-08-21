@@ -1,0 +1,582 @@
+.modal {
+    .modal_content{
+        position:relative;
+        width:100%;
+        height:85%;
+        overflow-y:scroll;
+    }
+    &.question_colorbox{
+        width:60%;
+        height:70%;
+        margin-left: 0;
+        top:50%;
+        margin-top: -20%;
+        left:20%;
+        @include screen('notebook') {
+             margin-top: -30%;
+        }
+        @include screen('tablet') {
+            width:90%;
+            left:5%;
+            top:5%;
+            margin-top: 0 !important;
+        }
+    }
+    .form_grp{
+        border-bottom: 1px dashed #DEDEDE;
+    }
+    position: fixed;
+    display: none;
+    width: 420px;
+    height: 420px;
+    background: #FFF;
+    z-index: 999999;
+    top: 30%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -210px;
+    padding: 1em 1em 1em;
+    @include box-sizing;
+    border-radius: 8px;
+    box-shadow: 1px 1px 30px -15px RGBA(0, 0, 0, .8);
+    animation: scaleUp .6s ease-out;
+    border: 3px solid $secondaryColor;
+    padding-bottom: 1.5em;
+    span.red {
+        color: $color-red;
+        margin-left: .9em;
+        font-size: .813em;
+        display:block;
+        line-height: 1.35em;
+    }
+    input.id{
+        background:url(../images/icon/icon_man.svg) no-repeat .2em .5em #f8f8f8;
+        background-size: 20px;
+        padding-left: 1.8em;
+    }
+    input.pw{
+        background:url(../images/icon/icon_lock.svg) no-repeat .4em .6em #f8f8f8;
+        background-size: 16px;
+        padding-left: 1.8em;
+    }
+    .btn-primary{
+        font-size:1em;
+    }
+    .btn-reset{
+        font-size:1em;
+    }
+    ul.member_function {
+        position: absolute;
+        bottom: .2em;
+        width: 90%;
+        left: 5%;
+        @include li-reset;
+        padding: .5em 0;
+        border-top: 1px solid #CCC;
+        li {
+            width: 33%;
+            float: left;
+            font-size: .875em;
+            text-align: center;
+            a {
+                @include aSetting(#555);
+                &:hover, &:focus {
+                    &:before {
+                        margin-left: .3em;
+                        margin-right: .2em;
+                    }
+                }
+                &:before {
+                    display: inline-block;
+                    width: 4px;
+                    height: 4px;
+                    transform: rotate(45deg);
+                    content: "";
+                    border: 2px solid #AAA;
+                    border-bottom: none;
+                    border-left: none;
+                    margin-right: .5em;
+                    vertical-align: middle;
+                    transform-origin: top center;
+                    transition: .3s ease-out;
+                }
+            }
+        }
+    }
+    .form_grp {
+        padding: .3em;
+        margin-bottom: .1em;
+    }
+    h2 {
+        border-bottom: 1px solid $primaryColor;
+        padding-bottom: .5em;
+        margin: .3em 0;
+    }
+    @include screen('mobile') {
+        left: 5%;
+        width: 90%;
+        margin-left: 0;
+    }
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 30px !important;
+        min-width: auto;
+        height: 30px;
+        font-size: 0em;
+        border: none;
+        display: block;
+        padding: 0;
+        background: url(../images/basic/icon_close.svg) no-repeat center center;
+        &:hover, &:focus {
+            cursor: pointer;
+        }
+    }
+}
+@keyframes scaleUp {
+    0% {
+        transform: scale(1) translateY(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+.modal_overlay {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: RGBA(0, 0, 0, .75);
+    z-index: 999998;
+}
+
+.loginMsgBox {
+    .container {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 0.8em;
+        border-radius: 0.5em;
+        overflow: hidden;
+        display: block;
+        width: 300px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .text {
+        display: block;
+         width: 100%;
+         position: relative;
+         overflow: hidden;
+         text-align:center;
+     }
+     h3 {
+        padding: 0px 0px 0px;
+        margin: 5px 10px 10px 10px;
+        display: inline-block;
+        text-align: center;
+        color: #FFF;
+        font-size: 1.25em;
+        font-weight: 400;
+        border-bottom: 1px solid #FFF;
+        text-align:center;
+    }
+    p {
+        color: #fff;
+        font-size: 0.875em;
+        line-height: 1.45em;
+        overflow: hidden;
+        margin: 0em;
+        padding:0em 0em 0.5em 0em;
+        text-align:center;
+    }
+    button{
+        color: #fff;
+        background: $primaryColor !important;
+        border:1px solid $primaryColor !important;
+        &:hover, &:focus {
+            background: lighten($primaryColor, 5) !important;
+            border:1px solid #fff !important;
+        }
+    }
+}
+
+
+
+.containerSkill {
+    width: 100%;
+    background-color: #c5c5c5;
+    border-radius: 35px;
+    padding: 2px 1px 0px 1px;
+    overflow: hidden;
+}
+
+.containerSkillin {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 30px;
+    padding: 0px 1px 1px 0px;
+    overflow: hidden;
+}
+
+.skills {
+    text-align: right;
+    padding: 0;
+    background-color: $secondaryColor;
+    border-radius: 25px;
+    line-height: 1em;
+    height: 1.25em;
+    // span {
+    //     margin-right: 1em;
+    //     color: white;
+    //     font-size: 0.8em;
+    //     line-height: 1em;
+    // }
+}
+
+
+.toDoBlock{
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 18px 10px 0 10px;
+    &:hover {
+        box-shadow: 1px 1px 8px #a5a5a5;
+    }
+}
+
+.ItemBar {
+    width:28%;
+    padding: 30px 15px 30px 0;
+    position: relative;
+    @include screen('tablet') {
+        display: inline-block;
+        width: 50%;
+    }
+    .pcnums {
+        color: $primaryColor;
+        font-size: 0.9em;
+        font-weight: bold;
+        line-height: 1em;
+        text-align:center;
+        position: absolute;
+        top: 10%;
+        width: 100%;
+    }
+}
+
+.ItemNot,.ItemAll {
+    width: 25%;
+    margin-left: 1%;
+    padding-top:8px;
+    @include screen('tablet') {
+        display: inline-block;
+        width: 48%;
+        padding-top:1em;
+    }
+    label {
+        display: inline;
+        text-align: right;
+        padding: 0 0.5em 0 1em;
+        font-size: 0.9em;
+    }
+    input {
+        display: inline;
+        width: 40%;
+        text-align: center;
+        background-color: #eee;
+    }
+}
+
+.toDoItem{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    padding-bottom: 18px;
+    h3 {
+        width: 20%;
+        padding: 0px 0 0 18px;
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.25em;
+        position: relative;
+        @include screen('tablet') {
+            display: inline-block;
+            width: 40%;
+            padding: 20px 0 35px 18px;
+            vertical-align: middle;
+        }
+        
+        a{
+            color:#333;
+            &:before{
+                position: absolute;
+                top: 3px;
+                left: 0px;
+                content: '';
+                background-image: url(../images/icon/icon_link2.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 14px; 
+                width:14px; 
+                @include screen('tablet') {
+                    top: 23px;
+                }
+            }
+            &:hover{
+                color:$primaryColor;
+                &:before{
+                    filter: $toDoFilter;
+                }
+            }
+        }
+    }
+    button{
+        position: absolute;
+        left: 50%;
+        bottom: -4px;
+        margin-left: -10px;
+        cursor: pointer;
+        background: none !important;
+        border: none;
+        padding: 0;
+        height: 16px; 
+        width:26px; 
+        min-width:auto;
+        &:before{
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            content: '';
+            background-image: url(../images/icon/icon_arrow_down.svg);
+            background-size: cover;
+            height: 16px; 
+            width:16px; 
+            opacity: 0.7;
+        }
+        &:hover, &:focus{
+            border: none !important;
+        }
+    }
+    button.btnDown{
+        &:before{
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            content: '';
+            background-image: url(../images/icon/icon_arrow_down.svg);
+            background-size: cover;
+            height: 16px; 
+            width:16px; 
+            opacity: 0.7;
+        }
+        &:hover{
+            &:before{
+                filter: $toDoFilter;
+                opacity: 1;
+            }
+        }
+    }
+    button.btnUp{
+        &:before{
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            content: '';
+            background-image: url(../images/icon/icon_arrow_down.svg);
+            background-size: cover;
+            height: 16px; 
+            width:16px; 
+            opacity: 0.7;
+            transform: rotate(180deg);
+        }
+        &:hover{
+            &:before{
+                filter: $toDoFilter;
+                opacity: 1;
+                transform: rotate(180deg);
+            }
+        }
+    }
+    @include screen('tablet') {
+        display: block;
+    }
+}
+
+.subItems{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: #eee;
+    padding: 25px 10px;
+    margin-bottom: 10px;
+    display: none;
+    @include screen('tablet') {
+        display: none;
+    }
+    hr{
+        width: 100%;
+        &~.subItemSys{
+            .subItemDate{
+                right: 5%;
+            }
+        }
+    }
+}
+.subItemSys{
+    width: 48%;
+    // padding:15px 15px 32px 15px;
+    background-color: #fff;
+    margin: 1%;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    cursor: default;
+    @include screen('tablet') {
+        display: inline-block;
+        width: 95%;
+        margin: 1% auto;
+    }
+    &:hover {
+        box-shadow: 1px 1px 8px #999;
+    }
+    a{
+        color:#333;
+        &:hover{
+            color:$primaryColor;
+        }
+    }
+    label{ 
+        width: 30%;
+        padding: 30px 5px 30px 10px;
+        font-size: 0.9em;
+        line-height: 1.2em;
+        vertical-align: middle;
+        margin: 0;
+        @include screen('tablet') {
+            width: 80%;
+            padding: 1em 0.5em;
+        }
+    }
+    .ItemBar{
+        width: 50%;
+        padding: 32px 15px 32px 0;
+        position: relative;
+        min-height: 80px;
+        @include screen('tablet') {
+            width: 80%;
+            padding: 0 0.5em 2em 0.5em;
+        }
+        .pcnums {
+            color: $primaryColor;
+            font-size: 0.9em;
+            font-weight: bold;
+            line-height: 1em;
+            text-align:center;
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            @include screen('tablet') {
+                position:unset;
+                top: unset;
+            }
+        }
+    }
+    .ItemLink{
+        width: 20%;
+        height: 100%;
+        @include screen('tablet') {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+        a{
+            position: relative;
+            width: 100%;
+            background-color: $secondaryColor;
+            color: #fff;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 8px;
+            font-size: 0.9em;
+            &:hover{
+                background-color: $primaryColor;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                right: 8px;
+                top:50%;
+                margin-top:-11px;
+                background-image: url(../images/basic/icon_arrow_w.png);
+                background-repeat: no-repeat;  
+                background-position: right center;
+                background-size: cover;
+                width: 21px;
+                height: 21px;
+                opacity: 0.7;
+                @media only screen and (max-width: 1120px) {
+                    width: 18px;
+                }
+                @include screen('tablet') {
+                    width: 21px;
+                }
+                @include screen('mobile') {
+                    left: 35%;
+                    top: 65%;
+                    right: unset;
+                }
+                          
+            }
+            @include screen('tablet') {
+                
+                
+            }
+        }
+    }
+    .subItemDate{ 
+        position: absolute;
+        right: 25%;
+        bottom: 5px;
+        font-size: 0.8em;
+        line-height: 1.25em;
+    }
+    .completed{
+        position: absolute; 
+        left: 10px; 
+        bottom: 6px;
+        font-size: 0.7em;
+        line-height: 1em;
+        background-color: $color-green;
+        border-radius: 4px;
+        height: auto;
+        color: #fff;
+        padding:3px 4px;
+    }
+}
+
+
+
+.exRed{
+    color: #f00;
+    position: relative;
+    padding-left:20px;
+    &:before {
+        background-image: url(../images/icon/icon_exmark.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: '';
+        height: 16px; 
+        width:16px; 
+    }
+}

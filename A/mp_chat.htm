@@ -1,0 +1,2470 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 ,user-scalable=no">
+    <title>台北國際自行車展覽會</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- font-awesone -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/tts_A.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+    <!-- 翻譯 -->
+    <div id="trans" style="" class="trans">
+        <div class="trans_window trans_open color_blue" style="transform: translateX(0px);">
+            <div class="trans_function">
+                <a href="#" class="close"><i class="fas fa-times"></i></a>
+                <div class="messenger">翻譯<span></span></div>
+            </div>
+            <div class="trans_inside" id="transArea">
+                <div class="trans_lang">
+                    <select id="srcLang" onchange="doTrans();">
+                        <option value="aaa">aaa</option>
+                        <option value="bbb">bbb</option>
+                        <option value="ccc">ccc</option>
+                    </select>
+                    <button type="button"><i class="fas fa-exchange-alt"></i></button>
+                    <select id="srcLang" onchange="doTrans();">
+                        <option value="aaa">aaa</option>
+                        <option value="bbb">bbb</option>
+                        <option value="ccc">ccc</option>
+                    </select>
+                </div>
+                <div class="trans_tool">
+                    <a href="javascript:clearText()" class="do_delete">clear</a>
+                </div>
+                <div class="src-text" id="transContent" contenteditable="true">在美國有很多義大利的移民，因此有許多美味的義大利餐廳，二世谷披薩的美味完全不輸給它們！我的奶奶是義大利移民經常做義大利料理，二世谷披薩就連習慣正統義大利味的我都很滿意</div>
+                <div class="trans_tool">
+                    <a href="javascript:doCopyText()" title="Hooray!" class="do_copy">copy</a>
+                    <a href="javascript:doTrans();" class="do_trans" onclick="">translate</a>
+                </div>
+                <div class="trans-text" id="resultContent">There are many Italian immigrants in the United States, so there are many delicious Italian restaurants, and the deliciousness of Niseko pizza is not lost to them! My grandmother is an Italian immigrant who often cooks Italian cuisine. Niseko pizza is very satisfying even for those who are used to the orthodox Italian taste.</div>
+            </div>
+        </div>
+        <!--end trans_window--->
+    </div>
+    <!-- video dragble -->
+    <!-- 視訊 -->
+    <!--  <div class="video_content show shrink ui-draggable ui-draggable-handle">
+        <div class="start_video">
+            <span>Hyweb Inc. Ltd</span>
+            <span>撥打中...</span>
+            <a href="#">開始通話</a>
+            <a href="#">拒絕通話</a>
+        </div>
+        <div class="camera_area">
+            <img src="images/chat.jpg" alt="">
+            <a href="#" class="enlarge"></a>
+            <div class="my_camera">
+                <img src="images/chat.jpg" alt="">
+            </div>
+        </div>
+        <div class="camera_function">
+            <a href="#" class="end_talk"></a>
+            <a href="#" class="end_video"></a>
+            <a href="#" class="end_audio"></a>
+            <a href="#" class="reverse"></a>
+            <a href="#" class="shrink"></a>
+        </div>
+    </div> -->
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <!-- navigation Start -->
+                <nav class="navigation">
+                    <div class="language">
+                        <a href="#">Language</a>
+                        <ul>
+                            <li><a href="#">繁體中文</a></li>
+                            <li><a href="#">简体中文</a></li>
+                            <li><a href="#">ENGLISH</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn_login">登入</button>
+                    <ul>
+                        <li><a href="#"><img src="images/nav_img.png" alt="">首頁</a></li>
+                        <li><a href="#">網站導覽</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                </nav>
+                <!-- navigation End -->
+                <h1>
+                    <a href="../index.htm">
+                        <picture>
+                            <source srcset="images/logo.png" media="(min-width: 992px)">
+                            <source srcset="images/logo_mobile.png" media="(max-width: 991px)">
+                            <img src="images/logo.png" alt="網站標題">
+                        </picture>
+                    </a>
+                </h1>
+                <!-- Search Start -->
+                <div class="search">
+                    <div class="container">
+                        <a href="#" class="close"></a>
+                        <div class="form_grp cate">
+                            <button class="btn">全文檢索</button>
+                            <div class="dropdown-content" style="display: none;">
+                                <ul>
+                                    <li><a href="#">全文檢索</a></li>
+                                    <li><a href="#">找廠商</a></li>
+                                    <li><a href="#">找產品</a></li>
+                                </ul>
+                            </div>
+                            </ul>
+                        </div>
+                        <div class="form_grp text">
+                            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S">
+                            <div class="dropdown-content" style="display: none;">
+                                <ul>
+                                    <li><a href="#"><span>產品名稱</span>產品名稱產品名稱產品名稱產品名稱產品名稱產品名稱</a></li>
+                                    <li><a href="#"><span>產品名稱</span>說明說明</a></li>
+                                    <li><a href="#"><span>產品名稱</span>說明說明</a></li>
+                                    <li><a href="#"><span>產品名稱</span>說明說明</a></li>
+                                    <li><a href="#"><span>產品名稱</span>說明說明</a></li>
+                                    <li><a href="#"><span>產品名稱</span>說明說明</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="btn_grp">
+                            <button class="btn" title="搜尋"></button>
+                            <a href="#">進階搜尋</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search End -->
+                <!-- menu Start -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">展覽介紹</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">展覽介紹</a></li>
+                        <li><a href="#">主題活動</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層有連結</a>
+                                    <ul>
+                                        <li><a href="http://www.google.com">第三層選單有下層</a>
+                                            <ul>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="http://www.google.com">第三層選單有連結</a></li>
+                                        <li><a href="#">第三層選單</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">影音專區</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">參展登記</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">廠商總覽</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">檔案下載</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main">
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <!-- 大廣告輪播 -->
+            <section class="section col-12 full">
+                <div class="container">
+                    <div class="col">
+                        <div class="mp_slider">
+                            <ul>
+                                <li>
+                                    <a href="#" title="">
+                                        <div class="img-container">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_mpslider01.jpg">
+                                                <source media="(min-width: 991px)" data-lazy-srcset="images/pic_mpslider01.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/pic_mpslider01.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/pic_mpslider01.jpg">
+                                                <img data-lazy="images/pic_mpslider01.jpg" class="cover">
+                                                <noscript><img src="images/pic_mpslider01.jpg"></noscript>
+                                            </picture>
+                                            <div class="caption">
+                                                <h2>邁向雙e化<br>智慧騎乘世代</h2>
+                                                <p>融合「自行車 x 新創 x 科技」 元素， 廣邀 IoT 應用裝置、雲端系統及大數據等製造及系統商參展</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <div class="img-container">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_mpslider02.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/pic_mpslider02.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/pic_mpslider02.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/pic_mpslider02.jpg">
+                                                <img data-lazy="images/pic_mpslider02.jpg" class="cover">
+                                                <noscript><img src="images/pic_mpslider02.jpg"></noscript>
+                                            </picture>
+                                            <div class="caption">
+                                                <h2>運動雲端 最佳教練</h2>
+                                                <p>有時最難的部分就在開始，Garmin提供Garmin Training Plan 訓練計劃，可選擇您的等級和目標事件，建立專屬訓練行事曆，上傳至機器中，更能讓您如同和專業教練一起運動。</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="">
+                                        <div class="img-container">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_mpslider03.jpg">
+                                                <source media="(min-width: 991px)" data-lazy-srcset="images/pic_mpslider03.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/pic_mpslider03.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/pic_mpslider03.jpg">
+                                                <img data-lazy="images/pic_mpslider03.jpg" class="cover">
+                                                <noscript><img src="images/pic_mpslider03.jpg"></noscript>
+                                            </picture>
+                                            <div class="caption">
+                                                <h2></h2>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 展覽時間 & 3個分眾按鈕 -->
+            <section class="section col-6-6">
+                <div class="container">
+                    <div class="col">
+                        <div class="ex_info">
+                            <time>
+                                <span class="year">2019</span>
+                                <div class="date">
+                                    <span class="month">01</span>
+                                    <span class="day">31</span>
+                                </div>
+                                <div class="date">
+                                    <span class="month">12</span>
+                                    <span class="day">29</span>
+                                </div>
+                            </time>
+                            <span class="location">
+                                <ul>
+                                    <li>台北南港展覽館1、2館 (台北市南港區經貿二路1、2號)</li>
+                                    <li>台北世貿一館 (台北市信義路5段5號)</li>
+                                    <li>台北國際會議中心(台北市信義路5段1號)</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ex_btn">
+                            <ul>
+                                <li><a href="#" class="btn"><img src="images/ex_btn01.png" alt="">買主預登</a></li>
+                                <li><a href="#" class="btn"><img src="images/ex_btn02.png" alt="">媒體預登</a></li>
+                                <li><a href="#" class="btn"><img src="images/ex_btn03.svg" alt="">參展報名</a></li>
+                                <!-- <li><a href="#" class="btn"><img src="images/ex_btn03.svg" alt="">參展報名</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 跑馬燈  marquee (預設輪播)-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="marquee">
+                            <ul>
+                                <li><a href="#">自行車展重回3月登場全球各品牌年度首發盛會台北國際自行車展帶您</a></li>
+                                <li><a href="#">台北國際自行車展（TAIPEI CYCLE）將於3月27日至30日於台北南港展覽館登場，今年使用1館4樓及首度加入的2館全區，並與台北國際體育用品展。</a></li>
+                                <li><a href="#">Taipei Cycle+」自行車生活沙龍</a></li>
+                                <li><a href="#">自行車及體育用品強強聯手 近7000國際買主來台觀展採購</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ex_area -->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="ex_area">
+                            <h2>展區規劃</h2>
+                            <p>來全球受極端氣候變化、工業發展用水量增加以及水污染嚴重等影響，各國水資源短缺，外貿協會乃規畫於台北世貿一館舉辦「台灣國際水週」，提供完整用水解決方案，希望成為全方位專業展示暨交易平台。</p>
+                            <div class="ex_link">
+                                <ul>
+                                    <li><a href="#">再生水(水處理)區</a></li>
+                                    <li><a href="#">輸送儲存與配件區</a></li>
+                                    <li><a href="#">綠色基礎建設區</a></li>
+                                    <li><a href="#">終端淨水與飲用水區</a></li>
+                                    <li><a href="#">流體自動化與控制區及水資源事業</a></li>
+                                    <li><a href="#">公共工程及周邊服務區</a></li>
+                                </ul>
+                            </div>
+                            <div class="ex_data">
+                                <ul>
+                                    <li>
+                                        <span class="title">展覽屆數</span>
+                                        <span class="data">6</span>
+                                        <span>屆</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">參展規模</span>
+                                        <span class="data">200</span>
+                                        <span>展出攤位</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">展示面積</span>
+                                        <span class="data">15,000</span>
+                                        <span>平方公尺</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">買主人數</span>
+                                        <span class="data">3,000<em>+</em></span>
+                                        <span>人</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">政府預算</span>
+                                        <span class="data">2507<em>億</em></span>
+                                        <span>新臺幣</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 產業消息 industry_news -->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="industry_news">
+                            <h2>產業消息</h2>
+                            <div class="pic">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <picture>
+                                            <source media="(min-width: 1200px)" data-srcset="images/pic_industrynews01.jpg">
+                                            <source media="(min-width: 992px)" data-srcset="images/pic_news.jpg">
+                                            <source media="(min-width: 576px)" data-srcset="images/pic_industrynews01.jpg">
+                                            <source media="(max-width: 575px)" data-srcset="images/pic_industrynews01.jpg">
+                                            <img data-src="images/pic_industrynews01.jpg" class="lazy">
+                                            <noscript><img src="images/pic_industrynews01.jpg"></noscript>
+                                        </picture>
+                                        <time>
+                                            <span class="day">29</span>
+                                            <span class="month">10月</span>
+                                            <span class="year">2019</span>
+                                        </time>
+                                        <span class="title">2019 Liv Day 仲夏田野 -花都42K挑戰賽、鯉魚潭75K挑戰賽 - 活動簡章</span>
+                                    </div>
+                                    <p>台北國際自行車展（TAIPEI CYCLE）將於3月27日至30日於台北南港展覽館登場，今年使用1館4樓及首度加入的2館全區，並與台北國際體育用品展...</p>
+                                </a>
+                            </div>
+                            <div class="news_list">
+                                <ul>
+                                    <li><time>2019/10/2</time><span class="tag top">最新</span><a href="#">台北國際自行車展 上萬件創新產品及騎行文化</a></li>
+                                    <li><time>2019/10/2</time><span class="tag hot">焦點訊息</span><a href="#">全新智慧騎乘與綠能環保概念將引領時代趨勢</a></li>
+                                    <li><time>2019/10/2</time><a href="#">Taipei Cycle+」自行車生活沙龍</a></li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多最新消息</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 最新消息 news -->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="ex_news">
+                            <h2>最新消息</h2>
+                            <div class="pic">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <picture>
+                                            <source media="(min-width: 1200px)" data-srcset="images/pic_news.jpg">
+                                            <source media="(min-width: 992px)" data-srcset="images/pic_news.jpg">
+                                            <source media="(min-width: 576px)" data-srcset="images/pic_news.jpg">
+                                            <source media="(max-width: 575px)" data-srcset="images/pic_news.jpg">
+                                            <img data-src="images/pic_news.jpg" class="lazy">
+                                            <noscript><img src="images/pic_news.jpg"></noscript>
+                                        </picture>
+                                        <time>
+                                            <span class="day">29</span>
+                                            <span class="month">12月</span>
+                                            <span class="year">2019</span>
+                                        </time>
+                                        <span class="title">自行車展重回3月登場全球各品牌年度首發盛會台北國際自行車展帶您</span>
+                                    </div>
+                                    <p>台北國際自行車展（TAIPEI CYCLE）將於3月27日至30日於台北南港展覽館登場，今年使用1館4樓及首度加入的2館全區，並與台北國際體育用品展...</p>
+                                </a>
+                            </div>
+                            <div class="news_list">
+                                <ul>
+                                    <li><time>2019/10/2</time>
+                                        <span class="tag tag_01">最新</span>
+                                        <span class="tag tag_02">最新</span>
+                                        <span class="tag tag_03">最新</span>
+                                        <span class="tag tag_04">最新</span>
+                                        <span class="tag tag_05">最新</span>
+                                        <span class="tag tag_06">最新</span>
+                                        <a href="#">台北國際自行車展 上萬件創新產品及騎行文化</a></li>
+                                    <li><time>2019/10/2</time><span class="tag hot">焦點訊息</span><a href="#">全新智慧騎乘與綠能環保概念將引領時代趨勢</a></li>
+                                    <li><time>2019/10/2</time><a href="#">Taipei Cycle+」自行車生活沙龍</a></li>
+                                    <li><time>2019/10/2</time><a href="#">自行車及體育用品強強聯手 近7000國際買主來台觀展採購</a></li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多最新消息</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 最新消息 news  -->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="ex_news">
+                            <h2>最新消息</h2>
+                            <ul>
+                                <li><time>2019/10/2</time><span class="tag top">最新</span><a href="#">台北國際自行車展 上萬件創新產品及騎行文化</a></li>
+                                <li><time>2019/10/2</time><span class="tag hot">焦點訊息</span><a href="#">全新智慧騎乘與綠能環保概念將引領時代趨勢</a></li>
+                                <li><time>2019/10/2</time><a href="#">Taipei Cycle+」自行車生活沙龍</a></li>
+                                <li><time>2019/10/2</time><a href="#">自行車及體育用品強強聯手 近7000國際買主來台觀展採購</a></li>
+                                <li><time>2019/10/2</time><a href="#">2019台北國際自行車展及台北國際體育用品展聯手展示產業智能化嶄新生態系</a></li>
+                            </ul>
+                            <div class="btn_grp">
+                                <a href="#" class="more">更多最新消息</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 主題報導 topic-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="topic">
+                            <!-- item 可以一直增加 -->
+                            <div class="item">
+                                <div class="img-container">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" data-srcset="images/pic_topic_01.jpg">
+                                        <source media="(min-width: 992px)" data-srcset="images/pic_topic_01.jpg">
+                                        <source media="(min-width: 576px)" data-srcset="images/pic_topic_01.jpg">
+                                        <source media="(max-width: 575px)" data-srcset="images/pic_topic_01.jpg">
+                                        <img data-src="images/pic_topic_01.jpg" class="lazy">
+                                        <noscript><img src="images/pic_topic_01.jpg"></noscript>
+                                    </picture>
+                                </div>
+                                <div class="topic_intro">
+                                    <h2>智慧騎乘</h2>
+                                    <p>「Taipei Cycle+ 智慧騎行專館」則由16家廠商展示智能裝置應用及系統服務商，結合車體技術的提升，將自行車產業全面推進至IoB (Internet of Bikes)的新世代。</p>
+                                    <div class="btn_grp">
+                                        <a href="#" class="more">更多主題</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img-container">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" data-srcset="images/pic_topic_02.jpg">
+                                        <source media="(min-width: 992px)" data-srcset="images/pic_topic_02.jpg">
+                                        <source media="(min-width: 576px)" data-srcset="images/pic_topic_02.jpg">
+                                        <source media="(max-width: 575px)" data-srcset="images/pic_topic_02.jpg">
+                                        <img data-src="images/pic_topic_02.jpg" class="lazy">
+                                        <noscript><img src="images/pic_topic_02.jpg"></noscript>
+                                    </picture>
+                                </div>
+                                <div class="topic_intro">
+                                    <h2>電動自行車</h2>
+                                    <p>「一顆電池，續航力可達100公里以上，智慧主控版，搭載六段模式，由台灣最大腳踏車廠，推出的這款電動腳踏車，號稱還可以自動化偵測，騎乘環境，未來還能透過手機APP，直接改變助力模式。</p>
+                                    <div class="btn_grp">
+                                        <a href="#" class="more">更多主題</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="img-container">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" data-srcset="images/pic_topic_03.jpg">
+                                        <source media="(min-width: 992px)" data-srcset="images/pic_topic_03.jpg">
+                                        <source media="(min-width: 576px)" data-srcset="images/pic_topic_03.jpg">
+                                        <source media="(max-width: 575px)" data-srcset="images/pic_topic_03.jpg">
+                                        <img data-src="images/pic_topic_03.jpg" class="lazy">
+                                        <noscript><img src="images/pic_topic_03.jpg"></noscript>
+                                    </picture>
+                                </div>
+                                <div class="topic_intro">
+                                    <h2>單車野營</h2>
+                                    <p>單車野營（BIKEPACKING）顧名思義便是騎著您的愛車到戶外享受野外露營的樂趣，在歐美已經有將當悠久的歷史，近年更有戶外愛好者將其結合了獨木舟，得以抵達更多夢幻境地。</p>
+                                    <div class="btn_grp">
+                                        <a href="#" class="more">更多主題</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 精選活動 event -->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col ">
+                        <div class="event">
+                            <h2>精選活動</h2>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <picture>
+                                            <source media="(min-width: 1200px)" data-srcset="images/pic_event01.jpg">
+                                            <source media="(min-width: 992px)" data-srcset="images/pic_event01.jpg">
+                                            <source media="(min-width: 576px)" data-srcset="images/pic_event01.jpg">
+                                            <source media="(max-width: 575px)" data-srcset="images/pic_event01.jpg">
+                                            <img data-src="images/pic_event01.jpg" class="lazy">
+                                            <noscript><img src="images/pic_event01.jpg"></noscript>
+                                        </picture>
+                                    </div>
+                                    <div class="event_intro">
+                                        <time>
+                                            <span class="year">2019</span>
+                                            <div class="date">
+                                                <span class="month">01</span>
+                                                <span class="day">31</span>
+                                            </div>
+                                            <div class="date">
+                                                <span class="month">12</span>
+                                                <span class="day">29</span>
+                                            </div>
+                                        </time>
+                                        <h3>Demo Day 試乘體驗日</h3>
+                                        <p>華中露營場 (台北市萬華區萬大路底華中河濱公園左區)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <picture>
+                                            <source media="(min-width: 1200px)" data-srcset="images/pic_event03.jpg">
+                                            <source media="(min-width: 992px)" data-srcset="images/pic_event03.jpg">
+                                            <source media="(min-width: 576px)" data-srcset="images/pic_event03.jpg">
+                                            <source media="(max-width: 575px)" data-srcset="images/pic_event03.jpg">
+                                            <img data-src="images/pic_event03.jpg" class="lazy">
+                                            <noscript><img src="images/pic_event03.jpg"></noscript>
+                                        </picture>
+                                    </div>
+                                    <div class="event_intro">
+                                        <time>
+                                            <span class="year">2019</span>
+                                            <div class="date">
+                                                <span class="month">01</span>
+                                                <span class="day">31</span>
+                                            </div>
+                                            <!-- <div class="date">
+                                            <span class="month">12</span>
+                                            <span class="day">29</span>
+                                        </div> -->
+                                        </time>
+                                        <h3>Demo Day 試乘體驗日</h3>
+                                        <p>華中露營場 (台北市萬華區萬大路底華中河濱公園左區)</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <picture>
+                                            <source media="(min-width: 1200px)" data-srcset="images/pic_event02.jpg">
+                                            <source media="(min-width: 992px)" data-srcset="images/pic_event02.jpg">
+                                            <source media="(min-width: 576px)" data-srcset="images/pic_event02.jpg">
+                                            <source media="(max-width: 575px)" data-srcset="images/pic_event02.jpg">
+                                            <img data-src="images/pic_event02.jpg" class="lazy">
+                                            <noscript><img src="images/pic_event02.jpg"></noscript>
+                                        </picture>
+                                    </div>
+                                    <div class="event_intro">
+                                        <time>
+                                            <span class="year">2019</span>
+                                            <div class="date">
+                                                <span class="month">01</span>
+                                                <span class="day">31</span>
+                                            </div>
+                                            <div class="date">
+                                                <span class="month">12</span>
+                                                <span class="day">29</span>
+                                            </div>
+                                        </time>
+                                        <h3>Demo Day 試乘體驗日Demo Day 試乘體驗日Demo Day</h3>
+                                        <p>華中露營場 (台北市萬華區萬大路底華中河濱公園左區)華中露營場 (台北市萬華區萬大路底華中河濱公園左區)華中露營場 (台北市萬華區萬大路底華中河濱公園左區)華中露營場 (台北市萬華區萬大路底華中河濱公園左區)</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 論壇/研討會 seminar-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="seminar">
+                            <h2>論壇/研討會</h2>
+                            <div class="pic">
+                                <div class="img-container">
+                                    <a href="#">
+                                        <picture>
+                                            <source media="(min-width: 1200px)" data-srcset="images/pic_seminar.jpg">
+                                            <source media="(min-width: 992px)" data-srcset="images/pic_seminar.jpg">
+                                            <source media="(min-width: 576px)" data-srcset="images/pic_seminar.jpg">
+                                            <source media="(max-width: 575px)" data-srcset="images/pic_seminar.jpg">
+                                            <img data-src="images/pic_seminar.jpg" class="lazy">
+                                            <noscript><img src="images/pic_seminar.jpg"></noscript>
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="seminar_intro">
+                                <h3>自行車產業論壇邀您共築未來城市藍圖</h3>
+                                <h4>Taipei Cycle Forum: Strategizing for the Future of Cycling Heavyweights plus Interactive Learning to Create Healthy Cities.</h4>
+                                <p>與德國紅點、iF設計獎得主、自行車展創新設計獎評審面對面，從設計創意看產業趨勢的發展，一窺智慧移動新所帶來的新視野與新商機</p>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">報名</a>
+                                    <a href="#" class="more">更多論壇</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 滿版背景影片 -->
+            <section class="section col-12 full">
+                <div class="container">
+                    <div class="col">
+                        <div class="video_bg">
+                            <div class="video-container">
+                                <div class="caption">
+                                    <h2>自行車產業論壇</h2>
+                                    <p>與德國紅點、iF設計獎得主、自行車展創新設計獎評審面對面，從設計創意看產業趨勢的發展，一窺智慧移動新所帶來的新視野與新商機</p>
+                                    <div class="btn_grp">
+                                        <a href="#" class="more">閱讀更多</a>
+                                    </div>
+                                </div>
+                                <video src="images/video.mp4" autoplay muted>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 創新設計獎 award(有輪播)-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="award">
+                            <h2>2019 創新設計獎 得獎產品(有輪播)</h2>
+                            <div class="pic slider">
+                                <ul>
+                                    <li>
+                                        <div class="img-container">
+                                            <a href="#">
+                                                <span class="award_name">金質獎</span>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/feature_01.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/feature_01.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/feature_01.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/feature_01.jpg">
+                                                    <img data-lazy="images/feature_01.jpg" class="cover">
+                                                    <noscript><img src="images/feature_01.jpg"></noscript>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="award_intro">
+                                            <h3>TCR 爬坡型公路競賽用車</h3>
+                                            <ul>
+                                                <li>製造商：巨大機械工業股份有限公司</li>
+                                            </ul>
+                                            <p>急縱陡坡，急切入彎，更輕量更強騎乘效率，經典傳奇的TCR是你的全能競賽戰駒。多年以來在專業級比賽中屢屢勝出的 TCR Advanced SL，是無數個專業自行車選手的最佳選擇。全手工打造的碳纖維複合材質，全面優化的壓縮幾何設計、OverDrive 2 加大車首強化設計、MegaDrive 加大管件強化設計以及 PowerCore 整合式五通下叉動力傳導設計，達到輕量與剛性最完美的平衡，多功整合的一體式座桿，不僅節省了45g的重量更提升了騎乘品質及騎乘的路感，讓動力的傳輸更為直接。長距離、高難度、有著長陡坡與急彎的賽事，TCR 都是全能型選手心中唯一的選擇。</p>
+                                            <p>產品資訊: <a href="https://www.giantcyclingworld.com/bike_brand.php?id=20032620">https://www.giantcyclingworld.com/bike_brand.php?id=20032620</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-container">
+                                            <a href="#">
+                                                <span class="award_name">金質獎</span>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/feature_02.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/feature_02.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/feature_02.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/feature_02.jpg">
+                                                    <img data-lazy="images/feature_02.jpg" class="cover">
+                                                    <noscript><img src="images/feature_02.jpg"></noscript>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="award_intro">
+                                            <h3>Acer OJO 500 微軟混合實境頭戴式顯示器</h3>
+                                            <ul>
+                                                <li>製造商：宏碁股份有限公司</li>
+                                                <li>設計公司：宏碁股份有限公司</li>
+                                            </ul>
+                                            <p>Acer OJO 500 是所有微軟混合實境頭戴式顯示器和虛擬實境頭戴式顯示器之中，首款同時採用可拆式設計、內建專利導音管技術，以及採用軟體技術輔助瞳距 （IPD） 調整的裝置。獨特可拆式設計易於清潔，方便多人共用（包括家人分享，或是多人共用的商業環境）。商業用戶*可於前罩上客製化加印公司標誌或代表色，打造專屬的頭戴式顯示器。 Acer OJO 500即是觀察出市場中消費者在使用VR時，常常會有需另外加戴耳機、安裝設定困難等不便之處。宏碁以獨特專利將內建喇叭聲音直接導向使用者的雙耳外，創新技術也使安裝過程在短短10 分鐘內就可完成，輕鬆無痛體驗VR帶來的身歷其境感受。可搭配一對藍牙驅動的動作控制器，與頭戴式顯示器同步連結，並內建 Window 鍵、觸控板及搖桿，讓使用者能夠在混合實境的環境中與虛擬的數位物件互動，發揮沉浸式學習的功效。 *必須符合最低訂購量</p>
+                                            <p>產品資訊: <a href="https://www.acer.com/ac/en/US/content/acerdesign-ojo-500">https://www.acer.com/ac/en/US/content/acerdesign-ojo-500</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多精選產品</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 創新設計獎 award(無輪播)-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="award">
+                            <h2>2019 創新設計獎 得獎產品(無輪播)</h2>
+                            <div class="pic">
+                                <ul>
+                                    <li>
+                                        <div class="img-container">
+                                            <a href="#">
+                                                <span class="award_name">金質獎</span>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-srcset="images/feature_01.jpg">
+                                                    <source media="(min-width: 992px)" data-srcset="images/feature_01.jpg">
+                                                    <source media="(min-width: 576px)" data-srcset="images/feature_01.jpg">
+                                                    <source media="(max-width: 575px)" data-srcset="images/feature_01.jpg">
+                                                    <img data-src="images/feature_01.jpg" class="lazy">
+                                                    <noscript><img src="images/feature_01.jpg"></noscript>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="award_intro">
+                                            <h3>TCR 爬坡型公路競賽用車</h3>
+                                            <ul>
+                                                <li>製造商：巨大機械工業股份有限公司</li>
+                                            </ul>
+                                            <p>急縱陡坡，急切入彎，更輕量更強騎乘效率，經典傳奇的TCR是你的全能競賽戰駒。多年以來在專業級比賽中屢屢勝出的 TCR Advanced SL，是無數個專業自行車選手的最佳選擇。全手工打造的碳纖維複合材質，全面優化的壓縮幾何設計、OverDrive 2 加大車首強化設計、MegaDrive 加大管件強化設計以及 PowerCore 整合式五通下叉動力傳導設計，達到輕量與剛性最完美的平衡，多功整合的一體式座桿，不僅節省了45g的重量更提升了騎乘品質及騎乘的路感，讓動力的傳輸更為直接。長距離、高難度、有著長陡坡與急彎的賽事，TCR 都是全能型選手心中唯一的選擇。</p>
+                                            <p>產品資訊: <a href="https://www.giantcyclingworld.com/bike_brand.php?id=20032620">https://www.giantcyclingworld.com/bike_brand.php?id=20032620</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-container">
+                                            <a href="#">
+                                                <span class="award_name">金質獎</span>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-srcset="images/feature_02.jpg">
+                                                    <source media="(min-width: 992px)" data-srcset="images/feature_02.jpg">
+                                                    <source media="(min-width: 576px)" data-srcset="images/feature_02.jpg">
+                                                    <source media="(max-width: 575px)" data-srcset="images/feature_02.jpg">
+                                                    <img data-src="images/feature_02.jpg" class="lazy">
+                                                    <noscript><img src="images/feature_02.jpg"></noscript>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="award_intro">
+                                            <h3>Acer OJO 500 微軟混合實境頭戴式顯示器</h3>
+                                            <ul>
+                                                <li>製造商：宏碁股份有限公司</li>
+                                                <li>設計公司：宏碁股份有限公司</li>
+                                            </ul>
+                                            <p>Acer OJO 500 是所有微軟混合實境頭戴式顯示器和虛擬實境頭戴式顯示器之中，首款同時採用可拆式設計、內建專利導音管技術，以及採用軟體技術輔助瞳距 （IPD） 調整的裝置。獨特可拆式設計易於清潔，方便多人共用（包括家人分享，或是多人共用的商業環境）。商業用戶*可於前罩上客製化加印公司標誌或代表色，打造專屬的頭戴式顯示器。 Acer OJO 500即是觀察出市場中消費者在使用VR時，常常會有需另外加戴耳機、安裝設定困難等不便之處。宏碁以獨特專利將內建喇叭聲音直接導向使用者的雙耳外，創新技術也使安裝過程在短短10 分鐘內就可完成，輕鬆無痛體驗VR帶來的身歷其境感受。可搭配一對藍牙驅動的動作控制器，與頭戴式顯示器同步連結，並內建 Window 鍵、觸控板及搖桿，讓使用者能夠在混合實境的環境中與虛擬的數位物件互動，發揮沉浸式學習的功效。 *必須符合最低訂購量</p>
+                                            <p>產品資訊: <a href="https://www.acer.com/ac/en/US/content/acerdesign-ojo-500">https://www.acer.com/ac/en/US/content/acerdesign-ojo-500</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多精選產品</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 精選產品 feature-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="feature">
+                            <h2>精選產品(預設輪播)</h2>
+                            <div class="pic slider">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/feature_01.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/feature_01.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/feature_01.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/feature_01.jpg">
+                                                    <img data-lazy="images/feature_01.jpg" class="cover">
+                                                    <noscript><img src="images/feature_01.jpg"></noscript>
+                                                </picture>
+                                            </div>
+                                            <div class="caption">
+                                                <span class="title">巨大機械工業股份有限公司</span>
+                                                <p>產品描述</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/feature_02.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/feature_02.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/feature_02.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/feature_02.jpg">
+                                                    <img data-lazy="images/feature_02.jpg" class="cover">
+                                                    <noscript><img src="images/feature_02.jpg"></noscript>
+                                                </picture>
+                                            </div>
+                                            <div class="caption">
+                                                <span class="title">巨大機械工業股份有限公司</span>
+                                                <p>產品描述</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/feature_03.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/feature_03.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/feature_03.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/feature_03.jpg">
+                                                    <img data-lazy="images/feature_03.jpg" class="cover">
+                                                    <noscript><img src="images/feature_03.jpg"></noscript>
+                                                </picture>
+                                            </div>
+                                            <div class="caption">
+                                                <span class="title">巨大機械工業股份有限公司</span>
+                                                <p>產品描述</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/feature_04.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/feature_04.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/feature_04.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/feature_04.jpg">
+                                                    <img data-lazy="images/feature_04.jpg" class="cover">
+                                                    <noscript><img src="images/feature_04.jpg"></noscript>
+                                                </picture>
+                                            </div>
+                                            <div class="caption">
+                                                <span class="title">巨大機械工業股份有限公司</span>
+                                                <p>產品描述</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/feature_05.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/feature_05.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/feature_05.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/feature_05.jpg">
+                                                    <img data-lazy="images/feature_05.jpg" class="cover">
+                                                    <noscript><img src="images/feature_05.jpg"></noscript>
+                                                </picture>
+                                            </div>
+                                            <div class="caption">
+                                                <span class="title">巨大機械工業股份有限公司</span>
+                                                <p>產品描述</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多精選產品</a>
+                                </div>
+                            </div>
+                            <div class="feature_intro">
+                                <p>今年與台北國際體育用品展（TaiSPO）共同展出，預計吸引1,250家廠商參與，使用4,500個攤位，打造亞洲最完整的運動健身供應鏈展會平台</p>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多精選產品</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 產品型錄 product(無輪播)-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="product">
+                            <h2>產品型錄(無輪播)</h2>
+                            <div class="pic">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_01.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_01.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_01.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_01.jpg">
+                                                <img data-src="images/product_01.jpg" class="lazy">
+                                                <noscript><img src="images/product_01.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱產品名稱產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_02.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_02.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_02.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_02.jpg">
+                                                <img data-src="images/product_02.jpg" class="lazy">
+                                                <noscript><img src="images/product_02.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_03.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_03.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_03.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_03.jpg">
+                                                <img data-src="images/product_03.jpg" class="lazy">
+                                                <noscript><img src="images/product_03.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_04.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_04.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_04.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_04.jpg">
+                                                <img data-src="images/product_04.jpg" class="lazy">
+                                                <noscript><img src="images/product_04.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_05.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_05.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_05.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_05.jpg">
+                                                <img data-src="images/product_05.jpg" class="lazy">
+                                                <noscript><img src="images/product_05.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_06.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_06.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_06.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_06.jpg">
+                                                <img data-src="images/product_06.jpg" class="lazy">
+                                                <noscript><img src="images/product_06.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_07.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_07.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_07.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_07.jpg">
+                                                <img data-src="images/product_07.jpg" class="lazy">
+                                                <noscript><img src="images/product_07.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_08.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_08.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_08.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_08.jpg">
+                                                <img data-src="images/product_08.jpg" class="lazy">
+                                                <noscript><img src="images/product_08.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_09.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_09.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_09.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_09.jpg">
+                                                <img data-src="images/product_09.jpg" class="lazy">
+                                                <noscript><img src="images/product_09.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_10.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_10.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_10.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_10.jpg">
+                                                <img data-src="images/product_10.jpg" class="lazy">
+                                                <noscript><img src="images/product_10.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多產品</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <h2>產品型錄(無輪播)</h2>
+                            <div class="pic">
+                                <ul class="row-3">
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_01.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_01.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_01.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_01.jpg">
+                                                <img data-src="images/product_01.jpg" class="lazy">
+                                                <noscript><img src="images/product_01.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱產品名稱產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_02.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_02.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_02.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_02.jpg">
+                                                <img data-src="images/product_02.jpg" class="lazy">
+                                                <noscript><img src="images/product_02.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_03.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_03.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_03.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_03.jpg">
+                                                <img data-src="images/product_03.jpg" class="lazy">
+                                                <noscript><img src="images/product_03.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_04.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_04.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_04.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_04.jpg">
+                                                <img data-src="images/product_04.jpg" class="lazy">
+                                                <noscript><img src="images/product_04.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_05.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_05.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_05.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_05.jpg">
+                                                <img data-src="images/product_05.jpg" class="lazy">
+                                                <noscript><img src="images/product_05.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_06.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_06.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_06.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_06.jpg">
+                                                <img data-src="images/product_06.jpg" class="lazy">
+                                                <noscript><img src="images/product_06.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_07.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_07.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_07.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_07.jpg">
+                                                <img data-src="images/product_07.jpg" class="lazy">
+                                                <noscript><img src="images/product_07.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_08.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_08.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_08.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_08.jpg">
+                                                <img data-src="images/product_08.jpg" class="lazy">
+                                                <noscript><img src="images/product_08.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_09.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_09.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_09.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_09.jpg">
+                                                <img data-src="images/product_09.jpg" class="lazy">
+                                                <noscript><img src="images/product_09.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_10.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_10.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_10.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_10.jpg">
+                                                <img data-src="images/product_10.jpg" class="lazy">
+                                                <noscript><img src="images/product_10.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多產品</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <h2>產品型錄(無輪播)</h2>
+                            <div class="pic">
+                                <ul class="row-4">
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_01.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_01.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_01.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_01.jpg">
+                                                <img data-src="images/product_01.jpg" class="lazy">
+                                                <noscript><img src="images/product_01.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱產品名稱產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_02.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_02.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_02.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_02.jpg">
+                                                <img data-src="images/product_02.jpg" class="lazy">
+                                                <noscript><img src="images/product_02.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_03.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_03.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_03.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_03.jpg">
+                                                <img data-src="images/product_03.jpg" class="lazy">
+                                                <noscript><img src="images/product_03.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_04.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_04.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_04.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_04.jpg">
+                                                <img data-src="images/product_04.jpg" class="lazy">
+                                                <noscript><img src="images/product_04.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_05.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_05.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_05.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_05.jpg">
+                                                <img data-src="images/product_05.jpg" class="lazy">
+                                                <noscript><img src="images/product_05.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_06.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_06.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_06.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_06.jpg">
+                                                <img data-src="images/product_06.jpg" class="lazy">
+                                                <noscript><img src="images/product_06.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_07.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_07.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_07.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_07.jpg">
+                                                <img data-src="images/product_07.jpg" class="lazy">
+                                                <noscript><img src="images/product_07.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_08.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_08.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_08.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_08.jpg">
+                                                <img data-src="images/product_08.jpg" class="lazy">
+                                                <noscript><img src="images/product_08.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_09.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_09.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_09.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_09.jpg">
+                                                <img data-src="images/product_09.jpg" class="lazy">
+                                                <noscript><img src="images/product_09.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-srcset="images/product_10.jpg">
+                                                <source media="(min-width: 992px)" data-srcset="images/product_10.jpg">
+                                                <source media="(min-width: 576px)" data-srcset="images/product_10.jpg">
+                                                <source media="(max-width: 575px)" data-srcset="images/product_10.jpg">
+                                                <img data-src="images/product_10.jpg" class="lazy">
+                                                <noscript><img src="images/product_10.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多產品</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 產品型錄 product(有輪播)-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="product">
+                            <h2>產品型錄(有輪播)</h2>
+                            <div class="pic slider">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_01.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_01.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_01.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_01.jpg">
+                                                <img data-lazy="images/product_01.jpg" class="cover">
+                                                <noscript><img src="images/product_01.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱產品名稱產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_02.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_02.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_02.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_02.jpg">
+                                                <img data-lazy="images/product_02.jpg" class="cover">
+                                                <noscript><img src="images/product_02.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_03.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_03.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_03.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_03.jpg">
+                                                <img data-lazy="images/product_03.jpg" class="cover">
+                                                <noscript><img src="images/product_03.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_04.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_04.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_04.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_04.jpg">
+                                                <img data-lazy="images/product_04.jpg" class="cover">
+                                                <noscript><img src="images/product_04.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_05.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_05.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_05.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_05.jpg">
+                                                <img data-lazy="images/product_05.jpg" class="cover">
+                                                <noscript><img src="images/product_05.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_06.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_06.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_06.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_06.jpg">
+                                                <img data-lazy="images/product_06.jpg" class="cover">
+                                                <noscript><img src="images/product_06.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_07.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_07.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_07.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_07.jpg">
+                                                <img data-lazy="images/product_07.jpg" class="cover">
+                                                <noscript><img src="images/product_07.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_08.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_08.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_08.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_08.jpg">
+                                                <img data-lazy="images/product_08.jpg" class="cover">
+                                                <noscript><img src="images/product_08.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_09.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_09.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_09.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_09.jpg">
+                                                <img data-lazy="images/product_09.jpg" class="cover">
+                                                <noscript><img src="images/product_09.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/product_10.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/product_10.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/product_10.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/product_10.jpg">
+                                                <img data-lazy="images/product_10.jpg" class="cover">
+                                                <noscript><img src="images/product_10.jpg"></noscript>
+                                            </picture>
+                                            <span>產品名稱</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">更多產品</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 活動照片 photo-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="photo">
+                            <h2>活動照片(預設輪播)</h2>
+                            <div class="pic slider">
+                                <ul>
+                                    <li><a href="#" title="">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                <img data-lazy="images/pic_event01.jpg" class="cover">
+                                                <noscript><img src="images/pic_event01.jpg"></noscript>
+                                            </picture>
+                                            <span class="title">照片相簿標題</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                <img data-lazy="images/pic_event02.jpg" class="cover">
+                                                <noscript><img src="images/pic_event02.jpg"></noscript>
+                                            </picture>
+                                            <span class="title">照片相簿標題</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                <img data-lazy="images/pic_event03.jpg" class="cover">
+                                                <noscript><img src="images/pic_event03.jpg"></noscript>
+                                            </picture>
+                                            <span class="title">照片相簿標題</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#" title="">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                <img data-lazy="images/pic_event01.jpg" class="cover">
+                                                <noscript><img src="images/pic_event01.jpg"></noscript>
+                                            </picture>
+                                            <span class="title">照片相簿標題</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                <img data-lazy="images/pic_event02.jpg" class="cover">
+                                                <noscript><img src="images/pic_event02.jpg"></noscript>
+                                            </picture>
+                                            <span class="title">照片相簿標題</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <picture>
+                                                <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                <source media="(min-width: 992px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                <source media="(min-width: 576px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                <source media="(max-width: 575px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                <img data-lazy="images/pic_event03.jpg" class="cover">
+                                                <noscript><img src="images/pic_event03.jpg"></noscript>
+                                            </picture>
+                                            <span class="title">照片相簿標題</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 影音專區 video-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="video">
+                            <h2>影音專區(預設輪播)</h2>
+                            <div class="pic slider">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/pic_event01.jpg">
+                                                    <img data-lazy="images/pic_event01.jpg" class="cover">
+                                                    <noscript><img src="images/pic_event01.jpg"></noscript>
+                                                </picture>
+                                            </div>
+                                            <span class="title">影片標題(youtube)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/pic_event02.jpg">
+                                                    <img data-lazy="images/pic_event02.jpg" class="cover">
+                                                    <noscript><img src="images/pic_event02.jpg"></noscript>
+                                                </picture>
+                                            </div>
+                                            <span class="title">影片標題(youtube)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/pic_event03.jpg">
+                                                    <img data-lazy="images/pic_event03.jpg" class="cover">
+                                                    <noscript><img src="images/pic_event03.jpg"></noscript>
+                                                </picture>
+                                            </div>
+                                            <span class="title">影片標題(youtube)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/pic_industrynews01.jpg">
+                                                    <source media="(min-width: 992px)" data-lazy-srcset="images/pic_industrynews01.jpg">
+                                                    <source media="(min-width: 576px)" data-lazy-srcset="images/pic_industrynews01.jpg">
+                                                    <source media="(max-width: 575px)" data-lazy-srcset="images/pic_industrynews01.jpg">
+                                                    <img data-lazy="images/pic_industrynews01.jpg" class="cover">
+                                                    <noscript><img src="images/pic_industrynews01.jpg"></noscript>
+                                                </picture>
+                                            </div>
+                                            <span class="title">影片標題(youtube)</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- parallax -->
+            <section class="section col-12 full">
+                <div class="container">
+                    <div class="col">
+                        <div class="clip">
+                            <!-- 請把圖檔放置這個style bg路徑 -->
+                            <div class="parallax" style="background:url(images/parallax.jpg)">
+                                <div class="">
+                                    <h2>視差滾動區塊</h2>
+                                    <p>Outdoor Demo戶外試乘會，2020台北國際自行車展於南港展覽館一館南側戶外廊道及南港二館南側戶外平台設置展示空間及試乘設施，相關活動內容及實施辦法請參閱下列活動簡介。</p>
+                                    <p>參展報名請洽：劉翊辰先生 電話02-27255200分機2861；email: <a href="mailto:ethanliu@taitra.org.tw">ethanliu@taitra.org.tw</a></p>
+                                    <div class="btn_grp">
+                                        <a href="" class="more">我有興趣</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- IG hashtag-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="hashtag">
+                            <h2>hashtag</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 合作單位 ad(有輪播)-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="ad">
+                            <h2>合作單位(有輪播)</h2>
+                            <div class="pic slider">
+                                <ul>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad01.png" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad02.jpg" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad03.png" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad04.jpg" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad05.gif" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad06.gif" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad07.gif" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad08.gif" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad09.jpg" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad10.jpg" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad11.gif" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad12.gif" alt=""></a></li>
+                                    <li><a href="#" title=""><img data-lazy="images/pci_ad13.gif" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 合作單位 ad(無輪播)-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="ad">
+                            <h2>合作單位(無輪播)</h2>
+                            <div class="pic">
+                                <ul>
+                                    <li>
+                                        <a href="#" title="">
+                                            <img data-src="images/pci_ad01.png" alt="" class="lazy">
+                                        </a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad02.jpg" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad03.png" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad04.jpg" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad05.gif" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad06.gif" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad07.gif" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad08.gif" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad09.jpg" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad10.jpg" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad11.gif" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad12.gif" alt="" class="lazy"></a></li>
+                                    <li><a href="#" title=""><img data-src="images/pci_ad13.gif" alt="" class="lazy"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 交通指引 location-->
+            <section class="section col-12">
+                <div class="container">
+                    <div class="col">
+                        <div class="loaction">
+                            <h2>交通指引</h2>
+                            <div class="loaction_intro">
+                                <p>展期開放時間 : <time>
+                                        <span>10/10</span>
+                                        <span>09:00 - 18:00</span>
+                                    </time>
+                                    <time>
+                                        <span>10/10</span>
+                                        <span>09:00 - 18:00</span>
+                                    </time>
+                                </p>
+                                <ul>
+                                    <li>台北南港展覽館1館4樓 雲端展場</li>
+                                    <li>台北市南港區經貿二路1號</li>
+                                    <li>台北南港展覽館2館1樓、4樓</li>
+                                    <li>台北市南港區經貿二路2號</li>
+                                </ul>
+                                <div class="btn_grp">
+                                    <a href="#" class="more">如何前往</a>
+                                </div>
+                            </div>
+                            <div class="pic">
+                                <div class="google_map">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.3509720951665!2d121.6154013150067!3d25.056090783962023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aca807806ebf%3A0x511ac25ffabd8628!2zMTE15Y-w5YyX5biC5Y2X5riv5Y2A57aT6LK_5LqM6LevMeiZnw!5e0!3m2!1szh-TW!2stw!4v1559534113606!5m2!1szh-TW!2stw" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- fatfooter Start -->
+        <section class="fatfooter">
+            <div class="container">
+                <button type="button" name="收合" class="btn btn-fatfooter">收合</button>
+                <nav>
+                    <ul>
+                        <li><a href="#">展覽介紹</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">展覽介紹</a></li>
+                        <li><a href="#">主題活動</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層有連結</a>
+                                    <ul>
+                                        <li><a href="http://www.google.com">第三層選單有下層</a>
+                                            <ul>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="http://www.google.com">第三層選單有連結</a></li>
+                                        <li><a href="#">第三層選單</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">影音專區</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">參展登記</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">廠商總覽</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">檔案下載</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- fatfooter End -->
+        <!-- footer Start-->
+        <footer>
+            <div class="container">
+                <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                <!-- footer資訊模組 -->
+                <div class="footer_info">
+                    <ul class="footer_share">
+                        <li><a href="#"><img data-src="images/basic/icon_facebook.svg" alt="" class="lazy"></a></li>
+                        <li><a href="#"><img data-src="images/basic/icon_twitter.svg" alt="" class="lazy"></a></li>
+                        <li><a href="#"><img data-src="images/basic/icon_youtube.svg" alt="" class="lazy"></a></li>
+                        <li><a href="#"><img data-src="images/basic/icon_instagram.svg" alt="" class="lazy"></a></li>
+                        <li><a href="#"><img data-src="images/basic/icon_pinterest.svg" alt="" class="lazy"></a></li>
+                    </ul>
+                    <ul class="footer_link">
+                        <li><a href="#">服務條款和隱私權政策內容</a></li>
+                        <li><a href="#">免責聲明</a></li>
+                        <li><a href="#">國際貿易局廣告</a></li>
+                        <li><a href="#">聯絡我們</a></li>
+                    </ul>
+                    <p class="Copyright">中華民國對外貿易發展協會</p>
+                    <p>本網站主辦單位<a href="#"><img src="images/fp0000149.png" alt="">經濟部國際貿易局</a> 執行單位<a href="#"><img src="images/fp0000150.png" alt="">中華民國對外貿易發展協會</a></p>
+                </div>
+                <!-- APP下載模組 -->
+                <div class="footer_app">
+                    <h3>下載APP</h3>
+                    <div class="app_download">
+                        <a target="_blank" href="#" title="另開視窗">
+                            <img data-src="images/google_play.png" alt="" class="lazy">
+                        </a>
+                        <a target="_blank" href="#" title="另開視窗">
+                            <img data-src="images/app_store.png" alt="" class="lazy">
+                        </a>
+                    </div>
+                    <div class="qr_code">
+                        <a target="_blank" href="#" title="另開視窗">
+                            <img data-src="images/qrcode.jpg" alt="" class="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer End -->
+    </div>
+    <!-- 分眾按鈕 -->
+    <div class="fixed_bar">
+        <ul>
+            <li><a href="#"><img src="images/icon/icon_charactor_people.svg" alt="">民眾</a></li>
+            <li><a href="#"><img src="images/icon/icon_charactor_buyer.svg" alt="">買主</a></li>
+            <li><a href="#"><img src="images/icon/icon_charactor_media.svg" alt="">媒體</a></li>
+        </ul>
+    </div>
+    <!-- cookie -->
+    <div class="cookiesBox">
+        <div class="container">
+            <div class="text">
+                <h3>Cookies</h3>
+                <p>為了給您更好的服務，本網站使用cookies，如果您繼續使用我們將視為您同意接收所有台灣國際專業展網站的cookies。 <a href="http://www.khhalal.com.tw/zh-tw/privacy/info.html" target="_blank">請參閱新版隱私權政策內容 </a>
+                </p>
+            </div>
+            <a href="javascript:confirmCookie()" class="btn-OK">OK </a>
+        </div>
+    </div>
+    <!-- chat 文字聊天 -->
+    <!-- js 示範寫在此網頁最下面 -->
+    <a href="#" class="open_chat"><span>99+</span></a>
+    <div class="chat_window">
+        <div class="chat_function">
+            <a href="#" class="close"></a>
+            <div class="messenger">聊聊<span>(3)</span></div>
+            <a href="#" class="minimize"></a>
+        </div>
+        <div class="chat_body color_blue">
+            <div class="chat_inside">
+                <!-- 列表 -->
+                <div class="chat_list">
+                    <div class="chat_search">
+                        <div class="form_grp">
+                            <input name="username" type="text" placeholder="請輸入文字">
+                        </div>
+                        <select name="" id="selectSample">
+                            <option value="">選項一</option>
+                            <option value="">選項二</option>
+                            <option value="">選項三</option>
+                            <option value="">選項四</option>
+                        </select>
+                    </div>
+                    <!-- 聊天列表 -->
+                    <div class="list">
+                        <div class="annoucement">
+                            <a href="#" class="close_no_script"><i class="i_close"></i></a>
+                            <span>我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告我是公告</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <!-- 有上線的 - online; 被標記的 bookmark -->
+                                <a href="#" class="online bookmark">
+                                    <div class="pic">
+                                        <img src="images/completed_bg.jpg" alt="">
+                                        <div class="status"></div>
+                                    </div>
+                                    <div class="chat_summary">
+                                        <div class="name">A廠商廠商廠商廠商廠商廠商廠商廠商</div>
+                                        <!-- 最高99，沒有新消息就隱藏 -->
+                                        <div class="new_message add_message">99</div>
+                                        <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                        <time>2020/09/10</time>
+                                    </div>
+                                </a>
+                                <!-- ... 點開內容 -->
+                                <div class="more_function">
+                                    <a href="#" class="dot"></a>
+                                    <div class="window">
+                                        <ul>
+                                            <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                            <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                            <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 有上線的 - online; 被標記的 bookmark -->
+                                <a href="#" class="online bookmark">
+                                    <div class="pic">
+                                        <img src="images/completed_bg.jpg" alt="">
+                                        <div class="status"></div>
+                                    </div>
+                                    <div class="chat_summary">
+                                        <div class="name">A廠商</div>
+                                        <!-- 最高99，沒有新消息就隱藏 -->
+                                        <div class="new_message">99</div>
+                                        <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                        <time>2020/09/10</time>
+                                    </div>
+                                </a>
+                                <!-- ... 點開內容 -->
+                                <div class="more_function">
+                                    <a href="#" class="dot"></a>
+                                    <div class="window">
+                                        <ul>
+                                            <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                            <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                            <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 有上線的 - online; 被標記的 bookmark -->
+                                <a href="#" class="online">
+                                    <div class="pic">
+                                        <img src="images/completed_bg.jpg" alt="">
+                                        <div class="status"></div>
+                                    </div>
+                                    <div class="chat_summary">
+                                        <div class="name">A廠商</div>
+                                        <!-- 最高99，沒有新消息就隱藏 -->
+                                        <div class="new_message">99</div>
+                                        <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                        <time>2020/09/10</time>
+                                    </div>
+                                </a>
+                                <!-- ... 點開內容 -->
+                                <div class="more_function">
+                                    <a href="#" class="dot"></a>
+                                    <div class="window">
+                                        <ul>
+                                            <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                            <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                            <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 有上線的 - online; 被標記的 bookmark -->
+                                <a href="#" class="online bookmark">
+                                    <div class="pic">
+                                        <img src="images/completed_bg.jpg" alt="">
+                                        <div class="status"></div>
+                                    </div>
+                                    <div class="chat_summary">
+                                        <div class="name">A廠商</div>
+                                        <!-- 最高99，沒有新消息就隱藏 -->
+                                        <div class="new_message">99</div>
+                                        <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                        <time>2020/09/10</time>
+                                    </div>
+                                </a>
+                                <!-- ... 點開內容 -->
+                                <div class="more_function">
+                                    <a href="#" class="dot"></a>
+                                    <div class="window">
+                                        <ul>
+                                            <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                            <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                            <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 有上線的 - online; 被標記的 bookmark -->
+                                <a href="#" class="online bookmark">
+                                    <div class="pic">
+                                        <img src="images/completed_bg.jpg" alt="">
+                                        <div class="status"></div>
+                                    </div>
+                                    <div class="chat_summary">
+                                        <div class="name">A廠商</div>
+                                        <!-- 最高99，沒有新消息就隱藏 -->
+                                        <div class="new_message">99</div>
+                                        <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                        <time>2020/09/10</time>
+                                    </div>
+                                </a>
+                                <!-- ... 點開內容 -->
+                                <div class="more_function">
+                                    <a href="#" class="dot"></a>
+                                    <div class="window">
+                                        <ul>
+                                            <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                            <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                            <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 有上線的 - online; 被標記的 bookmark -->
+                                <a href="#" class="online bookmark">
+                                    <div class="pic">
+                                        <img src="images/completed_bg.jpg" alt="">
+                                        <div class="status"></div>
+                                    </div>
+                                    <div class="chat_summary">
+                                        <div class="name">A廠商</div>
+                                        <!-- 最高99，沒有新消息就隱藏 -->
+                                        <div class="new_message">99</div>
+                                        <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                        <time>2020/09/10</time>
+                                    </div>
+                                </a>
+                                <!-- ... 點開內容 -->
+                                <div class="more_function">
+                                    <a href="#" class="dot"></a>
+                                    <div class="window">
+                                        <ul>
+                                            <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                            <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                            <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 沒上線的 - online; 被標記的 bookmark -->
+                                <a href="#" class="offline">
+                                    <div class="pic">
+                                        <img src="images/completed_bg.jpg" alt="">
+                                        <div class="status"></div>
+                                    </div>
+                                    <div class="chat_summary">
+                                        <div class="name">A廠商</div>
+                                        <!-- 最高99，沒有新消息就隱藏 -->
+                                        <div class="new_message">99</div>
+                                        <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                        <time>2020/09/10</time>
+                                    </div>
+                                </a>
+                                <!-- ... 點開內容 -->
+                                <div class="more_function">
+                                    <a href="#" class="dot"></a>
+                                    <div class="window">
+                                        <ul>
+                                            <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                            <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                            <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 沒上線的 - offline; 有被標記的 bookmark -->
+                                <a href="#" class="offline">
+                                    <div class="pic">
+                                        <img src="images/completed_bg.jpg" alt="">
+                                        <div class="status"></div>
+                                    </div>
+                                    <div class="chat_summary">
+                                        <div class="name">A廠商</div>
+                                        <!-- 最高99，沒有新消息就隱藏 -->
+                                        <div class="new_message">99</div>
+                                        <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                        <time>2020/09/10</time>
+                                    </div>
+                                </a>
+                                <!-- ... 點開內容 -->
+                                <div class="more_function">
+                                    <a href="#" class="dot"></a>
+                                    <div class="window">
+                                        <ul>
+                                            <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                            <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                            <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="offline">
+                                    <div class="pic">
+                                        <img src="images/completed_bg.jpg" alt="">
+                                        <div class="status"></div>
+                                    </div>
+                                    <div class="chat_summary">
+                                        <div class="name">A廠商</div>
+                                        <!-- 最高99，沒有新消息就隱藏 -->
+                                        <div class="new_message">99</div>
+                                        <div class="summary">近日接獲廠商反應，有詐騙公司打著本會各專業展之名義對廠商徵展、詢問「廠商名錄」更新需求或廣告宣傳，騙取廠商回傳同意書...</div>
+                                        <time>2020/09/10</time>
+                                    </div>
+                                </a>
+                                <!-- ... 點開內容 -->
+                                <div class="more_function">
+                                    <a href="#" class="dot"></a>
+                                    <div class="window">
+                                        <ul>
+                                            <li><a href="#"><i class="i_bookmark"></i>訊息標記</a></li>
+                                            <li><a href="#"><i class="i_read"></i>標記為已讀</a></li>
+                                            <li><a href="#"><i class="i_delete"></i>刪除對話</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- welcome 預設畫面 -->
+                <div class="chat_welcome">
+                    <div class="message">
+                        <span>歡迎使用聊天</span>
+                    </div>
+                </div>
+                <!-- 聊天內容 -->
+                <div class="chat_content">
+                    <a href="#" class="back"></a>
+                    <!-- 廠商資訊 -->
+                    <a href="#" class="information"><i class="i_information"></i></a>
+                    <!-- 視訊通話 -->
+                    <a href="#" class="video"><i class="i_videotalk"></i>視訊</a>
+                    <div class="title"> 某商家;某商家;某商家;某商家;某商家;某商家;某商家;某商家 </div>
+                    <div class="txt_content">
+                        <!-- 對話 -->
+                        <div class="txt_area">
+                            <div class="divider">以下未讀</div>
+                            <div class="txt right">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble">
+                                    <a href="#" target="blank">
+                                        <span class="chat_link_url">https://tts.portal.hyweb.com.tw/en/exhibitor/03145566552FA4DA6781639CBFC2274A/info.html</span>
+                                        <span class="chat_link_info">QQTEST 12O'CLOCK INC. <img alt="QQTEST 12O'CLOCK INC." src="images/completed_bg.jpg">
+                                            <span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <time id="READ-QQ202003000008-326">3/29/2021, 5:02:42 PM</time>
+                            </div>
+                            <!-- right是自己 -->
+                            <div class="txt right">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble"> 哈囉!!您好我想要請問！ </div>
+                                <time>2020/01/01 12:00:59</time>
+                            </div>
+                            <div class="txt left">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble">
+                                    <a href="#" target="blank">
+                                        <span class="chat_link_url">https://tts.portal.hyweb.com.tw/en/exhibitor/03145566552FA4DA6781639CBFC2274A/info.html</span>
+                                        <span class="chat_link_info">QQTEST 12O'CLOCK INC. <img alt="QQTEST 12O'CLOCK INC." src="images/completed_bg.jpg">
+                                            <span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <time id="READ-QQ202003000008-326">3/29/2021, 5:02:42 PM</time>
+                            </div>
+                            <!-- left是對方 -->
+                            <div class="txt left">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble">您好！很高興為您服務!!請問有什麼地方能為您效勞呢？</div>
+                                <time>2020/01/01 12:00:59</time>
+                            </div>
+                            <!-- right是自己 -->
+                            <div class="txt right">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble"> 哈囉!!您好我想要請問！ </div>
+                                <time>2020/01/01 12:00:59</time>
+                            </div>
+                            <!-- left是對方 -->
+                            <div class="txt left">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble">您好！很高興為您服務!!請問有什麼地方能為您效勞呢？</div>
+                                <time>2020/01/01 12:00:59</time>
+                            </div>
+                            <!-- right是自己 -->
+                            <div class="txt right">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble"> 哈囉!!您好我想要請問！ </div>
+                                <time>2020/01/01 12:00:59</time>
+                            </div>
+                            <!-- left是對方 -->
+                            <div class="txt left">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble">您好！很高興為您服務!!請問有什麼地方能為您效勞呢？</div>
+                                <time>2020/01/01 12:00:59</time>
+                            </div>
+                            <!-- right是自己 -->
+                            <div class="txt right">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble"> 哈囉!!您好我想要請問！ </div>
+                                <time>2020/01/01 12:00:59</time>
+                            </div>
+                            <!-- left是對方 -->
+                            <div class="txt left">
+                                <div class="pic">
+                                    <img src="images/completed_bg.jpg" alt="">
+                                </div>
+                                <div class="bubble">您好！很高興為您服務!!請問有什麼地方能為您效勞呢？</div>
+                                <time>2020/01/01 12:00:59</time>
+                            </div>
+                        </div>
+                        <!-- 輸入 -->
+                        <div class="type_area">
+                            <div class="form_grp">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="btn_grp">
+                                <button type="button" class="btn btn-orange">傳送</button>
+                                <button type="button" class="btn btn-green">翻譯</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 視訊 -->
+                    <div class="video_content">
+                        <div class="start_video">
+                            <span>Hyweb Inc. Ltd</span>
+                            <span>撥打中...</span>
+                            <a href="#">開始通話</a>
+                            <a href="#">拒絕通話</a>
+                        </div>
+                        <div class="camera_area">
+                            <img src="images/chat.jpg" alt="">
+                            <a href="#" class="enlarge"></a>
+                            <div class="my_camera">
+                                <img src="images/chat.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="camera_function">
+                            <a href="#" class="end_talk"></a>
+                            <a href="#" class="end_video"></a>
+                            <a href="#" class="end_audio"></a>
+                            <a href="#" class="reverse"></a>
+                            <a href="#" class="shrink"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- JQ -->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script>
+            $(document).ready(function() {
+                $('.chat_list').find('.list>ul>li>a').off().click(function(e) {
+                    $('.chat_content').stop().addClass('show');
+                    $('.chat_welcome').stop().addClass('hide');
+                    e.preventDefault();
+                });
+                $('.chat_list').find('.annoucement').find('a.close').off().click(function(e) {
+                    $(this).parents('.annoucement').hide();
+                    e.preventDefault();
+                });
+                $('.chat_content').find('a.back').off().click(function(e) {
+                    $('.chat_welcome').stop().removeClass('hide');
+                    $(this).parents('.chat_content').removeClass('show');
+                    e.preventDefault();
+                });
+                // 開啟morefunction
+                $('.chat_list').find('.list>ul>li').each(function(index, el) {
+                    $(this).find('.more_function a.dot').off().click(function(e) {
+                        $(this).siblings('.window').addClass('open');
+                        // $(this).parents('li').find('.window').removeClass('open');
+                        e.preventDefault();
+                    });
+                });
+                // 視窗消失
+                $(document).mouseup(function(e) {
+                    var target = e.target,
+                        container = $('.window');
+                    if ((!container.is(e.target) && container.has(e.target).length === 0)) {
+                        {
+                            container.removeClass('open');
+                        }
+                    }
+                });
+                // 打開視訊
+                $('.chat_content').find('.video').off().click(function(e) {
+                    $('.video_content').addClass('show');
+                    e.preventDefault();
+                });
+                // 關閉視訊
+                $('.camera_function').find('a.end_talk').click(function(e) {
+                    $('.video_content').removeClass('show');
+                    e.preventDefault();
+                });
+                // 開始通話關閉
+                $('.start_video').find('a').off().click(function(e) {
+                    $(this).parents('.start_video').addClass('hide');
+                    e.preventDefault();
+                });
+                //toogle video
+                $('.end_video').off().click(function(e) {
+                    $(this).toggleClass('open_video');
+                    e.preventDefault();
+                });
+                //toogle audio
+                $('.end_audio').off().click(function(e) {
+                    $(this).toggleClass('open_audio');
+                    e.preventDefault();
+                });
+                // 縮小
+                $('.shrink').off().click(function(event) {
+                    $('.video_content').addClass('shrink');
+                    e.preventDefault();
+                });
+                // 放大
+                $('.enlarge').off().click(function(event) {
+                    $('.video_content').removeAttr('style').removeClass('shrink');
+                    e.preventDefault();
+                });
+            });
+            </script>
+</body>
+</div>
+<!-- gotoTop -->
+<a href="#" class="scrollToTop">回頁首</a>
+<!-- JQ -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- plugin js -->
+<script src="vendor/jquery.easing.min.js"></script>
+<script src="vendor/slick/slick.min.js "></script>
+<script src="vendor/slick/slick-lightbox.js "></script>
+<script src="vendor/lazyload/lazyload.min.js"></script>
+<script src="vendor/picturefill/picturefill.min.js"></script>
+<!-- hyUI -->
+<script src="js/hyui.js"></script>
+<!-- 客製js -->
+<script src="js/customize.js"></script>
+<!-- 文字聊天視窗開關-->
+<script>
+</script>
+</body>
+
+</html>

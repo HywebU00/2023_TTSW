@@ -1,0 +1,93 @@
+ /* sitemap */
+ .sitemap {
+     margin: 0px auto 1em;
+     @extend %clearfix;
+     .accesskeyDefine {
+         padding: 1em 2em;
+         background: #EEE;
+         @include border-radius(6px);
+     }
+ }
+ $sitemapLength : 4;
+ $sitemapWidth: calc(100% / $sitemapLength);
+ .cascading {
+     @include gutter;
+     @include box-sizing;
+     ul {
+         @include li-reset;
+     }
+     li {
+         line-height: 1.5;
+         width: $sitemapWidth;
+         display: inline-block;
+         vertical-align: top;
+         margin: 0 -5px 1em 0; // margin-right:改為負5;
+         @include box-sizing;
+         padding: 0px .5em;
+         a {
+             margin: .5em 0;
+             color: #222;
+             padding: .5em;
+             display: block;
+             font-size: 1em;
+             font-weight: bold;
+             border-bottom: 2px solid $primaryColor;
+             &:hover,
+             &:focus {
+                 color: $primaryColor !important;
+                 text-decoration: none;
+             }
+         }
+         ul {
+             padding-left: 1em;
+             li {
+                 width: 100%;
+                 display: block;
+                 margin-bottom: 0;
+                 padding: 0;
+                 a {
+                     display: block;
+                     font-size: .875em;
+                     padding: .2em 0;
+                     border-bottom: 1px dotted #ccc;
+                     background-color: transparent;
+                     font-weight: normal;
+                 }
+             }
+         }
+     }
+     @include screen('mobile') {
+         width: 100%;
+         margin: 0px auto;
+         @include gutter(0);
+         li {
+             width: 100%;
+             ul {
+                padding-left: .5em;
+                 li {
+                     display: inline-block;
+                     width: auto;
+                     margin-right: .5em;
+                     border-bottom: none;
+                     vertical-align: top;
+                     a {
+                        margin: 0;
+                         &:after {
+                            font-size: .813em;
+                             content: ",";
+                             display: inline-block;
+                             margin-left: .4em;
+                         }
+                     }
+                     &:last-child {
+                         a {
+                             &:after {
+                                 content: "";
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
