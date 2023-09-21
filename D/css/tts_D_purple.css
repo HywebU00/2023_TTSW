@@ -12845,6 +12845,14 @@ h2.title:after {
      object-fit: contain;
 }
 
+.kv {
+  z-index: 9;
+  overflow: visible !important;
+}
+.kv .col {
+  overflow: visible !important;
+}
+
 .mp_search {
   padding: 1em;
   background: #7f50b4;
@@ -12872,7 +12880,70 @@ h2.title:after {
   border-radius: 0;
   border: none;
 }
-.mp_search button {
+.mp_search .dropdown-content {
+  display: none;
+}
+.mp_search .form_grp {
+  height: 39px;
+}
+.mp_search .form_grp.cate {
+  width: 30%;
+  margin: 0 5px 0 0;
+  position: relative;
+}
+.mp_search .form_grp.cate .dropdown-content {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+}
+.mp_search .form_grp.cate .dropdown-content ul {
+  margin: 0;
+  padding: 0;
+}
+.mp_search .form_grp.cate .dropdown-content ul a {
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid #efefef;
+}
+.mp_search .form_grp.cate .dropdown-content ul a:hover {
+  color: #fff;
+  background: #7f50b4;
+}
+.mp_search .form_grp.text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.mp_search .btn {
+  width: 100%;
+  height: 39px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.6em 1em 0.6em 0.4em;
+  margin: 0 !important;
+  border-radius: 0;
+  border: none !important;
+  background: none;
+  background: #fff;
+  text-align: left;
+  font-size: 0.938em;
+  position: relative;
+}
+.mp_search .btn::after {
+  position: absolute;
+  content: "";
+  top: 0.3em;
+  right: 0;
+  background: url(../images/basic/icon_select_arrow.svg) no-repeat right 0.5em;
+  background-size: 20px;
+  width: 20px;
+  height: 24px;
+  opacity: 0.5;
+}
+.mp_search button[type=submit] {
   height: 40px;
   padding: 10px 20px;
   margin: 0 0 0 10px;
@@ -12889,10 +12960,10 @@ h2.title:after {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-.mp_search button:hover {
+.mp_search button[type=submit]:hover {
   border: none !important;
 }
-.mp_search button::after {
+.mp_search button[type=submit]::after {
   width: 16px;
   height: 16px;
   background: url(../images/basic/icon_search_white.png) no-repeat center center;

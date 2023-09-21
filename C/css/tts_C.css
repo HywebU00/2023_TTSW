@@ -1449,7 +1449,7 @@ select::-ms-expand {
   margin: 0.5em;
 }
 .form_grid .form_grp {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #DDD;
   overflow: hidden;
   padding: 0.5em 0;
 }
@@ -1673,7 +1673,7 @@ button,
 input[type=button] {
   background-color: #00a5bd;
   border: 1px solid #008fa3;
-  color: #fff;
+  color: #FFF;
   text-shadow: 1px 1px 1px RGBA(0, 0, 0, 0.3);
   border-radius: 0.4em;
   background-clip: padding-box;
@@ -1702,7 +1702,7 @@ input[type=button].active {
 input[type=submit] {
   background-color: #00a5bd;
   border: 1px solid #008fa3;
-  color: #fff;
+  color: #FFF;
   text-shadow: 1px 1px 1px RGBA(0, 0, 0, 0.3);
   border-radius: 0.4em;
   background-clip: padding-box;
@@ -1784,7 +1784,7 @@ select:-moz-focusring {
 input[type=reset] {
   background-color: #999999;
   border: 1px solid #8c8c8c;
-  color: #fff;
+  color: #FFF;
   text-shadow: 1px 1px 1px RGBA(0, 0, 0, 0.3);
   border-radius: 0.4em;
   background-clip: padding-box;
@@ -1881,7 +1881,7 @@ input[disable]:focus {
   right: 3px;
   background-color: #00a5bd;
   border: 1px solid #008fa3;
-  color: #fff;
+  color: #FFF;
   text-shadow: 1px 1px 1px RGBA(0, 0, 0, 0.3);
   border-radius: 0.4em;
   background-clip: padding-box;
@@ -1945,16 +1945,12 @@ abbr[title] {
   text-decoration: none;
 }
 
-.tel input[type=text]:first-child,
-.tel input[type=text]:nth-child(2),
-.tel select:first-child {
+.tel input[type=text]:first-child, .tel input[type=text]:nth-child(2), .tel select:first-child {
   width: 20% !important;
   max-width: 60px;
 }
 @media screen and (max-width: 575px) {
-  .tel input[type=text]:first-child,
-  .tel input[type=text]:nth-child(2),
-  .tel select:first-child {
+  .tel input[type=text]:first-child, .tel input[type=text]:nth-child(2), .tel select:first-child {
     width: 15% !important;
   }
 }
@@ -1969,7 +1965,7 @@ abbr[title] {
 
 .upload_area {
   min-height: 100px;
-  border: 1px solid #ccc;
+  border: 1px solid #CCC;
   border-radius: 5px;
   padding: 3.5em 0.5em 3em;
   position: relative;
@@ -1984,7 +1980,7 @@ abbr[title] {
   bottom: 0.2em;
   left: 1em;
   font-size: 0.813em;
-  color: #bbb;
+  color: #BBB;
   margin: 0;
   line-height: 1.35em;
 }
@@ -2001,14 +1997,14 @@ abbr[title] {
   margin: 0px 0 0.5em;
   border-radius: 4px;
   padding: 0.5em 140px 0.5em 3.5em;
-  background: #f1f1f1;
+  background: #F1F1F1;
   position: relative;
 }
 .upload_area .file > span {
   font-size: 0.938em;
 }
 .upload_area .file > span em {
-  color: #aaa;
+  color: #AAA;
   font-size: 12px;
   font-style: normal;
   margin-left: 0.5em;
@@ -2030,7 +2026,7 @@ abbr[title] {
   border-radius: 4px;
 }
 .upload_area .file.notice_error {
-  background: #ffd2d2;
+  background: #FFD2D2;
   border-left: none;
 }
 .upload_area .file.notice_error .pic img {
@@ -2059,7 +2055,7 @@ abbr[title] {
 .upload_area .file .progress_bar {
   position: absolute;
   bottom: 0.2em;
-  background: #ddd;
+  background: #DDD;
   border-radius: 3px;
   height: 6px;
   width: 100px;
@@ -6102,7 +6098,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   z-index: 9999;
   height: 200px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to bottom, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(top, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
 }
 @media screen and (max-width: 991px) {
   .header {
@@ -11466,7 +11462,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   white-space: nowrap;
   text-overflow: ellipsis;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0.95)));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 70%);
+  background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 70%);
 }
 .main .photo li a:before {
   content: "";
@@ -12765,7 +12761,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
     left: 0;
     z-index: 2;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(249, 249, 249, 0)), color-stop(28%, rgb(249, 249, 249)), color-stop(99%, rgb(249, 249, 249)), to(rgb(249, 249, 249)));
-    background: linear-gradient(to bottom, rgba(249, 249, 249, 0) 0%, rgb(249, 249, 249) 28%, rgb(249, 249, 249) 99%, rgb(249, 249, 249) 100%);
+    background: linear-gradient(top, rgba(249, 249, 249, 0) 0%, rgb(249, 249, 249) 28%, rgb(249, 249, 249) 99%, rgb(249, 249, 249) 100%);
   }
 }
 .leftmenu .innovation_sub {

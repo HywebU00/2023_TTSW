@@ -3243,6 +3243,14 @@
   }
 }
 
+.kv {
+  z-index: 9;
+  overflow: visible !important;
+  .col {
+    overflow: visible !important;
+  }
+}
+
 .mp_search {
   padding: 1em;
   background: darken($primaryColor, 0);
@@ -3261,7 +3269,67 @@
     border-radius: 0;
     border: none;
   }
-  button {
+  .dropdown-content {
+    display: none;
+  }
+  .form_grp {
+    height: 39px;
+    &.cate {
+      width: 30%;
+      margin: 0 5px 0 0;
+      position: relative;
+      .dropdown-content {
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 9;
+        ul {
+          margin: 0;
+          padding: 0;
+          a {
+            display: block;
+            padding: 10px 20px;
+            border-bottom: 1px solid #efefef;
+            &:hover {
+              color: #fff;
+              background: darken($My_primaryColor, 0);
+            }
+          }
+        }
+      }
+    }
+    &.text {
+      flex-grow: 1;
+    }
+  }
+  .btn {
+    width: 100%;
+    height: 39px;
+    box-sizing: border-box;
+    padding: 0.6em 1em 0.6em 0.4em;
+    margin: 0 !important;
+    border-radius: 0;
+    border: none !important;
+    background: none;
+    background: #fff;
+    text-align: left;
+    font-size: 0.938em;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0.3em;
+      right: 0;
+      background: url(../images/basic/icon_select_arrow.svg) no-repeat right 0.5em;
+      background-size: 20px;
+      width: 20px;
+      height: 24px;
+      opacity: 0.5;
+    }
+  }
+  button[type='submit'] {
     height: 40px;
     padding: 10px 20px;
     margin: 0 0 0 10px;
