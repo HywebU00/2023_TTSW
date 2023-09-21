@@ -322,6 +322,7 @@
     @include screen('mobile') {
       border: none;
       margin-bottom: 0.5em;
+      flex-direction: column;
     }
     &:before {
       position: absolute;
@@ -350,10 +351,9 @@
       background: $My_primaryColor;
       flex-shrink: 0;
       padding: 1em;
-      @include screen('xs_mobile') {
+      @include screen('mobile') {
         width: 100%;
         float: none;
-        display: block;
       }
       span {
         display: block;
@@ -402,6 +402,9 @@
         @include screen('tablet') {
           font-size: 1.25em;
         }
+        @include screen('mobile') {
+          font-size: 1.1em;
+        }
         &:after {
           height: 1em;
           content: '';
@@ -419,6 +422,9 @@
         @include screen('tablet') {
           font-size: 1.25em;
         }
+        @include screen('mobile') {
+          font-size: 1.1em;
+        }
       }
     }
     .location {
@@ -431,6 +437,9 @@
       justify-content: center;
       @extend %clearfix;
       @include gutter;
+      @include screen('mobile') {
+        padding: 20px;
+      }
       ul {
         @include li-reset;
         overflow: hidden;
@@ -612,7 +621,7 @@
         padding-top: 40px;
         padding-bottom: 50px;
         @include screen('mobile') {
-          height: auto;
+          height: 100px;
           padding-top: 0;
           padding-bottom: 0px;
         }
@@ -3245,6 +3254,7 @@
 
 .kv {
   z-index: 9;
+  margin: 0;
   overflow: visible !important;
   .col {
     overflow: visible !important;
@@ -3255,16 +3265,21 @@
   padding: 1em;
   background: darken($primaryColor, 0);
   color: #fff;
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 1170px;
   margin: 0 auto;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1170px) {
+    margin: 0 15px;
+  }
   @include screen('mobile') {
-    transform: translateY(0%);
+    flex-direction: column;
+    margin-bottom: -30px;
   }
   input {
+    height: 39px;
     margin: 0;
     border-radius: 0;
     border: none;
@@ -3273,11 +3288,13 @@
     display: none;
   }
   .form_grp {
-    height: 39px;
     &.cate {
       width: 30%;
       margin: 0 5px 0 0;
       position: relative;
+      @include screen('mobile') {
+        border-bottom: 1px solid #efefef;
+      }
       .dropdown-content {
         width: 100%;
         background: #fff;
@@ -3303,6 +3320,10 @@
     &.text {
       flex-grow: 1;
     }
+    @include screen('mobile') {
+      width: 100% !important;
+      margin: 0 !important;
+    }
   }
   .btn {
     width: 100%;
@@ -3327,6 +3348,9 @@
       width: 20px;
       height: 24px;
       opacity: 0.5;
+      @include screen('mobile') {
+        right: 10px;
+      }
     }
   }
   button[type='submit'] {
@@ -3340,6 +3364,20 @@
     display: flex;
     align-items: center;
     flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    @include screen('mobile') {
+      text-indent: -99999px;
+      width: 39px;
+      height: 39px;
+      padding: 0;
+      margin: 0 !important;
+      position: absolute;
+      min-width: 20px;
+      background: none;
+      right: 15px;
+      bottom: 15px;
+    }
     &:hover {
       border: none !important;
     }
@@ -3353,6 +3391,17 @@
       content: '';
       display: block;
       margin: 0 0 0 5px;
+      @include screen('mobile') {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        position: absolute;
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: invert(0.4);
+      }
     }
   }
 }

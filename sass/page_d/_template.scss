@@ -67,6 +67,11 @@ body {
   }
   & > .container .searchCtrl {
     background: none;
+    @include screen('tablet') {
+      &::before {
+        filter: invert(1);
+      }
+    }
   }
 }
 .language > a {

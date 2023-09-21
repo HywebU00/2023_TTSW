@@ -8857,6 +8857,12 @@ body * {
 .wrapper header > .container .searchCtrl {
   background: none;
 }
+@media screen and (max-width: 991px) {
+  .wrapper header > .container .searchCtrl::before {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+}
 
 .language > a {
   background: none;
@@ -9277,6 +9283,10 @@ h2.title:after {
   .main .ex_info {
     border: none;
     margin-bottom: 0.5em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .main .ex_info:before {
@@ -9319,11 +9329,10 @@ h2.title:after {
       flex-shrink: 0;
   padding: 1em;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .main .ex_info time {
     width: 100%;
     float: none;
-    display: block;
   }
 }
 .main .ex_info time span {
@@ -9379,6 +9388,11 @@ h2.title:after {
     font-size: 1.25em;
   }
 }
+@media screen and (max-width: 767px) {
+  .main .ex_info time .month {
+    font-size: 1.1em;
+  }
+}
 .main .ex_info time .month:after {
   height: 1em;
   content: "";
@@ -9397,6 +9411,11 @@ h2.title:after {
 @media screen and (max-width: 991px) {
   .main .ex_info time .day {
     font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .ex_info time .day {
+    font-size: 1.1em;
   }
 }
 .main .ex_info .location {
@@ -9420,6 +9439,11 @@ h2.title:after {
   padding-right: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .main .ex_info .location {
+    padding: 20px;
+  }
 }
 .main .ex_info .location ul {
   margin: 0;
@@ -9635,7 +9659,7 @@ h2.title:after {
 }
 @media screen and (max-width: 767px) {
   .main .mp_slider .img-container .caption {
-    height: auto;
+    height: 100px;
     padding-top: 0;
     padding-bottom: 0px;
   }
@@ -12847,6 +12871,7 @@ h2.title:after {
 
 .kv {
   z-index: 9;
+  margin: 0;
   overflow: visible !important;
 }
 .kv .col {
@@ -12857,7 +12882,7 @@ h2.title:after {
   padding: 1em;
   background: #047cc3;
   color: #fff;
-  width: 100%;
+  width: calc(100% - 30px);
   max-width: 1170px;
   margin: 0 auto;
   -webkit-transform: translateY(-50%);
@@ -12869,10 +12894,19 @@ h2.title:after {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 1170px) {
+  .mp_search {
+    margin: 0 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mp_search {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .mp_search input {
