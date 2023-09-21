@@ -3354,54 +3354,35 @@
     }
   }
   button[type='submit'] {
-    height: 40px;
-    padding: 10px 20px;
-    margin: 0 0 0 10px;
-    line-height: 20px;
-    border-radius: 0;
     border: none;
-    background: #000;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
     overflow: hidden;
     position: relative;
-    @include screen('mobile') {
-      text-indent: -99999px;
-      width: 39px;
-      height: 39px;
-      padding: 0;
-      margin: 0 !important;
-      position: absolute;
-      min-width: 20px;
-      background: none;
-      right: 15px;
-      bottom: 15px;
-    }
+    text-indent: -99999px;
+    width: 39px;
+    height: 39px;
+    padding: 0;
+    margin: 0 !important;
+    position: absolute;
+    min-width: 20px;
+    background: none;
+    right: 15px;
+    bottom: 15px;
     &:hover {
       border: none !important;
     }
     &::after {
-      width: 16px;
-      height: 16px;
       background: url(../images/basic/icon_search_white.png) no-repeat center center;
-      background-size: 16px;
-      opacity: 1;
-      flex-shrink: 0;
       content: '';
       display: block;
-      margin: 0 0 0 5px;
-      @include screen('mobile') {
-        width: 20px;
-        height: 20px;
-        background-size: contain;
-        position: absolute;
-        margin: 0;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        filter: invert(0.4);
-      }
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      position: absolute;
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: invert(0.4);
     }
   }
 }
