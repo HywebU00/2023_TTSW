@@ -3252,28 +3252,25 @@
     }
   }
 }
-.main section {
-  isolation: isolate;
+
+.full .col,
+.col-12-full .col {
+  padding-left: 0;
+  padding-right: 0;
 }
-section.col-12.full {
-  overflow: visible;
-  margin: 0;
-  position: relative;
-  z-index: 9;
-  .col {
+
+.mp section {
+  isolation: isolate;
+  &:nth-of-type(1) {
+    margin: 0;
     overflow: visible;
+    position: relative;
+    z-index: 9;
+    .col {
+      overflow: visible;
+    }
   }
 }
-
-// .kv {
-//   z-index: 9;
-//   margin: 0;
-//   overflow: visible !important;
-//   .col {
-//     overflow: visible !important;
-//   }
-// }
-
 .mp_search {
   padding: 1em;
   background: darken($primaryColor, 0);

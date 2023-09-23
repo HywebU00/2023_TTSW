@@ -12870,17 +12870,22 @@ h2.title:after {
      object-fit: contain;
 }
 
-.main section {
-  isolation: isolate;
+.full .col,
+.col-12-full .col {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-section.col-12.full {
-  overflow: visible;
+.mp section {
+  isolation: isolate;
+}
+.mp section:nth-of-type(1) {
   margin: 0;
+  overflow: visible;
   position: relative;
   z-index: 9;
 }
-section.col-12.full .col {
+.mp section:nth-of-type(1) .col {
   overflow: visible;
 }
 
