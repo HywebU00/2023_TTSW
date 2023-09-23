@@ -9433,6 +9433,7 @@ h2.title:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #fff;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -12869,9 +12870,15 @@ h2.title:after {
      object-fit: contain;
 }
 
+.main section {
+  isolation: isolate;
+}
+
 section.col-12.full {
   overflow: visible;
   margin: 0;
+  position: relative;
+  z-index: 9;
 }
 section.col-12.full .col {
   overflow: visible;
@@ -12921,6 +12928,8 @@ section.col-12.full .col {
   left: 0;
   z-index: 9;
   display: none;
+  -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 .mp_search .dropdown-content ul {
   margin: 0;

@@ -435,6 +435,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      background: #fff;
       @extend %clearfix;
       @include gutter;
       @include screen('mobile') {
@@ -3251,10 +3252,14 @@
     }
   }
 }
-
+.main section {
+  isolation: isolate;
+}
 section.col-12.full {
   overflow: visible;
   margin: 0;
+  position: relative;
+  z-index: 9;
   .col {
     overflow: visible;
   }
@@ -3300,6 +3305,7 @@ section.col-12.full {
     left: 0;
     z-index: 9;
     display: none;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
     ul {
       margin: 0;
       padding: 0;
