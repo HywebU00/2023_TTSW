@@ -10547,11 +10547,12 @@ h2.title:after {
 .main .event .item .event_intro p::before {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 14px;
+  width: 16px;
+  height: 18px;
   left: 0;
-  top: 3px;
-  background: url(../images/icon_location.svg) center no-repeat;
+  top: 2px;
+  background: url(../images/icon/icon_location.svg) center no-repeat;
+  background-size: contain;
 }
 .main .event .item a {
   color: #bc2769;
