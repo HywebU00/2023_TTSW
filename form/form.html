@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <form action="">
+      <h1 class="pageTitle">網站滿意度調查</h1>
+      <div class="description">請注意填寫的內容，不要提供......</div>
+      <ul>
+        <li class="required" role="group" aria-labelledby="radio-demo">
+          <div class="title">請問你是否滿意網站設計? （單選</div>
+          <div class="inlineGrp formContent" id="radio-demo">
+            <label><input type="radio" name="sampleRadio" value="" />是</label>
+            <label><input type="radio" name="sampleRadio" value="" />否</label>
+          </div>
+        </li>
+        <li class="required" role="group" aria-labelledby="checkbox-demo">
+          <div class="title">請問你是否滿意網站設計? （複選</div>
+          <div class="inlineGrp formContent" id="checkbox-demo">
+            <label><input type="checkbox" value="" />項目一</label>
+            <label><input type="checkbox" value="" />項目二</label>
+            <label><input type="checkbox" value="" />項目三</label>
+            <label><input type="checkbox" value="" />項目四</label>
+            <label><input type="checkbox" value="" />項目五</label>
+            <label><input type="checkbox" value="" />項目六</label>
+            <label><input type="checkbox" value="" />項目七</label>
+            <label><input type="checkbox" value="" />項目八</label>
+            <label><input type="checkbox" value="" />項目九</label>
+            <label><input type="checkbox" value="" />項目十</label>
+          </div>
+        </li>
+        <li class="required" role="group" aria-labelledby="checkbox-demo">
+          <div class="title">請問你是否滿意網站設計? （文字</div>
+          <div class="formContent" id="checkbox-demo">
+            <input type="text" />
+          </div>
+        </li>
+        <li class="required" role="group" aria-labelledby="checkbox-demo">
+          <div class="title">請問你是否滿意網站設計? （下拉選項</div>
+          <div class="formContent" id="checkbox-demo">
+            <select name="" id="">
+              <option value="">請選擇</option>
+              <option value="">選項一</option>
+              <option value="">選項二</option>
+              <option value="">選項三</option>
+              <option value="">選項四</option>
+            </select>
+          </div>
+        </li>
+        <li class="required" role="group" aria-labelledby="checkbox-demo">
+          <div class="title">請問你是否滿意網站設計? （文字區塊</div>
+          <div class="formContent" id="checkbox-demo">
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+          </div>
+        </li>
+      </ul>
+      <div class="description">填寫完畢，請.....</div>
+      <div class="codeBox">
+        驗證碼
+        <input type="text" />
+        <img src="code.png" alt="" />
+        <button type="button">重新填寫</button>
+      </div>
+      <div class="btnBox">
+        <button type="submit">送出表單</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+//-------------------------------------------------------------mixin-media-------//
+@mixin transition($elem: all, $i: 0.3, $type: ease) {
+  -webkit-transition: $elem #{$i}s $type;
+  -moz-transition: $elem #{$i}s $type;
+  -ms-transition: $elem #{$i}s $type;
+  -o-transition: $elem #{$i}s $type;
+  transition: $elem #{$i}s $type;
+}
+
+$screen-lg: 1440px !default; //電腦
+$screen-md: 1024px !default; //平板
+$screen-sm: 768px !default; //手機
+$screen-xs: 576px !default; //極小尺寸
+
+$screen-lg-max: (
+  $screen-lg - 1) !default;
+$screen-md-max: (
+  $screen-md - 1) !default;
+$screen-sm-max: (
+  $screen-sm - 1) !default;
+$screen-xs-max: (
+  $screen-xs - 1) !default;
+
+@mixin screen($size) {
+  $desktop: '(max-width: #{$screen-lg-max})';
+  $desktopMin: '(min-width: #{$screen-lg})';
+  $tablet: '(max-width: #{$screen-md-max})';
+  $tabletMin: '(min-width: #{$screen-md})';
+  $mobile: '(max-width: #{$screen-sm-max})';
+  $mobileMin: '(min-width: #{$screen-sm})';
+  $xs_mobile: '(max-width: #{$screen-xs-max})';
+  $xs_mobileMin: '(min-width: #{$screen-xs})';
+
+  @if $size==desktop {
+    @media screen and #{$desktop} {
+      @content;
+    }
+  }
+
+  @else if $size==desktopMin {
+    @media screen and #{$desktopMin} {
+      @content;
+    }
+  }
+
+  @else if $size==tablet {
+    @media screen and #{$tablet} {
+      @content;
+    }
+  }
+
+  @else if $size==tabletMin {
+    @media screen and #{$tabletMin} {
+      @content;
+    }
+  }
+
+  @else if $size==mobile {
+    @media screen and #{$mobile} {
+      @content;
+    }
+  }
+
+  @else if $size==mobileMin {
+    @media screen and #{$mobileMin} {
+      @content;
+    }
+  }
+
+  @else if $size==xs_mobile {
+    @media screen and #{$xs-mobile} {
+      @content;
+    }
+  }
+
+  @else if $size==xs_mobileMin {
+    @media screen and #{$xs-mobileMin} {
+      @content;
+    }
+  }
+
+  @else {
+    @media screen and #{$size} {
+      @content;
+    }
+  }
+}
+
+@mixin screenWidth($sizeWidth) {
+  $sizeWidthUse: '(max-width: #{$sizeWidth}px)';
+
+  @media screen and #{$sizeWidthUse} {
+    @content;
+  }
+}
+
+@mixin screenWidthMin($sizeWidth) {
+  $sizeWidthUse: '(min-width: #{$sizeWidth}px)';
+
+  @media screen and #{$sizeWidthUse} {
+    @content;
+  }
+}
+
+// css arrow
+@mixin cssArrow($arrowColor) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: $arrowColor transparent transparent transparent;
+}
+
+//px轉rem 使用方式 Rem(px) px直接輸入數字即可
+@function Rem($n: $mainFontSize) {
+  @return calc($n / $mainFontSize * 1rem
+);
+}
+
+// more
+
+//font-size
+//color
+//background
+//border
+//滑過背景
+//滑過color
+//滑過border
+
+@mixin innerPage {
+  position: relative;
+  // z-index: 0;
+  // &::before {
+  //   content: '';
+  //   inset: 0 0 30% 0;
+  //   display: block;
+  //   position: absolute;
+  //   z-index: -1;
+  //   background: #f3f2f3;
+  //   background: linear-gradient(to bottom, #f3f2f3 0%, #ffffff 100%);
+  // }
+}

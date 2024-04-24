@@ -1,0 +1,33 @@
+//-------------------------------------------------------------顏色---------//
+// 定義顏色 此顏色可自由變換
+$mainColor: #B7957B; //主色
+$secColor: #0099FF; //輔色
+$lightColor: #03CACF; //點綴
+$linkColor: #00ffff; //連結
+$importantColor: #e50012; //重要
+$mainFontColor: #08111f; //一般字的顏色
+$activeColor: #000;
+
+//-------------------------------------------------------------字型--------//
+
+// 字型設定
+$arial: Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$poppins: 'Poppins', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$barlow: 'Barlow', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$khula: 'Khula', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$anton: 'Anton', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$khula: 'Encode Sans Semi Condensed', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$opensans: 'Open Sans', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$titillium: 'Titillium Web', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$roboto: 'Roboto', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$calibri: 'calibri', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$montserrat: 'Montserrat', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$NotoSansTC: 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+$LibreBaskerville: 'Libre Baskerville', 'Noto Sans TC', Arial, '微軟正黑體', 'Microsoft JhengHei', '蘋果儷中黑', 'Apple LiGothic Medium', sans-serif;
+
+//-------------------------------------------------------------版面------//
+
+$mainFontSize: 18;
+
+$domWidth: 1230px;
+$innerPage: 1230px;
