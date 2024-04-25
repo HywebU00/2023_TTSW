@@ -230,7 +230,7 @@ template,
 }
 
 body {
-  background: #F6F8FF;
+  background: #d4dcf8;
 }
 
 a:focus,
@@ -258,6 +258,7 @@ select {
   border: none;
   padding: 10px 30px 10px 10px;
   font-size: 1rem;
+  border-bottom: 1px solid rgba(20, 87, 157, 0.5);
 }
 
 textarea {
@@ -314,10 +315,15 @@ form > ul > li.required .title::after {
 }
 form .pageTitle {
   text-align: center;
-  font-size: 1.4444444444rem;
+  font-size: 2.2222222222rem;
   font-weight: 500;
   margin-bottom: 30px;
   color: #14579D;
+}
+@media screen and (max-width: 768px) {
+  form .pageTitle {
+    font-size: 1.8888888889rem;
+  }
 }
 form .description {
   padding-bottom: 40px;

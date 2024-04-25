@@ -5,7 +5,7 @@
 @import './partials/normalize';
 
 body {
-  background: #F6F8FF;
+  background: #d4dcf8;
 }
 
 a,
@@ -34,6 +34,7 @@ select {
   border: none;
   padding: 10px 30px 10px 10px;
   font-size: Rem(18);
+  border-bottom: 1px solid rgba(#14579D, 0.5);
 }
 
 textarea {
@@ -98,10 +99,14 @@ form {
 
   .pageTitle {
     text-align: center;
-    font-size: Rem(26);
+    font-size: Rem(40);
     font-weight: 500;
     margin-bottom: 30px;
     color: #14579D;
+
+    @media screen and (max-width: 768px) {
+      font-size: Rem(34);
+    }
   }
 
   .description {
@@ -117,6 +122,10 @@ form {
     font-weight: 400;
     position: relative;
     z-index: 5;
+
+    // & + div:not(.formContent) {
+    //   padding: 20px 0px 10px;
+    // }
   }
 
   .formContent {
