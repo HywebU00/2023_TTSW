@@ -5,7 +5,7 @@
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/D/css" //此為輸出的路徑，可以自行更改
+      "savePath": "/css" //此為輸出的路徑，可以自行更改
     }
     // {
     //   "extensionName": ".css", //正式版副檔名為min.css
