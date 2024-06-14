@@ -152,12 +152,12 @@
             <tr>
               <td></td>
               <td style="color: blue">訂閱信件</td>
-              <td><a href="form/mail.html"></a></td>
+              <td><a href="mail.html"></a></td>
             </tr>
             <tr>
               <td></td>
               <td style="color: blue">訂閱信件-確認</td>
-              <td><a href="form/mail_check.html"></a></td>
+              <td><a href="mail_check.html"></a></td>
             </tr>
           </tbody>
         </table>
@@ -1264,7 +1264,7 @@
         $('tbody')
           .find('a')
           .each(function (index, el) {
-            var Link = $(this).attr('href').substring(2);
+            var Link = $(this).attr('href').substring();
             $(this).text(Link);
           });
         $('.module_table tbody')
