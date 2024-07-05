@@ -416,7 +416,7 @@ a.more {
         position: relative;
         width: 100%;
         height: 100%;
-        margin-right: calc($grid-gutter-width / 2);
+        //margin-right: calc($grid-gutter-width / 2);
         display: flex;
         flex: 1;
         justify-content: center;
@@ -2154,11 +2154,11 @@ a.more {
             z-index: -2;
         }
     }
-    .col-6-6{
-        .container {
-            max-width: 100%;
-        }
-    } 
+    // .col-6-6{
+    //     .container {
+    //         max-width: 100%;
+    //     }
+    // } 
 }
 //animation
 @keyframes fixed_bar {

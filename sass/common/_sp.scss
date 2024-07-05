@@ -3713,7 +3713,15 @@ form {
     }
 }
 .rcm_login{
+    display: flex;
+    @include screen('tablet') {
+        display: block;
+    }
     .rcm_exh, .rcm_prod{
+        width: 50%;
+        @include screen('tablet') {
+            width: 100%;
+        }
         .rcm_more{
             padding:0.5em 1.6em 0.5em 0;
             text-align: right;

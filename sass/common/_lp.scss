@@ -2983,18 +2983,12 @@ $companyWidth :calc($companyUL/$companyLength);
 }
 
 .control_panel {
-  padding: .5em .5em .3em;
-  border-bottom: 2px solid #ddd;
-  background: #F1F1F1;
-  overflow: hidden;
-  margin-bottom: .5em;
-  font-size: .938em;
-
   .compare {
     width: 100%;
     display: flex;
     gap: 10px;
     align-items: center;
+    padding-bottom: 0;
 
     span {
       font-weight: bold;
@@ -3046,13 +3040,21 @@ $companyWidth :calc($companyUL/$companyLength);
 
     label {
       float: left;
-      margin: .4em 1em 0 0;
+      margin: .4em 1em 0 1em;
     }
 
     .form_content {
       float: left;
     }
   }
+
+  padding: .5em .5em .3em;
+  border-bottom: 2px solid #ddd;
+  background: #F1F1F1;
+  overflow: hidden;
+  margin-bottom: .5em;
+  font-size: .938em;
+  display: block;
 
   .pagination {
     margin: 0 auto;
@@ -3073,12 +3075,6 @@ $companyWidth :calc($companyUL/$companyLength);
     float: left;
     margin-top: .5em;
   }
-
-  // .form_grp {
-  //   display: flex;
-  //   align-items: center;
-  //   gap: 5px;
-  // }
 
   .btn_grp {
     float: right;
@@ -3594,6 +3590,114 @@ form {
       top: 0.25em !important;
       left: -1.4em !important;
       line-height: 1em;
+    }
+  }
+}
+
+
+//2024新增
+.newTopNav {
+  max-width: 675px;
+  border-radius: 50px;
+  background: $secondaryColor;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  position: relative;
+
+  .slick-arrow {
+    top: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    transform: translateY(-50%);
+    background-size: 50%;
+    filter: invert(1);
+
+    &:hover {
+      background-color: transparent;
+      border: none !important;
+    }
+
+    &.slick-prev {
+      left: 0;
+    }
+
+    &.slick-next {
+      right: 0;
+    }
+  }
+
+  .listBox {
+    padding: 0;
+    // display: flex;
+    list-style: none;
+    // width: fit-content;
+    margin: 0 35px;
+
+    .item {
+      & + .item {
+        border-left: rgba(255, 255, 255, .75) 1px solid;
+      }
+
+      &.recommend {
+        button {
+          &::before {
+            background: url('../images/icon/icon_recommend.svg') no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+
+      &.history {
+        button {
+          &::before {
+            background: url('../images/icon/icon_history.svg') no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+
+      &.popular {
+        button {
+          &::before {
+            background: url('../images/icon/icon_popular.svg') no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+
+      &.everyone {
+        button {
+          &::before {
+            background: url('../images/icon/icon_everyone.svg') no-repeat center center;
+            background-size: contain;
+          }
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      border-radius: 0;
+      background: $secondaryColor;
+      border: none !important;
+      padding: 10px 30px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      &::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        flex-shrink: 0;
+      }
+
+      &:hover {
+        background: $primaryColor;
+      }
     }
   }
 }

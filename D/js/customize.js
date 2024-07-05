@@ -2250,8 +2250,9 @@ $(function () {
     });
   }
 
-  if ($('[data-fancybox]').index() > 0) {
-    //fancybox改按鈕位子
+  //fancybox改按鈕位子
+
+  if ($('[data-fancybox]').length > 0) {
     $('[data-fancybox]').fancybox({
       toolbar: false,
       smallBtn: true,
@@ -2263,7 +2264,9 @@ $(function () {
         /* attr:{scrolling:"no"} */
       },
     });
+  }
 
+  if ($('.fbximg').length > 0) {
     $('.fbximg').fancybox({
       toolbar: false,
       smallBtn: true,
@@ -2276,6 +2279,9 @@ $(function () {
       },
       afterLoad: function (instance, current) {},
     });
+  }
+
+  if ($('.fbximg360').length > 0) {
     $('.fbximg360').fancybox({
       toolbar: false,
       smallBtn: true,
@@ -2288,6 +2294,9 @@ $(function () {
       },
       afterLoad: function (instance, current) {},
     });
+  }
+
+  if ($('.fbximg720').length > 0) {
     $('.fbximg720').fancybox({
       toolbar: false,
       smallBtn: true,
@@ -2300,7 +2309,9 @@ $(function () {
       },
       afterLoad: function (instance, current) {},
     });
+  }
 
+  if ($('[data-fancybox="images"]').length > 0) {
     $('[data-fancybox="images"]').fancybox({
       toolbar: false,
       arrows: false,
@@ -2316,6 +2327,40 @@ $(function () {
       // current.height = current.height / pixelRatio;
       // }
       // }
+    });
+  }
+
+  // -------------------------------------------產品清單
+  if ($('.consultation').length > 0) {
+    $('.consultation .listBox').slick({
+      lazyLoad: 'ondemand',
+      dots: false,
+      arrows: true,
+      speed: 1000,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      speed: 1000,
+      focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     });
   }
 });
@@ -2936,6 +2981,34 @@ $(function () {
           },
         },
       ],
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  if ($('.comparePage').length > 0) {
+    let blockBtn = document.querySelectorAll('.contentTableTitle');
+
+    blockBtn.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        this.classList.toggle('open');
+        let nextSibling = btn.nextElementSibling;
+
+        if (nextSibling.style.display === 'none') {
+          nextSibling.style.display = 'block';
+        } else {
+          nextSibling.style.display = 'none';
+        }
+      });
+    });
+
+    const table = document.querySelectorAll('.mobileUse .table');
+    table.forEach((item, i) => {
+      item.addEventListener('scroll', function () {
+        table.forEach((next, i) => {
+          next.scrollLeft = this.scrollLeft;
+        });
+      });
     });
   }
 });
