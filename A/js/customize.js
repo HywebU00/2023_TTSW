@@ -2365,7 +2365,6 @@ $(function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-  console.log($('.comparePage'));
   if ($('.comparePage').length > 0) {
     console.log('a');
     let blockBtn = document.querySelectorAll('.contentTableTitle');
@@ -2400,7 +2399,8 @@ if ($('.newsBox .slider').length > 0) {
     slidesToShow: 1,
     variableWidth: true,
     infinite: false,
-    appendArrows: $(`.newsBox .tabBar`),
+    arrow: false,
+    // appendArrows: $(`.newsBox .tabBar`),
   });
 
   $('.newsBox .slider ul').slick({
@@ -2412,6 +2412,7 @@ if ($('.newsBox .slider').length > 0) {
     slidesToScroll: 1,
     autoplay: false,
     arrow: true,
+    infinite: false,
     slidesToScroll: 1,
     prevArrow: '<button class="slick-prev" id="test" aria-label="Previous" type="button" title="Previous"><svg><use xlink:href="#arrow3" /></svg></button>',
     nextArrow: '<button class="slick-next" aria-label="Next" type="button" title="Next"><svg><use xlink:href="#arrow3" /></svg></button>',
@@ -2442,7 +2443,7 @@ if ($('.lp .newTopNav').length > 0) {
   $('.lp .newTopNav .listBox').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    infinite: true,
+    infinite: false,
     arrow: true,
     appendArrows: $(`.lp .newTopNav`),
     responsive: [
@@ -2468,6 +2469,96 @@ if ($('.lp .newTopNav').length > 0) {
   });
 }
 
+if ($('.rcm_loginTopNav').length > 0) {
+  $('.rcm_loginTopNav .listBox').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrow: true,
+    infinite: false,
+    appendArrows: $(`.rcm_loginTopNav`),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+}
+
+if ($('.rcm_slider_new').length > 0) {
+  $('.rcm_slider_new ul').slick({
+    lazyLoad: 'ondemand',
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrow: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+    ],
+  });
+}
+
+if ($('.leftmenu').length > 0) {
+  function leftmenuFn() {
+    if ($(window).width() > 991) {
+      setTimeout(function () {
+        $('.taitracode_list').css('height', `${$(window).height() - $('.taitracode_list').offset().top}px`);
+      });
+    }
+  }
+  window.addEventListener('DOMContentLoaded', function () {
+    leftmenuFn();
+  });
+  window.addEventListener('scroll', function () {
+    leftmenuFn();
+  });
+  window.addEventListener('resize', function () {
+    leftmenuFn();
+  });
+}
+
 window.addEventListener('DOMContentLoaded', function () {
   $('.newsBox .tabBar .listBox button').on('click', function () {
     $(this).addClass('active').siblings('button').removeClass('active');
@@ -2482,4 +2573,20 @@ window.addEventListener('DOMContentLoaded', function () {
     $('.rcm_exh_slider ul').slick('refresh');
     $('.rcm_prod_slider ul').slick('refresh');
   });
+
+  $('.rcm_loginTopNav .item').eq(0).addClass('active');
+  $('.rcmBodyBox .rcm_new').eq(0).addClass('active');
+
+  $('.rcm_loginTopNav .item button').hover(function () {
+    if ($(window).width() >= 768) loginTopNavFn($(this));
+  });
+  $('.rcm_loginTopNav .item button').click(function () {
+    if ($(window).width() < 767) loginTopNavFn($(this));
+  });
+  function loginTopNavFn(target) {
+    target.parent('.item').addClass('active').siblings('.item').removeClass('active');
+    $('.rcmBodyBox .rcm_new').eq(target.parent().index()).addClass('active').siblings('.rcm_new').removeClass('active');
+    $('.rcm_slider_new ul').slick('refresh');
+    $('.rcm_slider ul').slick('refresh');
+  }
 });

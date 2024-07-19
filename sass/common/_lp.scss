@@ -1,6 +1,6 @@
 .lp {
   padding-bottom: 4em;
-  overflow: hidden;
+  // overflow: hidden;
 
   @include screen('mobile') {
     @include gutter(0);
@@ -265,6 +265,7 @@
   .taitracode_list {
     margin-bottom: 1em;
     margin-left: 1em;
+    overflow-y: auto;
 
     @include screen('mobile') {
       margin-left: 0;
@@ -2927,14 +2928,14 @@ $companyWidth :calc($companyUL/$companyLength);
   margin-bottom: 1em;
 
   @include screen('mobile') {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0, 0, 0);
+
     ul {
       width: 700px;
     }
-
-    overflow-x: scroll;
-    overflow-y:hidden;
-    -webkit-overflow-scrolling: touch;
-    -webkit-transform: translate3d(0, 0, 0);
   }
 
   @extend %clearfix;
@@ -2983,6 +2984,12 @@ $companyWidth :calc($companyUL/$companyLength);
 }
 
 .control_panel {
+  &.compareBox {
+    position: sticky;
+    top: 40px;
+    z-index: 100;
+  }
+
   .compare {
     width: 100%;
     display: flex;
@@ -3624,6 +3631,10 @@ form {
     &.slick-next {
       right: 0;
     }
+  }
+
+  .slick-track {
+    display: flex;
   }
 
   .listBox {

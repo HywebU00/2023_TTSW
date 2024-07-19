@@ -219,15 +219,19 @@ th {
   padding: 0;
 }
 
-.divider, .divider-vertical {
+.divider,
+.divider-vertical {
   clear: both;
   zoom: 1;
 }
-.divider:before, .divider-vertical:before, .divider:after, .divider-vertical:after {
+.divider:before,
+.divider-vertical:before, .divider:after,
+.divider-vertical:after {
   content: "";
   display: table;
 }
-.divider:after, .divider-vertical:after {
+.divider:after,
+.divider-vertical:after {
   clear: both;
 }
 
@@ -553,7 +557,8 @@ a:hover, a:focus {
   }
 }
 
-.divider, .divider-vertical {
+.divider,
+.divider-vertical {
   text-align: center;
   white-space: nowrap;
   -webkit-user-select: none;

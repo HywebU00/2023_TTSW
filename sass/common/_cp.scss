@@ -817,6 +817,7 @@ div.tag {
 
     .item {
       padding: 0 20px;
+      position: relative;
 
       .pic {
         overflow: hidden;
@@ -835,10 +836,40 @@ div.tag {
         transition: all .3s linear;
       }
 
-      button {
-        display: block;
-        margin: 0 auto;
-        font-size: 14px;
+      // button {
+      //   display: block;
+      //   margin: 0 auto;
+      //   font-size: 14px;
+      // }
+      .del {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0;
+        color: transparent !important;
+        background: $color-red;
+        border: none !important;
+        opacity: 1;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 10px;
+          height: 1px;
+          background: #fff;
+          transform: translate(-50%, -50%);
+        }
+
+        &:focus-visible {
+          outline: $primaryColor 2px solid;
+        }
       }
 
       &:hover {

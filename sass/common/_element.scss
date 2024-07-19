@@ -1994,6 +1994,10 @@ img.img-responsive {
     }
   }
 
+  .slick-arrow {
+    display: none !important;
+  }
+
   .tabListContentBox {
     @include screen('mobile') {
       padding: 30px 0px 0;
