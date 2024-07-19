@@ -5,6 +5,11 @@
     {
       "format": "expanded",
       "extensionName": ".css",
+      "savePath": "/css" //此為輸出的路徑，可以自行更改
+    },
+    {
+      "format": "expanded",
+      "extensionName": ".css",
       "savePath": "/D/css" //此為輸出的路徑，可以自行更改
     },
     {

@@ -46,21 +46,21 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 $mukta: 'Ek Mukta', sans-serif;
 $menuItems: 8;
 //-------------------------------------------------------------匯入---------//
-@import 'common/_normalize'; //reset
+// @import 'common/_normalize'; //reset
 @import 'common/_mixin'; //客製MIXIN
-@import 'common/_typography'; //CP文字排版
-@import 'common/_font'; //文字設定
-// 元素
-@import 'common/_grid'; //格線
-// @import "common/_breadcrumb"; //麵包屑
-@import 'common/_divider'; //分隔線
-@import 'common/_btn'; //按鈕設定
-// @import "common/_hr"; //分隔線
-@import 'common/_image'; //圖片
-// @import "common/_tabs"; //頁籤
-@import 'common/_table'; //表格
-@import 'common/_form'; //表單
-@import 'common/_icon'; //圖示
+// @import 'common/_typography'; //CP文字排版
+// @import 'common/_font'; //文字設定
+// // 元素
+// @import 'common/_grid'; //格線
+// // @import "common/_breadcrumb"; //麵包屑
+// @import 'common/_divider'; //分隔線
+// @import 'common/_btn'; //按鈕設定
+// // @import "common/_hr"; //分隔線
+// @import 'common/_image'; //圖片
+// // @import "common/_tabs"; //頁籤
+// @import 'common/_table'; //表格
+// @import 'common/_form'; //表單
+// @import 'common/_icon'; //圖示
 // @import "common/_element"; //小元素
 // @import "common/_paginations"; //分頁
 // @import "common/_notice"; //提示
@@ -80,26 +80,33 @@ $subColor: #29b4f5, #a449a3, #db951a, #919c1a, #618e01, #12abcc, #aa5ac5, #666, 
 $color: #aa5ac5, #5cb85c, #ff981f, #d74261, #4a93f6;
 //最後的版本-----所有色系整併在一起
 $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444, #99001d, #d74261;
+
 // chat_iframe裡面的色系
 .chat_body {
   margin: 0;
   padding: 0;
   position: relative;
   height: 100%;
+
   &.color_blue {
     background: nth($chat_color, 1);
+
     .chat_inside {
       background: nth($chat_color, 1);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 1), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 1), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 1);
         }
+
         .list {
           ul {
             li {
@@ -107,6 +114,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 1);
@@ -121,20 +129,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   &.color_red {
     background: nth($chat_color, 2);
+
     .chat_inside {
       background: nth($chat_color, 2);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 2), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 2), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 2);
         }
+
         .list {
           ul {
             li {
@@ -142,6 +156,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 2);
@@ -156,20 +171,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   &.color_brown {
     background: nth($chat_color, 3);
+
     .chat_inside {
       background: nth($chat_color, 3);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 3), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 3), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 3);
         }
+
         .list {
           ul {
             li {
@@ -177,6 +198,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 3);
@@ -191,20 +213,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   &.color_yellow {
     background: nth($chat_color, 4);
+
     .chat_inside {
       background: nth($chat_color, 4);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 4), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 4), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 4);
         }
+
         .list {
           ul {
             li {
@@ -212,6 +240,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 4);
@@ -226,20 +255,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   &.color_green {
     background: nth($chat_color, 5);
+
     .chat_inside {
       background: nth($chat_color, 5);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 5), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 5), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 5);
         }
+
         .list {
           ul {
             li {
@@ -247,6 +282,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 5);
@@ -261,20 +297,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   &.color_cyanblue {
     background: nth($chat_color, 6);
+
     .chat_inside {
       background: nth($chat_color, 6);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 6), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 6), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 6);
         }
+
         .list {
           ul {
             li {
@@ -282,6 +324,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 6);
@@ -296,20 +339,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   &.color_purple {
     background: nth($chat_color, 7);
+
     .chat_inside {
       background: nth($chat_color, 7);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 7), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 7), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 7);
         }
+
         .list {
           ul {
             li {
@@ -317,6 +366,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 7);
@@ -331,20 +381,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   &.color_gray {
     background: nth($chat_color, 8);
+
     .chat_inside {
       background: nth($chat_color, 8);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 8), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 8), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 8);
         }
+
         .list {
           ul {
             li {
@@ -352,6 +408,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 8);
@@ -366,20 +423,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   &.color_redyellow {
     background: nth($chat_color, 9);
+
     .chat_inside {
       background: nth($chat_color, 9);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 9), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 9), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 9);
         }
+
         .list {
           ul {
             li {
@@ -387,6 +450,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 9);
@@ -401,20 +465,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   &.color_pink {
     background: nth($chat_color, 10);
+
     .chat_inside {
       background: nth($chat_color, 10);
+
       .chat_welcome {
         @include gradient(lighten(nth($chat_color, 10), 40), #fff, vertical);
       }
+
       .chat_content {
         background: darken(nth($chat_color, 10), 5);
       }
+
       .chat_list {
         .chat_search {
           background: nth($chat_color, 10);
         }
+
         .list {
           ul {
             li {
@@ -422,6 +492,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 ul {
                   li {
                     a {
+
                       &:hover,
                       &:focus {
                         color: nth($chat_color, 10);
@@ -437,69 +508,90 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     }
   }
 }
+
 // chat
 .chat_window {
   &.color_blue {
     background: nth($chat_color, 1);
+
     .chat_function {
       background: darken(nth($chat_color, 1), 10);
     }
   }
+
   &.color_red {
     background: nth($chat_color, 2);
+
     .chat_function {
       background: darken(nth($chat_color, 2), 10);
     }
   }
+
   &.color_brown {
     background: nth($chat_color, 3);
+
     .chat_function {
       background: darken(nth($chat_color, 3), 10);
     }
   }
+
   &.color_yellow {
     background: nth($chat_color, 4);
+
     .chat_function {
       background: darken(nth($chat_color, 4), 10);
     }
   }
+
   &.color_green {
     background: nth($chat_color, 5);
+
     .chat_function {
       background: darken(nth($chat_color, 5), 10);
     }
   }
+
   &.color_cyanblue {
     background: nth($chat_color, 6);
+
     .chat_function {
       background: darken(nth($chat_color, 6), 10);
     }
   }
+
   &.color_purple {
     background: nth($chat_color, 7);
+
     .chat_function {
       background: darken(nth($chat_color, 7), 10);
     }
   }
+
   &.color_gray {
     background: nth($chat_color, 8);
+
     .chat_function {
       background: darken(nth($chat_color, 8), 10);
     }
   }
+
   &.color_redyellow {
     background: nth($chat_color, 9);
+
     .chat_function {
       background: darken(nth($chat_color, 9), 10);
     }
   }
+
   &.color_pink {
     background: nth($chat_color, 10);
+
     .chat_function {
       background: darken(nth($chat_color, 10), 10);
     }
   }
 }
+
 .open_chat {
   width: 50px;
   height: 50px;
@@ -515,9 +607,11 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
   bottom: 70px;
   right: 10px;
   z-index: 100001;
+
   @include screen('mobile') {
     bottom: 130px;
   }
+
   span {
     border-radius: 0.25em;
     background: $color-red;
@@ -532,11 +626,13 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     line-height: 1.5em;
     padding: 0 0.5em;
   }
+
   &.has_bottom {
     @include screen('mobile') {
       bottom: 4em;
     }
   }
+
   &:hover,
   &:focus {
     background: url(../images/icon/icon_chat_white.svg) no-repeat center center $color-green;
@@ -544,6 +640,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     box-shadow: none;
   }
 }
+
 .chat_window {
   position: fixed;
   width: 720px;
@@ -557,56 +654,68 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
   background: #fff;
   box-shadow: -5px -5px 30px -5px rgba(0, 0, 0, 0.25);
   transform: translateX(100%);
+
   // transition: .3s $cubic;
   &.half {
     width: 360px;
+
     .chat_welcome {
       display: none;
     }
+
     .chat_content {
       width: 100%;
       left: 0;
       transform: translateX(0%);
       display: none;
+
       &.show {
         display: block;
         z-index: 9999;
       }
     }
+
     @media screen and (max-width: 565px) {
       width: 100%;
     }
+
     .chat_list {
       left: 0;
       width: 100%;
     }
   }
+
   iframe {
     width: 100%;
     height: 100%;
     left: 0;
     // margin-top: 60px;
   }
+
   @media screen and (max-width: 565px) {
     width: 100%;
     height: calc(100% - 60px);
   }
 }
+
 .chat_function {
   position: relative;
   height: 2rem;
   width: 100%;
   z-index: 99;
+
   // background: darken($primaryColor, 10);
   .messenger {
     color: #fff;
     padding: 0.3em 0.25em 0.2em;
+
     span {
       display: inline-block;
       font-size: 0.875rem;
       margin-left: 0.5em;
     }
   }
+
   a.close {
     width: 1em;
     height: 1.5em;
@@ -615,11 +724,13 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     position: relative;
     margin: 0.25em 0 0 0.5em;
     margin-right: 0.5em;
+
     &:hover {
       &:before {
         background: rgba(255, 255, 255, 1);
       }
     }
+
     &:before {
       position: absolute;
       top: 0.65em;
@@ -630,6 +741,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       content: '';
     }
   }
+
   a.minimize {
     width: 1em;
     height: 1.5em;
@@ -637,9 +749,11 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     position: absolute;
     right: 0.5em;
     top: 0.35em;
+
     @media screen and (max-width: 565px) {
       display: none;
     }
+
     &:hover {
       &:before {
         border: 2px solid rgba(255, 255, 255, 1);
@@ -647,6 +761,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         border-bottom: none;
       }
     }
+
     &:before {
       position: absolute;
       top: 0.35em;
@@ -659,6 +774,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       transform: rotate(45deg);
       content: '';
     }
+
     &.inverse {
       &:before {
         left: 0.5em;
@@ -666,6 +782,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         border-right: none;
         border-top: none;
       }
+
       &:hover,
       &:focus {
         &:before {
@@ -677,6 +794,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     }
   }
 }
+
 .chat_inside {
   max-width: 720px;
   min-height: 480px;
@@ -685,14 +803,17 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
   margin: 0;
   padding: 0;
   position: relative;
+
   @media screen and (max-width: 565px) {
     width: 100%;
     height: 100%;
   }
 }
+
 .chat_body {
   background: $primaryColor;
 }
+
 .chat_list {
   position: absolute;
   width: 50%;
@@ -702,26 +823,31 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   // transition: .3s $cubic;
   z-index: 15;
+
   &.goLeft {
     // transform: translateX(-40%);
     // opacity: .5;
   }
+
   @media screen and (max-width: 545px) {
     width: 100%;
     height: 100%;
     z-index: 13;
     left: 0;
   }
+
   .chat_search {
     display: flex;
     flex: 1;
     padding: 0.5em;
     align-items: center;
     background: $primaryColor;
+
     .form_grp {
       flex: 1 1 50%;
       margin-right: 1em;
       position: relative;
+
       &:before {
         position: absolute;
         width: 1em;
@@ -734,31 +860,38 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         left: 0.5em;
         opacity: 0.5;
       }
+
       input {
         width: 100%;
         height: 2.5em;
         padding-left: 2.5em;
         font-size: 0.813rem;
+
         &[type='text'] {
           background: rgba(0, 0, 0, 0.25);
           color: #fff;
           border: 1px solid transparent;
+
           &::-webkit-input-placeholder {
             /* Chrome/Opera/Safari */
             color: #ddd;
           }
+
           &::-moz-placeholder {
             /* Firefox 19+ */
             color: #ddd;
           }
+
           &:-ms-input-placeholder {
             /* IE 10+ */
             color: #ddd;
           }
+
           &:-moz-placeholder {
             /* Firefox 18- */
             color: #ddd;
           }
+
           &:focus {
             border: 1px solid transparent;
             box-shadow: none;
@@ -767,6 +900,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         }
       }
     }
+
     select {
       flex: 0 1 25%;
       width: 25%;
@@ -776,6 +910,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       background: rgba(0, 0, 0, 0.25) url(../images/basic/icon_select_arrow_white.svg) no-repeat right center;
       background-size: 16px;
       color: #fff;
+
       &:focus {
         border: 1px solid transparent;
         box-shadow: none;
@@ -784,6 +919,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   .list {
     // box-shadow: 0px 0px 5px rgba(0, 0, 0, .5) inset;
     position: absolute;
@@ -795,15 +931,18 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
     -webkit-transform: translate3d(0, 0, 0);
+
     .annoucement {
       background: lighten($color-yellow, 20);
       padding: 1em 1.5em 1em 1em;
+
       span {
         font-size: 0.813rem;
         display: block;
         line-height: 1.25em;
         color: #666;
       }
+
       a.close_no_script {
         position: absolute;
         top: 0.25em;
@@ -811,27 +950,33 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         width: 0.75em;
         height: 0.75em;
         opacity: 0.25;
+
         i {
           transform: scale(5%);
         }
+
         &:hover {
           opacity: 0.5;
         }
       }
     }
+
     ul {
       @include li-reset;
       padding-bottom: 4em;
+
       li {
         border-bottom: 1px solid #cecece;
         position: relative;
         padding-bottom: 20px;
         background: #f1f1f1;
         position: relative;
+
         &:hover,
         &:focus {
           background: transparent;
         }
+
         &:last-child {
           .more_function {
             .window {
@@ -840,6 +985,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             }
           }
         }
+
         .more_function {
           position: absolute;
           right: 0;
@@ -847,6 +993,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
           bottom: 5px;
           width: 50%;
           height: 10px;
+
           // outline: 1px solid red;
           a.dot {
             width: 80px;
@@ -858,6 +1005,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             background-size: 40px;
             // outline: 1px solid green;
           }
+
           .window {
             position: absolute;
             top: 5px;
@@ -868,14 +1016,17 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             padding: 0.75em;
             min-width: 6em;
             display: none;
+
             &.open {
               display: block;
               z-index: 999999;
             }
+
             ul {
               @include li-reset;
               background: #fff;
               padding-bottom: 0em;
+
               li {
                 display: block;
                 border-bottom: 1px dashed #dedede;
@@ -883,21 +1034,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 font-size: 0.813rem;
                 margin-bottom: 0.25em;
                 background: #fff;
+
                 &:hover {
                   background: none;
                 }
+
                 a {
                   padding: 0;
                   color: #555;
                   background: #fff;
+
                   i {
                     opacity: 0.5;
                     margin-right: 0.5em;
                   }
+
                   &:hover,
                   &:focus {
                     color: $aHover;
                     background: #fff;
+
                     i {
                       opacity: 0.75;
                     }
@@ -907,9 +1063,11 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             }
           }
         }
+
         a {
           display: flex;
           padding: 0.75em 1em 0.5em 0.5em;
+
           &.bookmark {
             &:after {
               position: absolute;
@@ -922,6 +1080,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
               top: 0.5em;
             }
           }
+
           &:hover,
           &:focus {
             .summary {
@@ -929,12 +1088,14 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 color: #333;
               }
             }
+
             .pic {
               .status {
                 border: 2px solid #fff;
               }
             }
           }
+
           &.online {
             .pic {
               .status {
@@ -942,6 +1103,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
               }
             }
           }
+
           &.offline {
             .pic {
               .status {
@@ -949,6 +1111,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
               }
             }
           }
+
           .pic {
             flex-basis: 50px;
             flex: 0 0 50px;
@@ -957,12 +1120,14 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             margin: 0 1em 0 0;
             border-radius: 0.25rem;
             position: relative;
+
             img {
               width: 100%;
               height: 100%;
               border-radius: 0.5rem;
               object-fit: cover;
             }
+
             .status {
               position: absolute;
               top: -0.45em;
@@ -974,6 +1139,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
               border: 2px solid #f1f1f1;
             }
           }
+
           .chat_summary {
             flex-basis: 50px;
             flex: 1 1 50px;
@@ -982,6 +1148,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             flex: 1;
             flex-flow: row wrap;
             overflow: hidden;
+
             .name {
               color: #555;
               width: 80%;
@@ -992,6 +1159,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
               margin-bottom: 0.5em;
               @include text-overflow;
             }
+
             .new_message {
               border-radius: 50%;
               background: rgba(0, 0, 0, 0.55);
@@ -1004,10 +1172,12 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
               width: 2em;
               font-weight: bold;
               font-size: 0.813rem;
+
               &.add_message {
                 background: $color-red;
               }
             }
+
             .summary {
               font-size: 0.813rem;
               color: #666;
@@ -1017,6 +1187,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
               max-width: 70%;
               @include text-overflow;
             }
+
             time {
               flex-basis: 25%;
               flex: 1 0 25%;
@@ -1031,6 +1202,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     }
   }
 }
+
 .chat_welcome {
   position: absolute;
   width: 50%;
@@ -1043,17 +1215,21 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
   // transform: translateX(0);
   @include gradient(lighten($primaryColor, 40), #fff, vertical);
   pointer-events: none;
+
   &.show {
     opacity: 1;
   }
+
   &.hide {
     opacity: 0;
     display: block;
     pointer-events: none;
   }
+
   @media screen and (max-width: 565px) {
     display: none;
   }
+
   .message {
     content: '';
     width: 150px;
@@ -1068,6 +1244,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     padding-top: 200px;
   }
 }
+
 .chat_content {
   position: absolute;
   width: 50%;
@@ -1079,6 +1256,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
   // transition: .3s $cubic;
   transform: translateX(50%);
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+
   // opacity:0;
   @media screen and (max-width: 565px) {
     z-index: 12;
@@ -1086,18 +1264,22 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     height: 100%;
     transform: translateX(100%);
   }
+
   &.show {
     transform: translateX(0%);
     opacity: 1;
+
     @media screen and (max-width: 565px) {
       transform: translateX(0%);
       z-index: 20;
     }
   }
+
   &.hide {
     transform: translateX(100%);
     opacity: 0;
   }
+
   a.information {
     width: 1.5em;
     height: 1.5em;
@@ -1105,11 +1287,13 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     left: 0.75em;
     top: 0.9em;
     opacity: 0.65;
+
     &:hover,
     &:focus {
       opacity: 1;
     }
   }
+
   a.video {
     width: 1.5em;
     height: 1.5em;
@@ -1125,20 +1309,24 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     color: #fff;
     font-size: 0.75rem;
     text-align: center;
+
     i {
       margin-right: 0.25em;
     }
+
     &:hover,
     &:focus {
       opacity: 1;
     }
   }
+
   a.back {
     width: 1.5em;
     height: 1.5em;
     position: absolute;
     right: 0.25em;
     top: 0.5em;
+
     &:before {
       width: 8px;
       height: 8px;
@@ -1152,12 +1340,14 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       left: 0.25em;
       opacity: 0.5;
     }
+
     &:hover {
       &:before {
         opacity: 1;
       }
     }
   }
+
   .title {
     padding: 1em 0.75em 0.25em 2em;
     height: 3.1rem;
@@ -1168,6 +1358,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     color: #fff;
     font-weight: bold;
   }
+
   .type_area {
     position: absolute;
     bottom: 2.8em;
@@ -1178,10 +1369,12 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     padding: 0.5em;
     width: 100%;
     z-index: 99;
+
     .form_grp {
       flex: 2 1 70%;
       flex-basis: 75%;
       margin-right: 0.25em;
+
       input[type='text'],
       textarea {
         height: 4.25rem;
@@ -1194,6 +1387,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         white-space: nowrap;
         max-width: 100%;
         white-space: pre-wrap;
+
         &:focus {
           box-shadow: none;
           border: 1px solid transparent;
@@ -1202,6 +1396,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         }
       }
     }
+
     .btn_grp {
       flex: 1 1 20%;
       flex-basis: 20%;
@@ -1209,24 +1404,28 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       margin: 0;
       display: flex;
       flex-flow: row wrap;
+
       button {
         height: 2rem;
         padding: 0.15rem;
         margin: 0 0.25em 0.3em;
         font-size: 0.813rem !important;
         border: 1px solid transparent;
+
         &:active {
           transform: scale(0.95);
         }
       }
     }
   }
+
   .txt_content {
     position: absolute;
     height: calc(100% - 3.1em);
     bottom: 0;
     width: 100%;
     left: 0;
+
     .txt_area {
       position: absolute;
       // width: 100%;
@@ -1238,10 +1437,12 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       overflow-y: auto !important;
       -webkit-overflow-scrolling: touch;
       -webkit-transform: translate3d(0, 0, 0);
+
       .divider {
         font-size: 0.75rem;
         color: #999;
       }
+
       .txt {
         position: relative;
         width: 90%;
@@ -1249,20 +1450,25 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         padding: 0em 0.5em;
         clear: both;
         overflow: hidden;
+
         &.left {
           padding-left: 2.5em;
+
           .bubble {
             text-shadow: none;
             background: #ffffff;
             box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
             color: #666;
+
             a {
               color: $color-blue;
+
               &:hover,
               &:focus {
                 color: darken($color-blue, 10);
               }
             }
+
             &:after {
               position: absolute;
               left: -6px;
@@ -1276,21 +1482,26 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             }
           }
         }
+
         &.right {
           padding-right: 2.5em;
           margin: 0 0 1em auto;
+
           .pic {
             right: 0;
             left: auto;
           }
+
           .bubble {
             float: right;
           }
+
           time {
             text-align: right;
             transform-origin: right center;
           }
         }
+
         .pic {
           position: absolute;
           width: 2em;
@@ -1298,6 +1509,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
           top: 0;
           left: 0;
           border-radius: 0.5em;
+
           img {
             width: 100%;
             height: 100%;
@@ -1308,6 +1520,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             object-fit: cover;
           }
         }
+
         .bubble {
           background: #0fba52;
           padding: 0.25em 0.75em;
@@ -1318,16 +1531,19 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
           float: left;
           width: auto;
           position: relative;
+
           a {
             word-break: break-all;
             color: #fff;
             display: block;
             text-decoration: underline;
+
             &:hover,
             &:focus {
               color: lighten($color-yellow, 20);
             }
           }
+
           .chat_link_info {
             img {
               width: 50px;
@@ -1337,6 +1553,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
               display: block;
             }
           }
+
           &:after {
             position: absolute;
             right: -6px;
@@ -1349,6 +1566,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             border-color: transparent transparent transparent #0fba52;
           }
         }
+
         time {
           font-size: 0.75rem;
           color: #7d7d7d;
@@ -1362,6 +1580,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   .video_content {
     position: absolute;
     height: 100%;
@@ -1372,6 +1591,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     background: rgba(0, 0, 0, 0.85);
     display: none;
     opacity: 0;
+
     &.shrink {
       position: absolute;
       top: 60px;
@@ -1381,33 +1601,41 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       height: 160px;
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
       border-radius: 0.25em;
+
       .camera_area {
         height: 100%;
         border-radius: 0.25rem;
+
         a.enlarge {
           display: block;
         }
+
         &:hover {
           a.enlarge {
             display: block;
           }
         }
+
         img,
         video {
           border-radius: 0.25rem;
         }
+
         .my_camera {
           display: none;
         }
       }
+
       .camera_function {
         display: none;
       }
     }
+
     &.show {
       display: block;
       opacity: 1;
     }
+
     .start_video {
       position: absolute;
       width: 100%;
@@ -1418,6 +1646,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       z-index: 9;
       position: relative;
       padding-top: 30%;
+
       span {
         text-align: center;
         display: block;
@@ -1427,6 +1656,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         font-weight: bold;
         color: #fff;
       }
+
       a {
         width: 200px;
         padding: 0.5em;
@@ -1437,21 +1667,25 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         font-size: 0.938rem;
         display: block;
         margin: 0 auto 1em;
+
         &:hover,
         &:focus {
           background: #333;
         }
       }
+
       &.hide {
         display: none;
       }
     }
+
     .camera_area {
       position: absolute;
       width: 100%;
       height: 70%;
       left: 0;
       top: 0;
+
       a.enlarge {
         position: absolute;
         right: 5%;
@@ -1465,11 +1699,13 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         border-radius: 0.25em;
         z-index: 9;
         display: none;
+
         &:hover {
           background: url(../images/icon_enlarge.svg) no-repeat center center rgba(0, 0, 0, 0.8);
           background-size: contain;
         }
       }
+
       .my_camera {
         position: absolute;
         width: 80px;
@@ -1480,6 +1716,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         border-radius: 0.5em;
         box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75);
         display: block;
+
         img,
         video {
           position: absolute;
@@ -1490,6 +1727,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
           object-fit: cover;
         }
       }
+
       img,
       video {
         position: absolute;
@@ -1500,6 +1738,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         object-fit: cover;
       }
     }
+
     .camera_function {
       position: absolute;
       width: 100%;
@@ -1508,6 +1747,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       top: auto;
       bottom: 0;
       display: block;
+
       a.end_talk {
         position: absolute;
         top: 3em;
@@ -1517,6 +1757,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         height: 4em;
         background: url(../images/end.svg) no-repeat center center;
       }
+
       a.end_video {
         position: absolute;
         left: 3em;
@@ -1527,19 +1768,23 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         background: url(../images/end_vidoe.svg) no-repeat center center;
         background-size: 50%;
         border-radius: 50%;
+
         &:hover {
           background: url(../images/end_vidoe.svg) no-repeat center center rgba(0, 0, 0, 0.7);
           background-size: 50%;
         }
+
         &.open_video {
           background: url(../images/start_vidoe.svg) no-repeat center center;
           background-size: 50%;
+
           &:hover {
             background: url(../images/start_vidoe.svg) no-repeat center center rgba(0, 0, 0, 0.7);
             background-size: 50%;
           }
         }
       }
+
       a.end_audio {
         position: absolute;
         right: 3em;
@@ -1550,19 +1795,23 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         background: url(../images/end_audio.svg) no-repeat center center;
         background-size: 50%;
         border-radius: 50%;
+
         &:hover {
           background: url(../images/end_audio.svg) no-repeat center center rgba(0, 0, 0, 0.7);
           background-size: 50%;
         }
+
         &.open_audio {
           background: url(../images/start_audio.svg) no-repeat center center;
           background-size: 50%;
+
           &:hover {
             background: url(../images/start_audio.svg) no-repeat center center rgba(0, 0, 0, 0.7);
             background-size: 50%;
           }
         }
       }
+
       a.reverse {
         position: absolute;
         right: 0.5em;
@@ -1574,11 +1823,13 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         background-size: contain;
         border-radius: 0.25em;
         z-index: 2;
+
         &:hover {
           background: url(../images/icon_reverse.svg) no-repeat center center rgba(0, 0, 0, 0.7);
           background-size: contain;
         }
       }
+
       a.shrink {
         position: absolute;
         right: 4em;
@@ -1590,6 +1841,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         background-size: contain;
         border-radius: 0.25em;
         z-index: 2;
+
         &:hover {
           background: url(../images/icon_shrink.svg) no-repeat center center rgba(0, 0, 0, 0.7);
           background-size: contain;
@@ -1598,6 +1850,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     }
   }
 }
+
 .video_content {
   position: fixed;
   top: 60px;
@@ -1608,12 +1861,14 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
   background: rgba(0, 0, 0, 0.85);
   display: none;
   opacity: 0;
+
   @include screen('mobile') {
     width: 100%;
     height: calc(100% - 60px);
     top: 60px;
     right: 0;
   }
+
   &.shrink {
     position: absolute;
     top: 60px;
@@ -1623,38 +1878,47 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     height: 550px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     border-radius: 0.25em;
+
     @include screen('mobile') {
       width: 100%;
       height: calc(100% - 60px);
       right: 0;
     }
+
     .camera_area {
       height: 80%;
       border-radius: 0;
+
       a.enlarge {
         display: none;
       }
+
       &:hover {
         a.enlarge {
           display: none;
         }
       }
+
       img,
       video {
         border-radius: 0.25rem;
       }
+
       .my_camera {
         display: block;
       }
     }
+
     .camera_function {
       display: block;
     }
   }
+
   &.show {
     display: block;
     opacity: 1;
   }
+
   .start_video {
     position: absolute;
     width: 100%;
@@ -1665,6 +1929,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     z-index: 9;
     position: relative;
     padding-top: 30%;
+
     span {
       text-align: center;
       display: block;
@@ -1674,6 +1939,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       font-weight: bold;
       color: #fff;
     }
+
     a {
       width: 200px;
       padding: 0.5em;
@@ -1684,21 +1950,25 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       font-size: 0.938rem;
       display: block;
       margin: 0 auto 1em;
+
       &:hover,
       &:focus {
         background: #333;
       }
     }
+
     &.hide {
       display: none;
     }
   }
+
   .camera_area {
     position: absolute;
     width: 100%;
     height: 80%;
     left: 0;
     top: 0;
+
     a.enlarge {
       position: absolute;
       right: 5%;
@@ -1712,11 +1982,13 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       border-radius: 0.25em;
       z-index: 9;
       display: none;
+
       &:hover {
         background: url(../images/icon_enlarge.svg) no-repeat center center rgba(0, 0, 0, 0.8);
         background-size: contain;
       }
     }
+
     .my_camera {
       position: absolute;
       width: 80px;
@@ -1727,6 +1999,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       border-radius: 0.5em;
       box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.75);
       display: block;
+
       img,
       video {
         position: absolute;
@@ -1737,6 +2010,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         object-fit: cover;
       }
     }
+
     img,
     video {
       position: absolute;
@@ -1747,6 +2021,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       object-fit: cover;
     }
   }
+
   .camera_function {
     position: absolute;
     width: 100%;
@@ -1757,6 +2032,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     display: block;
     background: #111;
     border-radius: 0 0 0.25em 0.25em;
+
     a.end_talk {
       position: absolute;
       top: 3em;
@@ -1766,6 +2042,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       height: 4em;
       background: url(../images/end.svg) no-repeat center center;
     }
+
     a.end_video {
       position: absolute;
       left: 3em;
@@ -1776,19 +2053,23 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       background: url(../images/end_vidoe.svg) no-repeat center center;
       background-size: 50%;
       border-radius: 50%;
+
       &:hover {
         background: url(../images/end_vidoe.svg) no-repeat center center rgba(0, 0, 0, 0.7);
         background-size: 50%;
       }
+
       &.open_video {
         background: url(../images/start_vidoe.svg) no-repeat center center;
         background-size: 50%;
+
         &:hover {
           background: url(../images/start_vidoe.svg) no-repeat center center rgba(0, 0, 0, 0.7);
           background-size: 50%;
         }
       }
     }
+
     a.end_audio {
       position: absolute;
       right: 3em;
@@ -1799,19 +2080,23 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       background: url(../images/end_audio.svg) no-repeat center center;
       background-size: 50%;
       border-radius: 50%;
+
       &:hover {
         background: url(../images/end_audio.svg) no-repeat center center rgba(0, 0, 0, 0.7);
         background-size: 50%;
       }
+
       &.open_audio {
         background: url(../images/start_audio.svg) no-repeat center center;
         background-size: 50%;
+
         &:hover {
           background: url(../images/start_audio.svg) no-repeat center center rgba(0, 0, 0, 0.7);
           background-size: 50%;
         }
       }
     }
+
     a.reverse {
       position: absolute;
       right: 0.5em;
@@ -1823,11 +2108,13 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       background-size: contain;
       border-radius: 0.25em;
       z-index: 2;
+
       &:hover {
         background: url(../images/icon_reverse.svg) no-repeat center center rgba(0, 0, 0, 0.7);
         background-size: contain;
       }
     }
+
     a.shrink {
       position: absolute;
       right: 4em;
@@ -1839,6 +2126,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       background-size: contain;
       border-radius: 0.25em;
       z-index: 2;
+
       &:hover {
         background: url(../images/icon_shrink.svg) no-repeat center center rgba(0, 0, 0, 0.7);
         background-size: contain;
@@ -1846,6 +2134,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     }
   }
 }
+
 .trans {
   position: fixed;
   width: 360px;
@@ -1858,6 +2147,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
   padding: 0;
   display: flex;
   overflow: hidden;
+
   @include screen('mobile') {
     width: 100%;
     height: 100%;
@@ -1865,32 +2155,39 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     left: 0;
     position: relative;
   }
+
   .messenger {
     padding: 0.25em;
   }
+
   .trans_function {
     width: 100%;
     height: 32px;
     background: #555;
     color: #fff;
     display: flex;
+
     a {
       margin: 0.25em 0.25em 0 0.5em;
       color: #aaa;
+
       &:hover,
       &:focus {
         color: #fff;
       }
     }
   }
+
   .trans_inside {
     padding: 0.5em;
     flex-flow: column wrap;
   }
+
   .trans_tool {
     clear: both;
     overflow: hidden;
     margin-bottom: 0.5em;
+
     a {
       display: block;
       float: left;
@@ -1902,26 +2199,31 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       color: #777;
       min-width: 6em;
       text-align: center;
+
       &:hover,
       &:focus {
         background: #bbb;
         color: #fff;
       }
+
       &:nth-child(2) {
         float: right;
       }
     }
   }
+
   .trans_lang {
     display: flex;
     margin-bottom: 0.5em;
     clear: both;
+
     select {
       flex-basis: auto;
       flex-grow: 1;
       flex-shrink: 1;
       margin: 0;
     }
+
     button {
       margin: 0;
       flex-basis: 40px;
@@ -1932,6 +2234,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       min-width: 2em;
       border: 1px solid #ddd;
       background: transparent;
+
       i {
         color: #888;
         font-size: 0.5em;
@@ -1940,6 +2243,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
       }
     }
   }
+
   .src-text,
   .trans-text {
     clear: both;
