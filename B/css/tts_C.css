@@ -16084,6 +16084,7 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 0;
+  position: relative;
 }
 .control_panel .compare span {
   font-weight: bold;

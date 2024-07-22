@@ -16090,6 +16090,7 @@ h1.title:after, h2.title:after {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 0;
+  position: relative;
 }
 .control_panel .compare span {
   font-weight: bold;
