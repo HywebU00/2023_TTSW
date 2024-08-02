@@ -4226,6 +4226,49 @@ img.img-responsive {
   background: url(../vendor/slick/icon_arrow_right_inverse.png) center center no-repeat !important;
   background-size: 33% !important;
 }
+.rcm .secTab .secTabBar .listBox {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0;
+  border-bottom: #ccc 1px solid;
+}
+.rcm .secTab .secTabBar .listBox .item {
+  width: 50%;
+  text-align: center;
+}
+.rcm .secTab .secTabBar .listBox .item.active button {
+  color: #618e01;
+  border-bottom: #618e01 2px solid !important;
+}
+.rcm .secTab .secTabBar button {
+  width: 100%;
+  border-radius: 0;
+  background: none;
+  color: #000;
+  margin: 0;
+  padding: 0 0 10px;
+  border: none;
+  text-shadow: none;
+  text-align: center;
+  border: none !important;
+  border-bottom: #fff 2px solid !important;
+}
+.rcm .secTab .secTabBar button:hover {
+  color: #618e01;
+  border-bottom: #618e01 2px solid !important;
+}
+.rcm .secTab .secTabContentBox .secTabBody {
+  display: none;
+}
+.rcm .secTab .secTabContentBox .secTabBody.active {
+  display: block;
+}
 
 .rcm_en .rcm_oc_en {
   position: absolute;
@@ -4455,20 +4498,41 @@ img.img-responsive {
   position: relative;
   margin-bottom: 20px;
 }
+.newsBox .tabBar .slick-track {
+  width: 100% !important;
+  -webkit-transform: none !important;
+          transform: none !important;
+}
+@media screen and (min-width: 767px) {
+  .newsBox .tabBar .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .newsBox .tabBar .slick-track .slick-slide {
+    float: none;
+  }
+}
+.newsBox .tabBar .slick-arrow {
+  display: none !important;
+}
 .newsBox .tabBar .listBox {
   margin: 0 30px;
 }
 .newsBox .tabBar .listBox .item {
-  padding: 0 5px;
+  padding: 0 3px;
+}
+.newsBox .tabBar .listBox .item.active button {
+  background: #32780d;
 }
 .newsBox .tabBar .listBox button {
   background: #618e01;
   border-radius: 50px;
   border: none !important;
   padding: 10px 20px;
-}
-.newsBox .slick-arrow {
-  display: none !important;
 }
 @media screen and (max-width: 767px) {
   .newsBox .tabListContentBox {
@@ -4480,6 +4544,9 @@ img.img-responsive {
 }
 .newsBox .tabListContentBox .tabListContent.active {
   display: block;
+}
+.newsBox .tabListContentBox .tabListContent .more {
+  margin: 20px auto 0;
 }
 .newsBox .tabListContentBox a {
   display: block;
@@ -13072,6 +13139,25 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   margin-bottom: 1em;
   margin-left: 1em;
   overflow-y: auto;
+  scrollbar-color: #36810e rgba(0, 0, 0, 0.2);
+  scrollbar-width: thin;
+  background: #fff;
+}
+.leftmenu .taitracode_list::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.leftmenu .taitracode_list::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #36810e;
+}
+.leftmenu .taitracode_list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 767px) {
   .leftmenu .taitracode_list {

@@ -3021,6 +3021,7 @@ if ($('.newsBox .slider').length > 0) {
     variableWidth: true,
     infinite: false,
     arrow: false,
+    // centerMode: true,
     // appendArrows: $(`.newsBox .tabBar`),
   });
 
@@ -3182,9 +3183,9 @@ if ($('.leftmenu').length > 0) {
 
 window.addEventListener('DOMContentLoaded', function () {
   $('.newsBox .tabBar .listBox button').on('click', function () {
-    $(this).addClass('active').siblings('button').removeClass('active');
-    $('.newsBox .tabListContent').eq($(this).index()).addClass('active').siblings('.tabListContent').removeClass('active');
-
+    $(this).parent().addClass('active').siblings().removeClass('active');
+    $('.newsBox .tabListContent').eq($(this).parent().index()).addClass('active').siblings('.tabListContent').removeClass('active');
+    $('.newsBox .img-container').addClass('effect');
     $('.newsBox .slider ul').slick('refresh');
   });
 
@@ -3210,4 +3211,9 @@ window.addEventListener('DOMContentLoaded', function () {
     $('.rcm_slider_new ul').slick('refresh');
     $('.rcm_slider ul').slick('refresh');
   }
+
+  $('.rcm_body .secTab .secTabBar button').on('click', function () {
+    $(this).parent().addClass('active').siblings().removeClass('active');
+    $('.secTabContentBox .secTabBody').eq($(this).parent().index()).addClass('active').siblings('.secTabBody').removeClass('active');
+  });
 });
