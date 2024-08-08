@@ -3962,12 +3962,19 @@ img.img-responsive {
   display: none;
 }
 .rcm .rcm_panel .rcm_body.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .rcm .rcm_panel .rcm_body .btnBox {
   padding-top: 10px;
   margin-top: 10px;
   border-top: #ddd 1px solid;
+  margin: auto 0 0;
 }
 .rcm .rcm_panel .rcm_body .btnBox button {
   display: block;
@@ -3984,7 +3991,10 @@ img.img-responsive {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  gap: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .rcm .rcm_panel .rcm_body .listBox li {
   list-style: none;
@@ -3998,8 +4008,12 @@ img.img-responsive {
           align-items: center;
 }
 .rcm .rcm_panel .rcm_body .listBox .pic {
-  max-width: 30%;
+  width: 74px;
+  height: 51px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border: #ddd 1px solid;
+  position: relative;
 }
 .rcm .rcm_panel .rcm_body .listBox .pic img {
   width: 100%;
@@ -4019,7 +4033,11 @@ img.img-responsive {
   color: #36810e;
 }
 .rcm .rcm_panel .rcm_body {
+  height: 450px;
   padding: 10px 0px;
+}
+.rcm .rcm_panel .rcm_body .btnBox {
+  margin: auto 0 0;
 }
 .rcm .rcm_panel .rcm_body .rcm_exh {
   padding: 5px 0px 15px 0px;
@@ -4226,6 +4244,16 @@ img.img-responsive {
   background: url(../vendor/slick/icon_arrow_right_inverse.png) center center no-repeat !important;
   background-size: 33% !important;
 }
+.rcm .secTab {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .rcm .secTab .secTabBar .listBox {
   padding: 0;
   display: -webkit-box;
@@ -4263,11 +4291,31 @@ img.img-responsive {
   color: #618e01;
   border-bottom: #618e01 2px solid !important;
 }
+.rcm .secTab .secTabContentBox {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .rcm .secTab .secTabContentBox .secTabBody {
   display: none;
+  padding-top: 5px;
 }
 .rcm .secTab .secTabContentBox .secTabBody.active {
-  display: block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .rcm_en .rcm_oc_en {

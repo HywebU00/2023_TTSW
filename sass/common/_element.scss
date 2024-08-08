@@ -1411,13 +1411,15 @@ img.img-responsive {
       display: none;
 
       &.active {
-        display: block;
+        display: flex;
+        flex-direction: column;
       }
 
       .btnBox {
         padding-top: 10px;
         margin-top: 10px;
         border-top: #ddd 1px solid;
+        margin: auto 0 0;
 
         button {
           display: block;
@@ -1431,7 +1433,8 @@ img.img-responsive {
         margin: 0;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 16px;
+        flex-grow: 1;
 
         li {
           list-style: none;
@@ -1443,8 +1446,11 @@ img.img-responsive {
         }
 
         .pic {
-          max-width: 30%;
+          width: 74px;
+          height: 51px;
+          flex-shrink: 0;
           border: #ddd 1px solid;
+          position: relative;
 
           img {
             width: 100%;
@@ -1469,7 +1475,12 @@ img.img-responsive {
     }
 
     .rcm_body {
+      height: 450px;
       padding: 10px 0px;
+
+      .btnBox {
+        margin: auto 0 0;
+      }
 
       .rcm_exh {
         padding: 5px 0px 15px 0px;
@@ -1723,6 +1734,10 @@ img.img-responsive {
   }
 
   .secTab {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
     .secTabBar {
       .listBox {
         padding: 0;
@@ -1765,11 +1780,18 @@ img.img-responsive {
     }
 
     .secTabContentBox {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
       .secTabBody {
         display: none;
+        padding-top: 5px;
 
         &.active {
-          display: block;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
         }
       }
     }
@@ -2046,7 +2068,7 @@ img.img-responsive {
     }
 
     .slick-arrow {
-      display: none !important; 
+      display: none !important;
     }
 
     .listBox {
