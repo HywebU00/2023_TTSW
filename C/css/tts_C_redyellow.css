@@ -4539,6 +4539,9 @@ img.img-responsive {
   border-radius: 50%;
 }
 
+.newsBox {
+  width: 100%;
+}
 .newsBox .sectionTitle {
   text-align: center !important;
 }
