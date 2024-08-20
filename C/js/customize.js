@@ -2859,8 +2859,12 @@ window.addEventListener('DOMContentLoaded', function () {
   function loginTopNavFn(target) {
     target.parent('.item').addClass('active').siblings('.item').removeClass('active');
     $('.rcmBodyBox .rcm_new').eq(target.parent().index()).addClass('active').siblings('.rcm_new').removeClass('active');
-    $('.rcm_slider_new ul').slick('refresh');
-    $('.rcm_slider ul').slick('refresh');
+    $('.rcm_slider_new ul').each(function () {
+      $(this).slick('refresh');
+    });
+    $('.rcm_slider ul').each(function () {
+      $(this).slick('refresh');
+    });
   }
 
   $('.rcm_body .secTab .secTabBar button').on('click', function () {
