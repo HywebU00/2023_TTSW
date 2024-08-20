@@ -2831,8 +2831,7 @@ if ($('.leftmenu').length > 0) {
     leftmenuFn();
   });
 }
-
-window.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function () {
   $('.newsBox .tabBar .listBox button').on('click', function () {
     $(this).parent().addClass('active').siblings().removeClass('active');
     $('.newsBox .tabListContent').eq($(this).parent().index()).addClass('active').siblings('.tabListContent').removeClass('active');
@@ -2856,11 +2855,16 @@ window.addEventListener('DOMContentLoaded', function () {
   $('.rcm_loginTopNav .item button').click(function () {
     if ($(window).width() < 767) loginTopNavFn($(this));
   });
+
   function loginTopNavFn(target) {
     target.parent('.item').addClass('active').siblings('.item').removeClass('active');
     $('.rcmBodyBox .rcm_new').eq(target.parent().index()).addClass('active').siblings('.rcm_new').removeClass('active');
-    $('.rcm_slider_new ul').slick('refresh');
-    $('.rcm_slider ul').slick('refresh');
+    $('.rcm_slider_new ul').each(function () {
+      $(this).slick('refresh');
+    });
+    $('.rcm_slider ul').each(function () {
+      $(this).slick('refresh');
+    });
   }
 
   $('.rcm_body .secTab .secTabBar button').on('click', function () {
