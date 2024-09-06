@@ -17812,10 +17812,6 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   color: #dc5490;
 }
 
-.wrapper {
-  overflow: unset !important;
-}
-
 .compare {
   padding-bottom: 100px;
   position: relative;
