@@ -16170,32 +16170,32 @@ h1.title:after, h2.title:after {
   -webkit-transform: none;
           transform: none;
 }
-.accordion ul {
+.accordion > ul {
   counter-reset: num;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.accordion ul li {
+.accordion > ul > li {
   text-align: left;
   display: block;
   border-bottom: 1px solid #FFF;
 }
-.accordion ul li a {
+.accordion > ul > li > a {
   display: block;
   background: #F1F1F1;
   padding: 1em 3em 1em 2em;
   color: #555;
   position: relative;
 }
-.accordion ul li a:before {
+.accordion > ul > li > a:before {
   counter-increment: num;
   content: counter(num) ". ";
   position: absolute;
   top: 1em;
   left: 0.5em;
 }
-.accordion ul li a:after {
+.accordion > ul > li > a:after {
   position: absolute;
   content: "";
   right: 1em;
@@ -16208,35 +16208,35 @@ h1.title:after, h2.title:after {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.accordion ul li a:hover, .accordion ul li a:focus {
+.accordion > ul > li > a:hover, .accordion > ul > li > a:focus {
   background: #8457b7;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #FFF;
 }
-.accordion ul li a:hover:after, .accordion ul li a:focus:after {
+.accordion > ul > li > a:hover:after, .accordion > ul > li > a:focus:after {
   border: 2px solid #FFF;
   border-top: none;
   border-left: none;
 }
-.accordion ul li a.active {
+.accordion > ul > li > a.active {
   color: #333;
   background: #F1F1F1;
 }
-.accordion ul li a.active:hover, .accordion ul li a.active:focus {
+.accordion > ul > li > a.active:hover, .accordion > ul > li > a.active:focus {
   background: #8c62bc;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.accordion ul li a.active:focus {
+.accordion > ul > li > a.active:focus {
   color: #FFF;
 }
-.accordion ul li a.active:after {
+.accordion > ul > li > a.active:after {
   top: 1.4em;
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
 }
-.accordion ul li .accordion-content {
+.accordion > ul > li .accordion-content {
   position: relative;
   padding: 1em 1em 2em 2em;
   background: #FFF;
@@ -16556,7 +16556,10 @@ form .company_list .exhCKLB {
 }
 
 .newTopNav {
-  max-width: 675px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
   border-radius: 50px;
   background: #AA5AC5;
   overflow: hidden;

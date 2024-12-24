@@ -3194,16 +3194,16 @@ $companyWidth :calc($companyUL/$companyLength);
     }
   }
 
-  ul {
+  & > ul {
     counter-reset: num;
     @include li-reset;
 
-    li {
+    & > li {
       text-align: left;
       display: block;
       border-bottom: 1px solid #FFF;
 
-      a {
+      & > a {
         display: block;
         background: #F1F1F1;
         padding: 1em 3em 1em 2em;
@@ -3626,7 +3626,8 @@ form {
 
 //2024新增
 .newTopNav {
-  max-width: 675px;
+  width: fit-content;
+  max-width: 100%;
   border-radius: 50px;
   background: $secondaryColor;
   overflow: hidden;
