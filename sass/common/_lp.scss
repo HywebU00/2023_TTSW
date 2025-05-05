@@ -207,6 +207,17 @@
             padding: .2em;
             text-align: center;
           }
+
+          &.active {
+            a {
+              color: #fff !important;
+              background: $aHover !important;
+
+              span {
+                color: #fff !important;
+              }
+            }
+          }
         }
       }
     }
@@ -247,6 +258,17 @@
             font-size: .813em;
             font-weight: normal;
             color: #999;
+          }
+        }
+
+        &.active {
+          a {
+            color: #fff !important;
+            background: $aHover !important;
+
+            span {
+              color: #fff !important;
+            }
           }
         }
       }

@@ -13136,6 +13136,13 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   padding: 0.2em;
   text-align: center;
 }
+.leftmenu .company_menu.col_2 ul li.active a {
+  color: #fff !important;
+  background: #c8501b !important;
+}
+.leftmenu .company_menu.col_2 ul li.active a span {
+  color: #fff !important;
+}
 .leftmenu .company_menu ul {
   margin: 0;
   padding: 0;
@@ -13178,6 +13185,13 @@ a.more:hover:after, a.more:focus:after, a.more.active:after {
   font-size: 0.813em;
   font-weight: normal;
   color: #999;
+}
+.leftmenu .company_menu ul li.active a {
+  color: #fff !important;
+  background: #c8501b !important;
+}
+.leftmenu .company_menu ul li.active a span {
+  color: #fff !important;
 }
 .leftmenu h3 {
   margin-top: 0;
