@@ -1,0 +1,200 @@
+footer {
+  // color: $My_WhiteColor;
+  // background: $My_footerColor;
+  color: #fff;
+  background: #333333;
+  text-align: left;
+  padding: 2em 20px;
+  font-size: Rem(20);
+
+  &.has_bottom {
+    @include screen('mobile') {
+      padding-top: 0;
+      padding-bottom: 6em;
+    }
+  }
+
+  @include screen('mobile') {
+    padding: 2em 20px 1em;
+    position: relative;
+    z-index: 1;
+  }
+
+  .container {
+    // @include gutter;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 50px;
+    border-top: 2px solid #fff;
+    padding-top: 3%;
+
+    @include screen('mobile') {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding-top: 40px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+
+      @include screen('mobile') {
+        display: none;
+      }
+    }
+  }
+
+  p {
+    line-height: 1.45em;
+    margin: 0;
+
+    a {
+      display: inline-block;
+      margin: 0px .5em;
+      color: #FFF;
+
+      img {
+        // height: 2em;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: .5em;
+      }
+    }
+  }
+
+  a {
+    @include aSetting;
+  }
+
+  .footer_info {
+    width: calc(100% - 265px);
+    padding-right: 50px;
+    float: left;
+
+    // @include make-xs-column(12);
+    // @include make-sm-column(7);
+    // @include make-md-column(8);
+    // @include make-lg-column(8);
+    // @include gutter();
+    @include screen('mobile') {
+      width: auto;
+      padding-right: 0;
+      float: none;
+      order: 1;
+    }
+  }
+
+  .footer_share {
+    width: 265px;
+    float: right;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+
+    @include screen('mobile') {
+      float: none;
+      order: 0;
+      margin: 0;
+    }
+
+    li {
+      line-height: 0;
+    }
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  // 版權連結
+  .footer_link {
+    @include li-reset();
+    @extend %clearfix;
+    margin-top: 30px;
+
+    li {
+      float: none;
+      display: block;
+      margin: 0px 1em .5em 0px;
+
+      a {
+        @include aSetting_whitecolor;
+        display: block;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  .update,
+  .counter {
+    display: inline-block;
+    margin-right: 5px;
+
+    em {
+      font-style: normal;
+      color: $My_WhiteColor;
+      padding: 0 .5em;
+    }
+  }
+
+  .footer_app {
+    width: 265px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 0 0 auto;
+    gap: 10px;
+
+    @include screen('mobile') {
+      float: none;
+      margin: auto;
+      order: 2;
+    }
+
+    h3 {
+      width: 100%;
+      margin: 0;
+      font-size: Rem(20);
+    }
+
+    a {
+      display: block;
+      line-height: 0;
+    }
+
+    .app_download {
+      float: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .qr_code {
+      aspect-ratio: 1;
+      line-height: 0;
+      // img {
+      //   border: 5px solid #FFF;
+      // }
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    img {
+      max-width: 150px;
+      max-height: 80px;
+    }
+  }
+}

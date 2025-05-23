@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>台北國際自行車展覽會</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/tts_E.css" />
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="vendor/pignose/css/pignose.calendar.min.css" />
+    <!--
+	<style>
+        .cookieText{
+            padding:1em 0 0 0;
+        }
+        .cookieText p{
+            margin:0px ;
+            padding:5px;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+        .cookieSet{
+            padding:1em 0 2em 0;
+        }
+        .cookieSetBox{
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+        .cookieBoxTop{
+            position: relative;
+            border-bottom: 1px solid #ddd;
+            padding:10px;
+        }
+        .cookieBoxTop h3{
+            margin:0px;
+            padding:0px;
+            line-height: 2em;
+        }
+        .cookieBoxTop .switch{
+            position: absolute;
+            right:1em;
+            top:0.8em;
+        }
+        .cookieBoxBottom{
+            padding:10px;
+        }
+        .cookieBoxBottom h3{
+            margin:0px;
+            padding:0px;
+            line-height: 2em;
+        }
+        .cookieBoxBottom p{
+            margin:0px;
+            padding:0px;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+        /*background-color: $primaryColor*/
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    </style>
+    -->
+  </head>
+
+  <body class="noScrollBody">
+    <div class="fboxifDiv">
+      <div class="title">
+        <h2>Cookie設定</h2>
+      </div>
+
+      <!-- 上方選擇時間區塊 -->
+      <div class="S-scrollbar fboxifBody">
+        <div class="cookieSetPG">
+          <div class="cookieText">
+            <p>台北自行車展重視您的私隱，尊重互聯網安全的重要性。</p>
+
+            <p>本網站將cookie與類似技術用於各類目的，包括在本網站中區分您與其他使用者，以提供適合的體驗與功能。如要繼續使用本網站，則表示您同意我們的cookie政策。</p>
+
+            <p>我們使用什麼cookie？</p>
+
+            <p>Cookie是包含少量資訊的文字檔案，當您瀏覽網站時cookie將會被下載至您的電腦或設備。我們無法透過cookie獲取您的個人資訊，但能夠識別您的設備，同時可以透過cookie記住您的各類喜好或操作設定。</p>
+          </div>
+          <div class="cookieSet">
+            <h2>管理同意偏好設定</h2>
+            <div class="cookieSetBox">
+              <div class="cookieBoxTop">
+                <h3>定向cookie</h3>
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p>網站運行離不開這些cookie且您不能在系統中將其關閉。通常僅根據您所做出的操作（即服務請求）來設置這些cookie，如設置隱私偏好、登錄或填充表格。您可以將您的瀏覽器設置為阻止或向您提示這些Cookie，但可能會導致某些網站功能無法工作。</p>
+              </div>
+              <div class="cookieBoxBottom">
+                <h3>絕對必要的cookie</h3>
+                <p>網站運行離不開這些cookie且您不能在系統中將其關閉。通常僅根據您所做出的操作（即服務請求）來設置這些cookie，如設置隱私偏好、登錄或填充表格。您可以將您的瀏覽器設置為阻止或向您提示這些Cookie，但可能會導致某些網站功能無法工作。</p>
+              </div>
+            </div>
+          </div>
+          <div class="btn-grp">
+            <button type="button" class="btn btn-ls">取消</button>
+            <button class="btn-ls">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JQ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <script src="vendor/slick/slick.min.js "></script>
+    <script src="vendor/slick/slick-lightbox.js "></script>
+    <script src="vendor/lazyload/lazyload.min.js"></script>
+    <script src="vendor/picturefill/picturefill.min.js"></script>
+    <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <!-- add pignose calendar -->
+    <script src="vendor/pignose/js/pignose.calendar.full.min.js"></script>
+    <script src="vendor/pignose/js/pignose.calendar.min.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+    <script>
+      $(function () {
+        $('.calendar').pignoseCalendar();
+        $('.pickHour')
+          .find('a')
+          .each(function (index, el) {
+            $(this).click(function (e) {
+              $(this).addClass('active').parent().siblings().find('a').removeClass('active');
+              e.preventDefault();
+            });
+          });
+      });
+    </script>
+  </body>
+</html>

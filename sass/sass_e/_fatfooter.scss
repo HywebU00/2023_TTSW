@@ -1,0 +1,165 @@
+.fatfooter {
+  background: #333333;
+  @include make-fatfooter($fatfooter-length, 100%);
+  @extend %clearfix;
+  overflow: hidden;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  padding: 0 20px;
+  // background: $fatfooterBgColor;
+
+  @include screen('mobile') {
+    display: none;
+  }
+
+  .container {
+    overflow: hidden;
+    @include box-sizing;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  // 按鈕
+  .btn-fatfooter {
+    font-size: .813em;
+    display: block;
+    min-width: 6em;
+    color: #FFF;
+    border: none;
+    background: $aHover;
+    position: absolute;
+    right: 1%;
+    z-index: 9;
+    text-indent: -9999px;
+    @include border-radius(4px);
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #FFF;
+      border-left: none;
+      border-bottom: none;
+      transform: rotate(-45deg);
+      left: 50%;
+      top: 12px;
+      margin-left: -6px;
+      transition: .3s ease-out;
+    }
+
+    &:hover,
+    &:focus {
+      background: darken($aHover, 10);
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &.close {
+      &:before {
+        transform: rotate(135deg) !important;
+        top: 5px;
+      }
+    }
+  }
+
+  nav {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding: 3em 0 1em 0em;
+    @include box-sizing;
+
+    @include screen('mobile') {
+      padding: 1em 0;
+    }
+
+    & > ul {
+      @include li-reset;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+
+      & > li {
+        width: calc((100% - 40px * 4) / 5);
+        display: block;
+        margin: 0 -5px 1em 0;
+        @include box-sizing;
+
+        @include screen('tablet') {
+          width: calc((100% - 40px * 3) / 4);
+        }
+
+        @include screen('mobile') {
+          width: calc((100% - 40px * 2) / 3);
+          display: block;
+          margin: 0 0 .4em
+        }
+
+        a {
+          color: #fff;
+          line-height: 1.5;
+          // @include aSetting_nocolor;
+          display: block;
+          font-weight: bold;
+          padding: .5em 0px;
+          font-size: Rem(20);
+          @include box-sizing;
+
+          &:hover {
+            box-shadow: none;
+          }
+        }
+
+        ul {
+          margin-top: 5px;
+          padding-left: 0;
+
+
+          li {
+            display: block;
+            margin: 0;
+            border: none;
+            background: none;
+            width: 100%;
+            padding-left: 15px;
+            position: relative;
+
+            &::before {
+              content: '-';
+              position: absolute;
+              left: 0;
+              top: 2px;
+              color: #FFF;
+            }
+
+            a {
+              display: block;
+              font-weight: normal;
+              text-align: left;
+              font-size: Rem(20);
+              line-height: 1.2m;
+              padding: .3em .2em;
+              background: none;
+
+              @include screen('mobile') {
+                padding: .3em .2em;
+              }
+            }
+          }
+
+          //第三層關閉
+          ul {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
