@@ -9301,7 +9301,7 @@ h1.title:after, h2.title:after {
 .article_rightimg .pic,
 .article_centerimg .pic, .article_leftimg .article,
 .article_rightimg .article,
-.article_centerimg .article, .main.index .loaction .pic, .main.index .loaction .loaction_intro, .main.index .feature .pic, .main.index .feature .feature_intro, .main.index .seminar .pic, .main.index .seminar .seminar_intro, .main.index .ex_news .pic,
+.article_centerimg .article, .main.index .loaction .pic, .main.index .loaction .location_intro, .main.index .feature .pic, .main.index .feature .feature_intro, .main.index .seminar .pic, .main.index .seminar .seminar_intro, .main.index .ex_news .pic,
 .main.index .industry_news .pic, .main.index .ex_news .news_list,
 .main.index .industry_news .news_list {
   position: relative;
@@ -9316,7 +9316,7 @@ h1.title:after, h2.title:after {
   .article_rightimg .pic,
   .article_centerimg .pic, .article_leftimg .article,
   .article_rightimg .article,
-  .article_centerimg .article, .main.index .loaction .pic, .main.index .loaction .loaction_intro, .main.index .feature .pic, .main.index .feature .feature_intro, .main.index .seminar .pic, .main.index .seminar .seminar_intro, .main.index .ex_news .pic,
+  .article_centerimg .article, .main.index .loaction .pic, .main.index .loaction .location_intro, .main.index .feature .pic, .main.index .feature .feature_intro, .main.index .seminar .pic, .main.index .seminar .seminar_intro, .main.index .ex_news .pic,
   .main.index .industry_news .pic, .main.index .ex_news .news_list,
   .main.index .industry_news .news_list {
     padding-bottom: 1em;
@@ -9326,7 +9326,7 @@ h1.title:after, h2.title:after {
 .article_rightimg .pic h2,
 .article_centerimg .pic h2, .article_leftimg .article h2,
 .article_rightimg .article h2,
-.article_centerimg .article h2, .main.index .loaction .pic h2, .main.index .loaction .loaction_intro h2, .main.index .feature .pic h2, .main.index .feature .feature_intro h2, .main.index .seminar .pic h2, .main.index .seminar .seminar_intro h2, .main.index .ex_news .pic h2,
+.article_centerimg .article h2, .main.index .loaction .pic h2, .main.index .loaction .location_intro h2, .main.index .feature .pic h2, .main.index .feature .feature_intro h2, .main.index .seminar .pic h2, .main.index .seminar .seminar_intro h2, .main.index .ex_news .pic h2,
 .main.index .industry_news .pic h2, .main.index .ex_news .news_list h2,
 .main.index .industry_news .news_list h2 {
   margin: 0em -15px 1em;
@@ -13472,21 +13472,8 @@ h1.title:after, h2.title:after {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.main.index .loaction {
-  font-size: 0.938em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.main.index .loaction .titleElem {
+  text-align: center;
 }
 @media screen and (max-width: 575px) {
   .main.index .loaction {
@@ -13494,18 +13481,9 @@ h1.title:after, h2.title:after {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    position: relative;
-    min-height: 1px;
-    padding-left: 0;
-    padding-right: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
   .main.index .loaction .loaction_intro {
-    width: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    font-size: 1.125rem;
   }
   .main.index .loaction .pic {
     width: 100%;
@@ -13514,33 +13492,14 @@ h1.title:after, h2.title:after {
             flex: 1 1 100%;
   }
 }
-.main.index .loaction h2 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.main.index .loaction .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-  width: 100%;
 }
-@media screen and (max-width: 767px) {
-  .main.index .loaction h2 {
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-.main.index .loaction .loaction_intro {
+.main.index .loaction .location_intro {
   padding: 0.5em;
   padding: 0;
-  float: left;
   width: 33%;
   margin-bottom: 1em;
   display: -webkit-box;
@@ -13564,7 +13523,7 @@ h1.title:after, h2.title:after {
           box-sizing: border-box;
 }
 @media screen and (max-width: 767px) {
-  .main.index .loaction .loaction_intro {
+  .main.index .loaction .location_intro {
     float: none;
     width: 100%;
   }
@@ -13653,6 +13612,8 @@ h1.title:after, h2.title:after {
   height: 100%;
   left: 0;
   top: 0;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .main.index .ad {
   position: relative;
@@ -15198,6 +15159,123 @@ h1.title:after, h2.title:after {
 .piSlider ul li .img-container img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.kvVideo {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.videoContainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.videoContainer iframe,
+.videoContainer object,
+.videoContainer embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.marqueeSlider {
+  list-style: none;
+  overflow: hidden;
+  background: #fff;
+  text-align: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dadada;
+  padding: 8px 40px 8px 16px;
+}
+.marqueeSlider:has(.swiperArrow) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.marqueeSlider .swiper {
+  padding: 4px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 40px;
+  margin: 0 auto 0 0;
+}
+.marqueeSlider .swiperArrow {
+  width: 24px;
+  min-width: unset;
+  height: 24px;
+  position: absolute;
+  cursor: pointer;
+  right: 5px;
+  z-index: 9;
+  padding: 0px !important;
+  margin: 0;
+  border: none;
+  background: none !important;
+}
+.marqueeSlider .swiperArrow:hover, .marqueeSlider .swiperArrow:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: none !important;
+}
+.marqueeSlider .swiperArrow::before {
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/E/arrow_left.svg);
+  content: "";
+  display: block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.marqueeSlider .swiperArrow.prevSlider {
+  top: 0;
+}
+.marqueeSlider .swiperArrow.nextSlider {
+  bottom: 0;
+}
+.marqueeSlider .swiperArrow.nextSlider::before {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.marqueeSlider a {
+  display: block;
+  line-height: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+.marqueeSlider a:not(:hover) {
+  color: #005096;
+}
+.marqueeSlider a span {
+  color: #69707D;
+  margin-right: 15px;
+}
+
+.fbBox {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 12px;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .lp {
