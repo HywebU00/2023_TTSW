@@ -2914,8 +2914,12 @@
       });
 
       let photoSwiper_m = new Swiper('.photoSwiper_m .swiper', {
-        slidesPerView: 1,
+        slidesPerView: 1.5,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
         watchSlidesProgress: true,
+        centerInsufficientSlides: true,
+        spaceBetween: 10,
         pagination: {
           el: '.photoSwiper_m .swiperPagination',
           clickable: true,

@@ -1448,8 +1448,8 @@
       z-index: 2;
 
       @include screen('mobile') {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -1767,8 +1767,8 @@
       box-shadow: 0 0 15px rgba(#000, 0.3);
 
       @include screen('mobile') {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -2021,6 +2021,26 @@
         max-width: 1352px;
         margin: 0 auto;
       }
+
+      &.active {
+        .swiper-slide-active {
+          .info {
+            @include screen('xs_mobile') {
+              animation: scrollUp 0.5s ease forwards 1s;
+            }
+
+            @keyframes scrollUp {
+              0% {
+                transform: translateY(100%);
+              }
+
+              100% {
+                transform: translateY(0);
+              }
+            }
+          }
+        }
+      }
     }
 
     .swiperArrows {
@@ -2037,8 +2057,8 @@
       box-shadow: 0 0 15px rgba(#000, 0.3);
 
       @include screen('mobile') {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -2123,10 +2143,8 @@
       color: #fff;
       transition: all 0.5s ease;
       border-radius: 30px;
+      transform: translateY(100%);
 
-      @include screen('tabletMin') {
-        transform: translateY(100%);
-      }
 
       .title {
         margin-bottom: 30%;
@@ -2246,8 +2264,8 @@
       box-shadow: 0 0 15px rgba(#000, 0.3);
 
       @include screen('mobile') {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -2302,7 +2320,7 @@
       justify-content: center;
 
       @include screen('tablet') {
-        padding-top: 0;
+        padding-top: 0 !important;
       }
 
       a {
@@ -2318,8 +2336,6 @@
       }
 
       &:hover {
-        padding-top: 0;
-
         .pic {
           aspect-ratio: 214/509;
         }
@@ -2339,7 +2355,7 @@
       }
 
       @include screen('xs_mobile') {
-        aspect-ratio: 214/460;
+        aspect-ratio: 214/509;
       }
     }
 
@@ -2356,10 +2372,10 @@
       gap: 15px;
       transition: all 0.3s ease;
       background: linear-gradient(to top, rgba(#010101, 0.9) 0%, rgba(#414141, 0.6) 100%);
+      transform: translateY(100%);
 
       @include screen('tabletMin') {
         top: auto;
-        transform: translateY(100%);
         justify-content: center;
         gap: 30px;
       }
@@ -2407,6 +2423,28 @@
 
         @include screen('tabletMin') {
           display: none;
+        }
+      }
+    }
+
+    .informationSwiper.active {
+
+      .swiper-slide-active,
+      .swiper-slide-next {
+        .info {
+          @include screen('xs_mobile') {
+            animation: scrollUp 0.5s ease forwards 1s;
+          }
+
+          @keyframes scrollUp {
+            0% {
+              transform: translateY(100%);
+            }
+
+            100% {
+              transform: translateY(0);
+            }
+          }
         }
       }
     }
@@ -2506,6 +2544,10 @@
           overflow: hidden;
           flex-shrink: 0;
           margin: 0 0 0 auto;
+
+          @include screen('mobile') {
+            display: none;
+          }
         }
 
         &:hover {
@@ -2618,6 +2660,10 @@
       margin: 0 auto;
     }
 
+    @include screen('mobile') {
+      padding: 0 15px;
+    }
+
     .infoBox {
       display: flex;
       flex-direction: column;
@@ -2640,17 +2686,24 @@
 
       @include screen('tablet') {
         position: absolute;
+        top: 23%;
+        width: auto;
+        left: 0;
+        right: 0;
+        // &::before {
+        //   content: '';
+        //   width: calc(100% - 70px);
+        //   aspect-ratio: 80/56;
+        //   position: relative;
+        //   display: block;
+        //   background: #000;
+        //   opacity: 0;
+        //   pointer-events: none;
+        // }
+      }
 
-        &::before {
-          content: '';
-          width: calc(100% - 70px);
-          aspect-ratio: 80/56;
-          position: relative;
-          display: block;
-          background: #000;
-          opacity: 0;
-          pointer-events: none;
-        }
+      @include screen('mobile') {
+        top: 16%;
       }
     }
 
@@ -2673,15 +2726,15 @@
       }
 
       @include screen('mobile') {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
       }
 
       &.swiperPrev {
         transform: scale(-1);
 
         @include screen('tablet') {
-          left: -35px;
+          left: -0;
           transform: scale(-1) translateY(50%) !important;
         }
       }
@@ -2689,7 +2742,7 @@
       &.swiperNext {
         @include screen('tablet') {
           right: 0;
-          transform: translate(-50%, -50%) !important;
+          transform: translateY(-50%) !important;
         }
       }
 
@@ -3076,8 +3129,8 @@
       box-shadow: 0 0 15px rgba(#000, 0.3);
 
       @include screen('mobile') {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -3182,7 +3235,7 @@
     }
 
     .photoSwiper {
-      @include screen('tablet') {
+      @include screen('mobile') {
         display: none;
       }
     }
@@ -3190,8 +3243,13 @@
     .photoSwiper_m {
       display: none;
 
-      @include screen('tablet') {
+      @include screen('mobile') {
         display: block;
+        padding: 0 15px;
+      }
+
+      .swiper {
+        overflow: visible;
       }
 
       .title {
@@ -3263,7 +3321,7 @@
     position: relative;
 
     @include screen('mobile') {
-      padding: 0 20px;
+      padding: 0 15px;
     }
 
     .titleElem {
@@ -3356,6 +3414,12 @@
       position: relative;
     }
 
+    .swiper {
+      @include screen('tablet') {
+        overflow: visible;
+      }
+    }
+
     .videoContainer {
       position: relative;
       padding-bottom: 56.25%;
@@ -3436,6 +3500,10 @@
       margin: 0 auto 40px;
       position: relative;
 
+      @include screen('mobile') {
+        width: calc(100% - 50px);
+      }
+
       &::before {
         content: '';
         width: 100%;
@@ -3509,8 +3577,8 @@
       box-shadow: 0 0 15px rgba(#000, 0.3);
 
       @include screen('mobile') {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -3519,11 +3587,19 @@
       &.swiperPrev {
         transform: translateY(-50%) scale(-1);
         left: -100px;
+
+        @include screen('mobile') {
+          left: -25px;
+        }
       }
 
       &.swiperNext {
         transform: translateY(-50%);
         right: -100px;
+
+        @include screen('mobile') {
+          right: -25px;
+        }
       }
 
       &::before {
@@ -4634,6 +4710,73 @@
   }
 }
 
+.fixed_bar_m {
+  position: fixed;
+  bottom: 0;
+  background: rgba(#000, 0.6);
+  justify-content: center;
+  z-index: 9;
+  width: 100%;
+  display: none;
+
+  @include screen('mobile') {
+    display: block;
+  }
+
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5px;
+
+    li {
+      &.exhibiter {
+        img {
+          width: 25px;
+        }
+      }
+
+      &.media {
+        img {
+          width: 35px;
+        }
+      }
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 10px 5px;
+      color: #fff;
+      font-size: Rem(13);
+    }
+
+    .pic {
+      width: 50px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      margin: 0 auto;
+
+
+      img {
+        width: 30px;
+        object-fit: contain;
+        margin: 0px auto 0.1em;
+        display: block;
+        filter: invert(100%) brightness(50);
+      }
+    }
+  }
+}
+
 .fixed_bar {
   height: auto;
   //top: 40%;
@@ -4681,6 +4824,12 @@
       &:last-child {
         img {
           filter: invert(0) !important;
+        }
+      }
+
+      @include screen('mobile') {
+        &.onMobile {
+          display: none;
         }
       }
     }
