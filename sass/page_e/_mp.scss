@@ -716,18 +716,19 @@
     }
 
     .contentBox {
-      height: 95vh;
+      height: 100vh;
       display: flex;
       justify-content: space-between;
-      padding-top: 250px;
+      padding-top: 200px;
       padding-bottom: 40px;
       align-items: center;
       max-width: 1440px;
       margin: 0 auto;
       gap: 30px;
+      position: relative;
 
       @media screen and (max-width: 1440px) {
-        padding-top: 100px;
+        padding-top: 180px;
       }
 
       @include screen('tablet') {
@@ -796,7 +797,15 @@
     max-width: 582px;
     display: block;
     position: relative;
-    padding-bottom: 150px;
+    padding-bottom: 130px;
+    right: 0;
+    bottom: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    top: 200px;
+
+    // @media screen and (max-width: 1440px) {}
 
     @include screen('tablet') {
       max-width: none;
@@ -884,15 +893,16 @@
 
     .gallerySwiper {
       width: 100%;
-      // position: absolute;
-      // right: 0%;
-      // top: 0%;
-      // bottom: auto;
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      bottom: auto;
       z-index: 2;
       // position: absolute;
       // top: 5%;
       // right: 0%;
       overflow: visible;
+      backdrop-filter: blur(10px);
 
       @include screen('tablet') {
         width: 90%;

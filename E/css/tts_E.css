@@ -10018,14 +10018,14 @@ h1.title:after, h2.title:after {
   }
 }
 .main.index .mpKv .contentBox {
-  height: 95vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 250px;
+  padding-top: 200px;
   padding-bottom: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -10033,10 +10033,11 @@ h1.title:after, h2.title:after {
   max-width: 1440px;
   margin: 0 auto;
   gap: 30px;
+  position: relative;
 }
 @media screen and (max-width: 1440px) {
   .main.index .mpKv .contentBox {
-    padding-top: 100px;
+    padding-top: 180px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -10112,7 +10113,13 @@ h1.title:after, h2.title:after {
   max-width: 582px;
   display: block;
   position: relative;
-  padding-bottom: 150px;
+  padding-bottom: 130px;
+  right: 0;
+  bottom: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  top: 200px;
 }
 @media screen and (max-width: 991px) {
   .main.index .mp_slider {
@@ -10186,8 +10193,14 @@ h1.title:after, h2.title:after {
 }
 .main.index .mp_slider .gallerySwiper {
   width: 100%;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  bottom: auto;
   z-index: 2;
   overflow: visible;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 @media screen and (max-width: 991px) {
   .main.index .mp_slider .gallerySwiper {
