@@ -10121,9 +10121,17 @@ h1.title:after, h2.title:after {
   bottom: 40px;
   top: 200px;
 }
+@media screen and (max-width: 1440px) {
+  .main.index .mp_slider {
+    top: 150px;
+  }
+}
 @media screen and (max-width: 991px) {
   .main.index .mp_slider {
+    position: relative;
     max-width: none;
+    top: auto;
+    bottom: auto;
     width: 100%;
     margin: 0 auto;
     padding: 50px 0px 300px;
@@ -10204,6 +10212,7 @@ h1.title:after, h2.title:after {
 }
 @media screen and (max-width: 991px) {
   .main.index .mp_slider .gallerySwiper {
+    position: relative;
     width: 90%;
     margin: 0 auto;
     -webkit-transform: translate(0, 0) !important;

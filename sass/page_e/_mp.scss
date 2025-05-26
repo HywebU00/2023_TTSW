@@ -805,10 +805,15 @@
     bottom: 40px;
     top: 200px;
 
-    // @media screen and (max-width: 1440px) {}
+    @media screen and (max-width: 1440px) {
+      top: 150px;
+    }
 
     @include screen('tablet') {
+      position: relative;
       max-width: none;
+      top: auto;
+      bottom: auto;
       width: 100%;
       margin: 0 auto;
       padding: 50px 0px 300px;
@@ -905,6 +910,7 @@
       backdrop-filter: blur(10px);
 
       @include screen('tablet') {
+        position: relative;
         width: 90%;
         margin: 0 auto;
         transform: translate(0, 0) !important;
