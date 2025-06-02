@@ -48,10 +48,11 @@
       }
     }
 
-    // &:focus {
-    //   box-shadow: none;
-    //   background: #444;
-    // }
+    &:focus {
+      // color: #fff;
+      box-shadow: none;
+      // background: #444;
+    }
   }
 
   ul {

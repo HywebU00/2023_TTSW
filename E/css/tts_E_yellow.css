@@ -7388,6 +7388,10 @@ div.tag ul li a:hover, div.tag ul li a:focus {
     right: 25px;
   }
 }
+.language > a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .language ul {
   background: #555;
   padding: 1em 1.5em;
