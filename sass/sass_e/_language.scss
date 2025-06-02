@@ -48,10 +48,10 @@
       }
     }
 
-    &:focus {
-      box-shadow: none;
-      background: #444;
-    }
+    // &:focus {
+    //   box-shadow: none;
+    //   background: #444;
+    // }
   }
 
   ul {
@@ -65,6 +65,7 @@
     z-index: 9999;
     @include li-reset;
     border-radius: 8px;
+    overflow: hidden;
 
     li {
       display: block;
