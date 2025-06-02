@@ -2823,10 +2823,11 @@
           bottom: 0;
           left: 0;
           width: 100%;
-          padding: 40px 40px;
+          padding: 30px 40px;
           background: linear-gradient(to top, rgba(#010101, 0.9) 0%, rgba(#414141, 0) 100%);
           line-height: 1.2;
           margin: 0;
+          text-align: center;
 
           @include screen('mobile') {
             font-size: Rem(20);
@@ -4810,7 +4811,7 @@
   margin-right: 20px;
 
   @include screen('tablet') {
-    margin-right: 5px;
+    bottom: 10%;
   }
 
 

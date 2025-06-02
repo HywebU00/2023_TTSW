@@ -64,6 +64,7 @@
     height: auto;
     z-index: 9999;
     @include li-reset;
+    border-radius: 8px;
 
     li {
       display: block;

@@ -7405,6 +7405,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   margin: 0;
   padding: 0;
   list-style: none;
+  border-radius: 8px;
 }
 .language ul li {
   display: block;
@@ -12250,11 +12251,12 @@ h1.title:after, h2.title:after {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 40px 40px;
+  padding: 30px 40px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 1, 1, 0.9)), to(rgba(65, 65, 65, 0)));
   background: linear-gradient(to top, rgba(1, 1, 1, 0.9) 0%, rgba(65, 65, 65, 0) 100%);
   line-height: 1.2;
   margin: 0;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
   .main.index .awardBox .awardSwiper .picBox .tagInfo {
@@ -14423,7 +14425,7 @@ h1.title:after, h2.title:after {
 }
 @media screen and (max-width: 991px) {
   .fixed_bar {
-    margin-right: 5px;
+    bottom: 10%;
   }
 }
 .fixed_bar ul {
