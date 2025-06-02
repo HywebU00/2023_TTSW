@@ -104,6 +104,7 @@
       list-style: none;
       text-align: left;
       animation: showMenu .3s ease-out;
+      border-radius: 8px;
 
       ul {
         top: 0;
@@ -127,10 +128,23 @@
     li {
       float: none;
 
+      &:first-child {
+        a {
+          border-radius: 8px 8px 0 0;
+        }
+      }
+
+      &:last-child {
+        a {
+          border-radius: 0 0 8px 8px;
+        }
+      }
+
       a {
         padding: .5em .8em;
         font-size: .938em;
         color: #FFF;
+        overflow: hidden;
         font-weight: bold;
 
         &:hover,

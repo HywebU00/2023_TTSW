@@ -85,6 +85,7 @@ footer {
       padding-right: 0;
       float: none;
       order: 1;
+      text-align: center;
     }
   }
 
@@ -161,12 +162,17 @@ footer {
       float: none;
       margin: auto;
       order: 2;
+      justify-content: center;
     }
 
     h3 {
       width: 100%;
       margin: 0;
       font-size: Rem(20);
+
+      @include screen('mobile') {
+        text-align: center;
+      }
     }
 
     a {
@@ -190,6 +196,10 @@ footer {
       background: #fff;
       padding: 10px;
       border-radius: 10px;
+
+      @include screen('mobile') {
+        display: none;
+      }
     }
 
     img {

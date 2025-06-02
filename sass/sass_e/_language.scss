@@ -1,7 +1,7 @@
 .language {
   // width: 110px;
-  font-weight: bold;
-  font-size: .938em;
+  // font-weight: bold;
+  // font-size: .938em;
   // text-shadow: 1px 1px 2px RGBA(0, 0, 0, .8);
   position: relative;
 
@@ -15,6 +15,7 @@
     position: relative;
     transition: .3s ease-out;
     // border: 1px solid #666;
+    @include aSetting_whitecolor;
 
     &:after {
       display: none;

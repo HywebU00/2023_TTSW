@@ -6761,9 +6761,14 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   -webkit-box-ordinal-group: 6;
       -ms-flex-order: 5;
           order: 5;
+  color: #FFF;
+  text-decoration: none;
 }
 .header .navigation .btn_login:hover, .header .navigation .btn_login:focus {
-  background: #9975c3;
+  color: #cdbbf7;
+  cursor: pointer;
+}
+.header .navigation .btn_login:hover, .header .navigation .btn_login:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none !important;
@@ -7333,8 +7338,6 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 
 .language {
-  font-weight: bold;
-  font-size: 0.938em;
   position: relative;
 }
 .language > a {
@@ -7347,6 +7350,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   position: relative;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
+  color: #FFF;
+  text-decoration: none;
+}
+.language > a:hover, .language > a:focus {
+  color: #cdbbf7;
+  cursor: pointer;
 }
 .language > a:after {
   display: none;
@@ -7512,6 +7521,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   text-align: left;
   -webkit-animation: showMenu 0.3s ease-out;
           animation: showMenu 0.3s ease-out;
+  border-radius: 8px;
 }
 .menu > ul ul ul {
   top: 0;
@@ -7530,10 +7540,17 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .menu li li {
   float: none;
 }
+.menu li li:first-child a {
+  border-radius: 8px 8px 0 0;
+}
+.menu li li:last-child a {
+  border-radius: 0 0 8px 8px;
+}
 .menu li li a {
   padding: 0.5em 0.8em;
   font-size: 0.938em;
   color: #FFF;
+  overflow: hidden;
   font-weight: bold;
 }
 .menu li li a:hover, .menu li li a:focus {
@@ -10050,8 +10067,8 @@ h1.title:after, h2.title:after {
 }
 @media screen and (max-width: 991px) {
   .main.index .mpKv .kvTitleBox {
-    height: 80vh;
     margin: 0;
+    min-height: 60vh;
     width: 100%;
     max-width: none;
     padding: 40px 30px;
@@ -10105,15 +10122,14 @@ h1.title:after, h2.title:after {
   position: relative;
   padding-bottom: 130px;
   right: 0;
-  bottom: 40px;
+  bottom: 80px;
   position: absolute;
-  right: 0;
-  bottom: 40px;
   top: 200px;
 }
 @media screen and (max-width: 1440px) {
   .main.index .mp_slider {
     top: 150px;
+    bottom: 40px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -10131,12 +10147,12 @@ h1.title:after, h2.title:after {
 }
 @media screen and (max-width: 767px) {
   .main.index .mp_slider {
-    padding: 50px 0 250px;
+    padding: 0px 0 250px;
   }
 }
 @media screen and (max-width: 575px) {
   .main.index .mp_slider {
-    padding: 50px 0 200px;
+    padding: 0px 0 200px;
   }
 }
 .main.index .mp_slider .swiper-slide {
@@ -11704,6 +11720,9 @@ h1.title:after, h2.title:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.main.index .informationBox .swiper-slide:hover {
+  padding-top: 0;
+}
 .main.index .informationBox .swiper-slide:hover .pic {
   aspect-ratio: 214/509;
 }
@@ -11874,6 +11893,8 @@ h1.title:after, h2.title:after {
   aspect-ratio: 56/46;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border-radius: 30px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1100px) {
   .main.index .newsBox .pic {
@@ -12013,7 +12034,7 @@ h1.title:after, h2.title:after {
   background: url("../images/E/bg_purple.jpg") no-repeat center top !important;
   background-size: cover !important;
   background-attachment: fixed !important;
-  padding: 7% 30px !important;
+  padding: 6% 30px !important;
 }
 @media screen and (max-width: 991px) {
   .main.index section:has(.awardBox) {
@@ -12209,20 +12230,40 @@ h1.title:after, h2.title:after {
     gap: 20px;
   }
 }
-.main.index .awardBox .awardSwiper .pic {
+.main.index .awardBox .awardSwiper .picBox {
   width: 50%;
-  aspect-ratio: 80/56;
   position: relative;
   isolation: isolate;
   border-radius: 30px;
   overflow: hidden;
 }
 @media screen and (max-width: 991px) {
-  .main.index .awardBox .awardSwiper .pic {
+  .main.index .awardBox .awardSwiper .picBox {
     width: 100%;
   }
 }
-.main.index .awardBox .awardSwiper .pic img {
+.main.index .awardBox .awardSwiper .picBox .tagInfo {
+  color: #fff;
+  font-size: 1.625rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 40px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 1, 1, 0.9)), to(rgba(65, 65, 65, 0)));
+  background: linear-gradient(to top, rgba(1, 1, 1, 0.9) 0%, rgba(65, 65, 65, 0) 100%);
+  line-height: 1.2;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .main.index .awardBox .awardSwiper .picBox .tagInfo {
+    font-size: 1.25rem;
+    padding: 20px;
+  }
+}
+.main.index .awardBox .awardSwiper .picBox img {
+  aspect-ratio: 80/56;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -14371,9 +14412,9 @@ h1.title:after, h2.title:after {
 
 .fixed_bar {
   height: auto;
-  top: 50%;
-  -webkit-transform: translateY(-50%) translateZ(0);
-          transform: translateY(-50%) translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  bottom: 5%;
   position: fixed;
   z-index: 99;
   -webkit-animation: fixed_bar 2s cubic-bezier(0.4, 0.01, 0.165, 0.99) forwards;
@@ -14470,8 +14511,8 @@ h1.title:after, h2.title:after {
 }
 @media screen and (max-width: 991px) {
   .fixed_bar ul a .pic {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 }
 .fixed_bar ul a .pic img {
@@ -14482,11 +14523,6 @@ h1.title:after, h2.title:after {
   display: block;
   -webkit-filter: invert(100%) brightness(50);
           filter: invert(100%) brightness(50);
-}
-@media screen and (max-width: 991px) {
-  .fixed_bar ul a .pic img {
-    width: 20px;
-  }
 }
 .fixed_bar ul a.ai .pic img {
   width: 30px;

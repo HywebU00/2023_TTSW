@@ -338,10 +338,11 @@
       border-radius: 0;
       margin: 0;
       order: 5;
+      @include aSetting_whitecolor;
 
       &:hover,
       &:focus {
-        background: lighten($primaryColor, 10);
+        // background: lighten($primaryColor, 10);
         box-shadow: none;
         border: none !important;
       }
