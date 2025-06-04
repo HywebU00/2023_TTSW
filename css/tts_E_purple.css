@@ -9392,7 +9392,7 @@ h1.title:after, h2.title:after {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main.index .indexBtn {
+.main.index .more {
   max-width: 250px;
   border-radius: 0;
   font-weight: 400;
@@ -9421,22 +9421,25 @@ h1.title:after, h2.title:after {
   padding: 25px 30px 25px 30px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  line-height: 1.45em;
+  height: auto;
 }
 @media screen and (max-width: 1399px) {
-  .main.index .indexBtn {
+  .main.index .more {
     font-size: 1.375rem;
   }
 }
 @media screen and (max-width: 991px) {
-  .main.index .indexBtn {
+  .main.index .more {
     font-size: 1.125rem;
     padding: 15px 30px 15px 30px;
   }
 }
-.main.index .indexBtn::before {
+.main.index .more::before {
   content: "";
   position: absolute;
   width: 0;
+  left: auto;
   right: 0;
   top: 0;
   bottom: 0;
@@ -9445,8 +9448,10 @@ h1.title:after, h2.title:after {
   z-index: -1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-transform: none;
+          transform: none;
 }
-.main.index .indexBtn::after {
+.main.index .more::after {
   content: "";
   position: absolute;
   width: 28px;
@@ -9460,26 +9465,27 @@ h1.title:after, h2.title:after {
           transform: translateY(-50%);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border: none;
 }
 @media screen and (max-width: 1400px) {
-  .main.index .indexBtn::after {
+  .main.index .more::after {
     right: 30px;
   }
 }
-.main.index .indexBtn img {
+.main.index .more img {
   width: 60px;
   height: 60px;
   margin: 0px auto 0.3em;
   display: block;
 }
-.main.index .indexBtn:hover, .main.index .indexBtn:focus {
+.main.index .more:hover, .main.index .more:focus {
   color: #fff;
 }
-.main.index .indexBtn:hover::before, .main.index .indexBtn:focus::before {
+.main.index .more:hover::before, .main.index .more:focus::before {
   width: 100%;
   left: 0;
 }
-.main.index .indexBtn:hover::after, .main.index .indexBtn:focus::after {
+.main.index .more:hover::after, .main.index .more:focus::after {
   -webkit-filter: brightness(50);
           filter: brightness(50);
 }
@@ -9488,16 +9494,6 @@ h1.title:after, h2.title:after {
 }
 .main.index .btn_grp a {
   display: inline-block;
-}
-.main.index a.more {
-  margin: 1em auto 0.5em 0;
-}
-@media screen and (max-width: 767px) {
-  .main.index a.more {
-    margin: 0 auto 0.5em;
-    display: block;
-    width: 80%;
-  }
 }
 .main.index .section {
   padding: 0em;
@@ -9925,7 +9921,7 @@ h1.title:after, h2.title:after {
     padding: 1em 0;
   }
 }
-.main.index .ex_btn ul li .indexBtn {
+.main.index .ex_btn ul li .more {
   max-width: none;
   font-weight: 500;
   width: 100%;
@@ -9940,15 +9936,15 @@ h1.title:after, h2.title:after {
   transition: all 0.3s ease;
   padding: 25px 70px 25px 30px;
 }
-.main.index .ex_btn ul li .indexBtn:hover {
+.main.index .ex_btn ul li .more:hover {
   color: #333;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.main.index .ex_btn ul li .indexBtn:hover::before {
+.main.index .ex_btn ul li .more:hover::before {
   display: none;
 }
-.main.index .ex_btn ul li .indexBtn:hover::after {
+.main.index .ex_btn ul li .more:hover::after {
   -webkit-filter: none;
           filter: none;
 }
@@ -10111,10 +10107,6 @@ h1.title:after, h2.title:after {
   .main.index .mpKv .kvTitleBox .description {
     font-size: 20px;
   }
-}
-.main.index .mpKv .kvTitleBox .more {
-  background: #fff;
-  border-radius: 50px;
 }
 .main.index .mp_slider {
   width: 45%;
@@ -10989,7 +10981,7 @@ h1.title:after, h2.title:after {
   left: 0;
   top: 0px;
 }
-.main.index .eventBox .indexBtn {
+.main.index .eventBox .more {
   position: absolute;
   left: 0;
   bottom: 10%;
@@ -11000,7 +10992,7 @@ h1.title:after, h2.title:after {
   padding-right: 80px;
 }
 @media screen and (max-width: 767px) {
-  .main.index .eventBox .indexBtn {
+  .main.index .eventBox .more {
     position: relative;
     left: auto;
     bottom: auto;
@@ -13366,21 +13358,8 @@ h1.title:after, h2.title:after {
     width: 66.6666666667%;
   }
 }
-@media screen and (max-width: 767px) {
-  .main.index .feature .feature_intro a.more {
-    display: none;
-  }
-}
 .main.index .feature .slider ul li {
   padding: 0 15px;
-}
-.main.index .feature .slider a.more {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .main.index .feature .slider a.more {
-    display: block;
-  }
 }
 .main.index .feature ul {
   margin: 0;
@@ -14185,15 +14164,6 @@ h1.title:after, h2.title:after {
   overflow: hidden;
   display: block;
   line-height: 1.5em;
-}
-.main.index .video_bg .video-container .caption a.more {
-  background: RGBA(0, 0, 0, 0.15);
-  border: 1px solid #fff;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-.main.index .video_bg .video-container .caption a.more:hover, .main.index .video_bg .video-container .caption a.more:focus {
-  background: RGBA(0, 0, 0, 0.35);
 }
 .main.index .video_bg .video-container:after {
   position: absolute;
