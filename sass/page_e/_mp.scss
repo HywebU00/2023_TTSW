@@ -4988,6 +4988,21 @@
       top: auto;
       right: auto;
     }
+
+    .count {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-50%, 0%);
+      background: red;
+      z-index: 5;
+      color: #fff;
+      border-radius: 50%;
+      width: fit-content;
+      min-width: 20px;
+      line-height: 1;
+      padding: 3px;
+    }
   }
 }
 
