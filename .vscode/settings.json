@@ -31,6 +31,11 @@
       "format": "expanded",
       "extensionName": ".css",
       "savePath": "/E/css" //此為輸出的路徑，可以自行更改
+    },
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/aiChat/css" //此為輸出的路徑，可以自行更改
     }
     // {
     //   "extensionName": ".css", //正式版副檔名為min.css

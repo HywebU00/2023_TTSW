@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+// 共通
+// 初始值
+@import "_style2";
+//-------------------------------------------------------------繼承---------//
+$color: index($style, 灰色);
+
+$primaryColor: nth($mainColor, $color); //主色
+$secondaryColor: nth($subColor, $color); //主色
+//-------------------------------------------------------------顏色---------//
+$lightColor: #FCC211; //點綴
+$linkColor: #21BAFF; //連結
+$importantColor: #FF3E4D; //重要
+
+$color-blue: #21BAFF;
+$color-green: #5CB85C;
+$color-orange: #F77810;
+$color-red: #FF3E4D;
+$color-yellow: #FCC211;
+$color-purple: #AA5AC5;
+$color-gray: #CCC;
+$color-dark: #333;
+$color-hr: #666; //hr顏色
+$My_wordColor: #222; //黑字
+$My_WhiteColor: #FFF; //白字
+$color-word: $My_wordColor; //一般字的顏色
+// 連結顏色
+$aColor: $primaryColor;
+$aHover: lighten($aColor, 15);
+
+// 表單focus顏色
+$form-focus: saturate(lighten($primaryColor, 7), 36); //表單
+
+// 替換顏色
+$My_primaryColor: $primaryColor; //客製主色
+$My_secondaryColor: $secondaryColor; //客製輔色
+$My_aColor: $aColor; //連結顏色
+$My_aHover: $aHover; //滑過顏色
+$My_footerColor: $My_primaryColor; //footer
+$My_colorWord: $color-word; //footer
+$My_line: #DDD; //預設線
+
+$toDoFilter: invert(23%) sepia(6%) saturate(14%) hue-rotate(329deg) brightness(99%) contrast(87%);
+
+//px轉rem 使用方式 Rem(px) px直接輸入數字即可
+@function Rem($n: 16) {
+  @return calc($n / 16 * 1rem);
+}
+
+//-------------------------------------------------------------背景---------//
+$bg: nth($bgPic, $color); //主色
+//
+//-------------------------------------------------------------匯入---------//
+@import "common/_normalize"; //reset
+@import "common/_mixin"; //客製MIXIN
+@import "common/_font"; //文字設定
+
+// 元素
+@import "common/_btn"; //按鈕設定
+@import "common/_icon"; //圖示
+@import "common/_element"; //小元素
+
+
+// 頁面
+@import "page_aiChat/_template"; //版型初始設定
