@@ -3174,21 +3174,69 @@ main .chatInfoBox {
   color: #fff;
   background: rgba(102, 102, 102, 0.8);
   padding: 15px 70px;
+  position: relative;
 }
 @media screen and (max-width: 991px) {
   main .chatInfoBox {
-    padding: 15px;
+    padding: 15px 50px 15px 50px;
   }
 }
 @media screen and (max-width: 767px) {
   main .chatInfoBox {
     font-size: 0.875rem;
-    padding: 10px 15px;
   }
 }
 main .chatInfoBox a {
   color: #fff;
   text-decoration: underline;
+}
+main .chatInfoBox .swiperArrows {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  position: absolute;
+  cursor: pointer;
+  z-index: 9;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+main .chatInfoBox .swiperArrows::before {
+  content: "";
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-image: url(../images/arrow_left.svg);
+  background-size: contain;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform-origin: center;
+}
+main .chatInfoBox .swiperArrows.swiperPrev {
+  left: 15px;
+}
+@media screen and (max-width: 991px) {
+  main .chatInfoBox .swiperArrows.swiperPrev {
+    left: 10px;
+  }
+}
+main .chatInfoBox .swiperArrows.swiperNext {
+  right: 15px;
+}
+@media screen and (max-width: 991px) {
+  main .chatInfoBox .swiperArrows.swiperNext {
+    right: 10px;
+  }
+}
+main .chatInfoBox .swiperArrows.swiperNext::before {
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
 }
 main .chatContentBox {
   display: -webkit-box;

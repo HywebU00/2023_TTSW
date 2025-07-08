@@ -39,7 +39,16 @@
       <!-- header End -->
       <!-- main Start -->
       <main>
-        <div class="chatInfoBox">為保護您的權益，請詳細閱讀「<a href="#" target="_blank">個人資料運用法定告知事項</a>」如您已充分瞭解並同意，請繼續進行對談服務。</div>
+        <div class="chatInfoBox">
+          <div class="swiperArrows swiperPrev"></div>
+          <div class="swiperArrows swiperNext"></div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">為保護您的權益，請詳細閱讀「<a href="#" target="_blank">個人資料運用法定告知事項</a>」如您已充分瞭解並同意，請繼續進行對談服務。</div>
+              <div class="swiper-slide">為保護您的權益，請詳細閱讀「<a href="#" target="_blank">個人資料運用法定告知事項</a>」如您已充分瞭解並同意，請繼續進行對談服務。</div>
+            </div>
+          </div>
+        </div>
         <div class="chatContentBox">
           <div class="chatMessageBox">
             <div class="chatMessageContent">
@@ -277,6 +286,14 @@
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
 
     <script>
+      const infoSwiper = new Swiper('.chatInfoBox .swiper', {
+        slidesPerView: 1,
+        navigation: {
+          nextEl: '.chatInfoBox .swiperNext',
+          prevEl: '.chatInfoBox .swiperPrev',
+        },
+      });
+
       const chatSwiperBox = document.querySelectorAll('.chatSwiperBox');
       chatSwiperBox.forEach((item) => {
         const swiper = new Swiper(item.querySelector('.swiper'), {
@@ -287,10 +304,8 @@
           },
         });
       });
-
       const mobileContextMenuBtn = document.querySelector('#mobileContextMenuBtn');
       const chatContextMenu = document.querySelector('.chatContextMenu');
-
       mobileContextMenuBtn.addEventListener('click', (e) => {
         e.preventDefault();
         mobileContextMenuBtn.classList.toggle('active');
