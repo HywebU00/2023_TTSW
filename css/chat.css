@@ -18,12 +18,12 @@
   background: #047cc3;
 }
 .chat_body.color_blue .chat_inside .chat_welcome {
-  background: #96d7fd;
-  background: -webkit-gradient(linear, left top, left bottom, from(#96d7fd), to(#fff));
-  background: linear-gradient(to bottom, #96d7fd, #fff);
+  background: rgb(150.1507537688, 214.6733668342, 252.8492462312);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(150.1507537688, 214.6733668342, 252.8492462312)), to(#fff));
+  background: linear-gradient(to bottom, rgb(150.1507537688, 214.6733668342, 252.8492462312), #fff);
 }
 .chat_body.color_blue .chat_inside .chat_content {
-  background: #036caa;
+  background: rgb(3.4874371859, 108.1105527638, 170.0125628141);
 }
 .chat_body.color_blue .chat_inside .chat_list .chat_search {
   background: #047cc3;
@@ -38,12 +38,12 @@
   background: #bc2769;
 }
 .chat_body.color_red .chat_inside .chat_welcome {
-  background: #f1bed5;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1bed5), to(#fff));
-  background: linear-gradient(to bottom, #f1bed5, #fff);
+  background: rgb(241.4273127753, 189.5726872247, 212.5418502203);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(241.4273127753, 189.5726872247, 212.5418502203)), to(#fff));
+  background: linear-gradient(to bottom, rgb(241.4273127753, 189.5726872247, 212.5418502203), #fff);
 }
 .chat_body.color_red .chat_inside .chat_content {
-  background: #a7235d;
+  background: rgb(166.8810572687, 34.6189427313, 93.204845815);
 }
 .chat_body.color_red .chat_inside .chat_list .chat_search {
   background: #bc2769;
@@ -58,12 +58,12 @@
   background: #853512;
 }
 .chat_body.color_brown .chat_inside .chat_welcome {
-  background: #ed9a76;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ed9a76), to(#fff));
-  background: linear-gradient(to bottom, #ed9a76, #fff);
+  background: rgb(236.5231788079, 154.4039735099, 118.4768211921);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(236.5231788079, 154.4039735099, 118.4768211921)), to(#fff));
+  background: linear-gradient(to bottom, rgb(236.5231788079, 154.4039735099, 118.4768211921), #fff);
 }
 .chat_body.color_brown .chat_inside .chat_content {
-  background: #6f2c0f;
+  background: rgb(110.5397350993, 44.0496688742, 14.9602649007);
 }
 .chat_body.color_brown .chat_inside .chat_list .chat_search {
   background: #853512;
@@ -78,12 +78,12 @@
   background: #f8920f;
 }
 .chat_body.color_yellow .chat_inside .chat_welcome {
-  background: #feecd5;
-  background: -webkit-gradient(linear, left top, left bottom, from(#feecd5), to(#fff));
-  background: linear-gradient(to bottom, #feecd5, #fff);
+  background: rgb(253.7813765182, 236.024291498, 213.2186234818);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(253.7813765182, 236.024291498, 213.2186234818)), to(#fff));
+  background: linear-gradient(to bottom, rgb(253.7813765182, 236.024291498, 213.2186234818), #fff);
 }
 .chat_body.color_yellow .chat_inside .chat_content {
-  background: #e78507;
+  background: rgb(230.7692307692, 132.6923076923, 6.7307692308);
 }
 .chat_body.color_yellow .chat_inside .chat_list .chat_search {
   background: #f8920f;
@@ -98,12 +98,12 @@
   background: #36810e;
 }
 .chat_body.color_green .chat_inside .chat_welcome {
-  background: #9aef6c;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9aef6c), to(#fff));
-  background: linear-gradient(to bottom, #9aef6c, #fff);
+  background: rgb(153.5524475524, 239.041958042, 107.958041958);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(153.5524475524, 239.041958042, 107.958041958)), to(#fff));
+  background: linear-gradient(to bottom, rgb(153.5524475524, 239.041958042, 107.958041958), #fff);
 }
 .chat_body.color_green .chat_inside .chat_content {
-  background: #2c6a0c;
+  background: rgb(44.3706293706, 105.9965034965, 11.5034965035);
 }
 .chat_body.color_green .chat_inside .chat_list .chat_search {
   background: #36810e;
@@ -123,7 +123,7 @@
   background: linear-gradient(to bottom, #66ecff, #fff);
 }
 .chat_body.color_cyanblue .chat_inside .chat_content {
-  background: #007080;
+  background: rgb(0, 111.6666666667, 127.5);
 }
 .chat_body.color_cyanblue .chat_inside .chat_list .chat_search {
   background: #008699;
@@ -138,12 +138,12 @@
   background: #7f50b4;
 }
 .chat_body.color_purple .chat_inside .chat_welcome {
-  background: #e7dff1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e7dff1), to(#fff));
-  background: linear-gradient(to bottom, #e7dff1, #fff);
+  background: rgb(231.448, 222.8, 241.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(231.448, 222.8, 241.2)), to(#fff));
+  background: linear-gradient(to bottom, rgb(231.448, 222.8, 241.2), #fff);
 }
 .chat_body.color_purple .chat_inside .chat_content {
-  background: #7246a4;
+  background: rgb(114.436, 70.35, 164.15);
 }
 .chat_body.color_purple .chat_inside .chat_list .chat_search {
   background: #7f50b4;
@@ -163,7 +163,7 @@
   background: linear-gradient(to bottom, #aaaaaa, #fff);
 }
 .chat_body.color_gray .chat_inside .chat_content {
-  background: #373737;
+  background: rgb(55.25, 55.25, 55.25);
 }
 .chat_body.color_gray .chat_inside .chat_list .chat_search {
   background: #444;
@@ -183,7 +183,7 @@
   background: linear-gradient(to bottom, #ff6683, #fff);
 }
 .chat_body.color_redyellow .chat_inside .chat_content {
-  background: #800018;
+  background: rgb(127.5, 0, 24.1666666667);
 }
 .chat_body.color_redyellow .chat_inside .chat_list .chat_search {
   background: #99001d;
@@ -198,12 +198,12 @@
   background: #d74261;
 }
 .chat_body.color_pink .chat_inside .chat_welcome {
-  background: #fbeaee;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fbeaee), to(#fff));
-  background: linear-gradient(to bottom, #fbeaee, #fff);
+  background: rgb(250.6331877729, 234.3668122271, 237.7510917031);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(250.6331877729, 234.3668122271, 237.7510917031)), to(#fff));
+  background: linear-gradient(to bottom, rgb(250.6331877729, 234.3668122271, 237.7510917031), #fff);
 }
 .chat_body.color_pink .chat_inside .chat_content {
-  background: #d32d4f;
+  background: rgb(210.5458515284, 44.9541484716, 79.4061135371);
 }
 .chat_body.color_pink .chat_inside .chat_list .chat_search {
   background: #d74261;
@@ -216,61 +216,61 @@
   background: #047cc3;
 }
 .chat_window.color_blue .chat_function {
-  background: #035c91;
+  background: rgb(2.9748743719, 92.2211055276, 145.0251256281);
 }
 .chat_window.color_red {
   background: #bc2769;
 }
 .chat_window.color_red .chat_function {
-  background: #921e51;
+  background: rgb(145.7621145374, 30.2378854626, 81.40969163);
 }
 .chat_window.color_brown {
   background: #853512;
 }
 .chat_window.color_brown .chat_function {
-  background: #58230c;
+  background: rgb(88.0794701987, 35.0993377483, 11.9205298013);
 }
 .chat_window.color_yellow {
   background: #f8920f;
 }
 .chat_window.color_yellow .chat_function {
-  background: #ce7606;
+  background: rgb(205.991902834, 118.4453441296, 6.008097166);
 }
 .chat_window.color_green {
   background: #36810e;
 }
 .chat_window.color_green .chat_function {
-  background: #235309;
+  background: rgb(34.7412587413, 82.993006993, 9.006993007);
 }
 .chat_window.color_cyanblue {
   background: #008699;
 }
 .chat_window.color_cyanblue .chat_function {
-  background: #005966;
+  background: rgb(0, 89.3333333333, 102);
 }
 .chat_window.color_purple {
   background: #7f50b4;
 }
 .chat_window.color_purple .chat_function {
-  background: #663f92;
+  background: rgb(101.992, 62.7, 146.3);
 }
 .chat_window.color_gray {
   background: #444;
 }
 .chat_window.color_gray .chat_function {
-  background: #2b2b2b;
+  background: rgb(42.5, 42.5, 42.5);
 }
 .chat_window.color_redyellow {
   background: #99001d;
 }
 .chat_window.color_redyellow .chat_function {
-  background: #660013;
+  background: rgb(102, 0, 19.3333333333);
 }
 .chat_window.color_pink {
   background: #d74261;
 }
 .chat_window.color_pink .chat_function {
-  background: #be2847;
+  background: rgb(189.8253275109, 40.1746724891, 71.3100436681);
 }
 
 .open_chat {
@@ -587,7 +587,7 @@
   -webkit-transform: translate3d(0, 0, 0);
 }
 .chat_list .list .annoucement {
-  background: #fddc76;
+  background: rgb(253.2697095436, 219.8174273859, 117.7302904564);
   padding: 1em 1.5em 1em 1em;
 }
 .chat_list .list .annoucement span {
@@ -692,7 +692,7 @@
   margin-right: 0.5em;
 }
 .chat_list .list ul li .more_function .window ul li a:hover, .chat_list .list ul li .more_function .window ul li a:focus {
-  color: #059cf5;
+  color: rgb(5.0251256281, 155.7788944724, 244.9748743719);
   background: #fff;
 }
 .chat_list .list ul li .more_function .window ul li a:hover i, .chat_list .list ul li .more_function .window ul li a:focus i {
@@ -838,9 +838,9 @@
   top: 0;
   background: #d0dada;
   z-index: 9999;
-  background: #96d7fd;
-  background: -webkit-gradient(linear, left top, left bottom, from(#96d7fd), to(#fff));
-  background: linear-gradient(to bottom, #96d7fd, #fff);
+  background: rgb(150.1507537688, 214.6733668342, 252.8492462312);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(150.1507537688, 214.6733668342, 252.8492462312)), to(#fff));
+  background: linear-gradient(to bottom, rgb(150.1507537688, 214.6733668342, 252.8492462312), #fff);
   pointer-events: none;
 }
 .chat_welcome.show {
@@ -876,7 +876,7 @@
   height: 100%;
   left: 0px;
   top: 0;
-  background: #036caa;
+  background: rgb(3.4874371859, 108.1105527638, 170.0125628141);
   z-index: 9;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -1093,7 +1093,7 @@
   color: #21baff;
 }
 .chat_content .txt_content .txt_area .txt.left .bubble a:hover, .chat_content .txt_content .txt_area .txt.left .bubble a:focus {
-  color: #00a3ed;
+  color: rgb(0, 163.3378378378, 237);
 }
 .chat_content .txt_content .txt_area .txt.left .bubble:after {
   position: absolute;
@@ -1159,7 +1159,7 @@
   text-decoration: underline;
 }
 .chat_content .txt_content .txt_area .txt .bubble a:hover, .chat_content .txt_content .txt_area .txt .bubble a:focus {
-  color: #fddc76;
+  color: rgb(253.2697095436, 219.8174273859, 117.7302904564);
 }
 .chat_content .txt_content .txt_area .txt .bubble .chat_link_info img {
   width: 50px;
