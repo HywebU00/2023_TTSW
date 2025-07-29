@@ -11510,6 +11510,7 @@ h1.title:after, h2.title:after {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
+
 .main.index .highlightBox .info .title {
   margin-bottom: 30%;
   margin-top: 30%;
@@ -11519,6 +11520,8 @@ h1.title:after, h2.title:after {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  padding: 5px 0;
+  color: #fff;
 }
 @media screen and (max-width: 991px) {
   .main.index .highlightBox .info .title {
