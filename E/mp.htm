@@ -402,40 +402,40 @@
                 <h2 class="titleElem wow fadeInUp" data-wow-delay="0s">Product Catalog</h2>
                 <div class="mpTagBox">
                   <ul>
-                    <li><a href="#">標籤1</a></li>
-                    <li><a href="#">標籤2</a></li>
-                    <li><a href="#">標籤3</a></li>
-                    <li><a href="#">標籤4</a></li>
-                    <li><a href="#">標籤5</a></li>
+                    <li><button type="button">標籤1</button></li>
+                    <li><button type="button">標籤2</button></li>
+                    <li><button type="button">標籤3</button></li>
+                    <li><button type="button">標籤4</button></li>
+                    <li><button type="button">標籤5</button></li>
                   </ul>
                 </div>
                 <div class="mpTagAll">
                   <ul>
-                    <li><a href="#">標籤1</a></li>
-                    <li><a href="#">標籤2</a></li>
-                    <li><a href="#">標籤3</a></li>
-                    <li><a href="#">標籤4</a></li>
-                    <li><a href="#">標籤5</a></li>
-                    <li><a href="#">標籤1</a></li>
-                    <li><a href="#">標籤2</a></li>
-                    <li><a href="#">標籤3</a></li>
-                    <li><a href="#">標籤4</a></li>
-                    <li><a href="#">標籤5</a></li>
-                    <li><a href="#">標籤1</a></li>
-                    <li><a href="#">標籤2</a></li>
-                    <li><a href="#">標籤3</a></li>
-                    <li><a href="#">標籤4</a></li>
-                    <li><a href="#">標籤5</a></li>
-                    <li><a href="#">標籤1</a></li>
-                    <li><a href="#">標籤2</a></li>
-                    <li><a href="#">標籤3</a></li>
-                    <li><a href="#">標籤4</a></li>
-                    <li><a href="#">標籤5</a></li>
-                    <li><a href="#">標籤1</a></li>
-                    <li><a href="#">標籤2</a></li>
-                    <li><a href="#">標籤3</a></li>
-                    <li><a href="#">標籤4</a></li>
-                    <li><a href="#">標籤5</a></li>
+                    <li><button type="button">標籤1</button></li>
+                    <li><button type="button">標籤2</button></li>
+                    <li><button type="button">標籤3</button></li>
+                    <li><button type="button">標籤4</button></li>
+                    <li><button type="button">標籤5</button></li>
+                    <li><button type="button">標籤1</button></li>
+                    <li><button type="button">標籤2</button></li>
+                    <li><button type="button">標籤3</button></li>
+                    <li><button type="button">標籤4</button></li>
+                    <li><button type="button">標籤5</button></li>
+                    <li><button type="button">標籤1</button></li>
+                    <li><button type="button">標籤2</button></li>
+                    <li><button type="button">標籤3</button></li>
+                    <li><button type="button">標籤4</button></li>
+                    <li><button type="button">標籤5</button></li>
+                    <li><button type="button">標籤1</button></li>
+                    <li><button type="button">標籤2</button></li>
+                    <li><button type="button">標籤3</button></li>
+                    <li><button type="button">標籤4</button></li>
+                    <li><button type="button">標籤5</button></li>
+                    <li><button type="button">標籤1</button></li>
+                    <li><button type="button">標籤2</button></li>
+                    <li><button type="button">標籤3</button></li>
+                    <li><button type="button">標籤4</button></li>
+                    <li><button type="button">標籤5</button></li>
                   </ul>
                   <button class="switchMore" type="button"></button>
                 </div>
@@ -444,6 +444,7 @@
                   <div class="swiperArrows swiperNext"></div>
                   <div class="swiper">
                     <div class="swiper-wrapper">
+                      <!-- 變更slide數量後需要執行 productsSwiperGrp.forEach((item) => item.updateSlides()); 這會更新所有productsSwiper的swiper-->
                       <div class="swiper-slide">
                         <a href="#">
                           <div class="box">
@@ -2774,7 +2775,7 @@
       });
 
       const productsSwiper = document.querySelectorAll('.productsSwiper');
-
+      let productsSwiperGrp = [];
       productsSwiper.forEach((item, index) => {
         let newSwiper = new Swiper(item.querySelector('.swiper'), {
           slideToClickedSlide: true,
@@ -2804,6 +2805,8 @@
             },
           },
         });
+
+        productsSwiperGrp.push(newSwiper);
       });
 
       let highlightSwiper = new Swiper('.highlightSwiper .swiper', {
@@ -3061,10 +3064,15 @@
 
     <script>
       $(function () {
+        $('.mpTagAll ul button,.mpTagBox ul button').on('click', function () {
+          $(this).toggleClass('active');
+          $(this).blur();
+        });
+
         $('.mpTagAll .switchMore').on('click', function () {
           $(this).toggleClass('active');
           $(this).blur();
-          $('.mpTagAll ul').slideToggle('fast');
+          $('.mpTagAll ul').slideToggle(200);
         });
       });
 

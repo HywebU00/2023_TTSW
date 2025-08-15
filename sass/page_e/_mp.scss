@@ -6115,7 +6115,11 @@
       margin: 0 5px 10px;
     }
 
-    a {
+    a,
+    button {
+      border: none !important;
+      margin: 0 !important;
+      text-shadow: none !important;
       border-radius: 50px;
       display: block;
       padding: 10px 20px;
@@ -6123,6 +6127,7 @@
       background: #f8f8f8;
       color: #333;
 
+      &.active,
       &:hover {
         color: #fff;
         background: $primaryColor;
@@ -6187,6 +6192,7 @@
       z-index: 9;
     }
 
+    &.active,
     &:focus,
     &:hover {
       border: none !important;
@@ -6199,13 +6205,6 @@
     }
 
     &.active {
-      border: none !important;
-      border-top: $primaryColor 2px solid !important;
-
-      &::before {
-        background: $primaryColor;
-      }
-
       &::after {
         border-width: 0 6px 6px;
         border-color: transparent transparent #fff;

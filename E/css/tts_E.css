@@ -15564,7 +15564,12 @@ h1.title:after, h2.title:after {
   margin: 0 5px 10px;
 }
 .mpTagBox ul a,
-.mpTagAll ul a {
+.mpTagBox ul button,
+.mpTagAll ul a,
+.mpTagAll ul button {
+  border: none !important;
+  margin: 0 !important;
+  text-shadow: none !important;
   border-radius: 50px;
   display: block;
   padding: 10px 20px;
@@ -15573,8 +15578,13 @@ h1.title:after, h2.title:after {
   background: #f8f8f8;
   color: #333;
 }
-.mpTagBox ul a:hover,
-.mpTagAll ul a:hover {
+.mpTagBox ul a.active, .mpTagBox ul a:hover,
+.mpTagBox ul button.active,
+.mpTagBox ul button:hover,
+.mpTagAll ul a.active,
+.mpTagAll ul a:hover,
+.mpTagAll ul button.active,
+.mpTagAll ul button:hover {
   color: #fff;
   background: #0a6bbe;
 }
@@ -15637,19 +15647,12 @@ h1.title:after, h2.title:after {
   position: relative;
   z-index: 9;
 }
-.mpTagAll .switchMore:focus, .mpTagAll .switchMore:hover {
+.mpTagAll .switchMore.active, .mpTagAll .switchMore:focus, .mpTagAll .switchMore:hover {
   border: none !important;
   border-top: #0a6bbe 2px solid !important;
   background: none;
 }
-.mpTagAll .switchMore:focus::before, .mpTagAll .switchMore:hover::before {
-  background: #0a6bbe;
-}
-.mpTagAll .switchMore.active {
-  border: none !important;
-  border-top: #0a6bbe 2px solid !important;
-}
-.mpTagAll .switchMore.active::before {
+.mpTagAll .switchMore.active::before, .mpTagAll .switchMore:focus::before, .mpTagAll .switchMore:hover::before {
   background: #0a6bbe;
 }
 .mpTagAll .switchMore.active::after {
