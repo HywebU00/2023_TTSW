@@ -425,6 +425,7 @@
   .ex_info {
     padding-right: 30px;
     width: 100%;
+    align-self: center;
 
     @include screen('tablet') {
       width: fit-content;
