@@ -75,7 +75,9 @@
         margin-right: 0;
         padding-right: 0;
         border-bottom: none;
+        flex-wrap: wrap;
         justify-content: flex-start;
+        gap: 5px 40px;
 
         > li {
           min-width: 6em;
