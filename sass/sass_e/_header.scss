@@ -62,7 +62,7 @@
     }
 
     .menu {
-      margin-left: 130px;
+      margin-left: 0px;
       margin-right: 0px;
       margin-top: 30px;
 
@@ -75,6 +75,7 @@
         margin-right: 0;
         padding-right: 0;
         border-bottom: none;
+        justify-content: flex-start;
 
         > li {
           min-width: 6em;
